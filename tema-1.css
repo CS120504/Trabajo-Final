@@ -1,0 +1,392 @@
+section.Recien-llegados {
+    width: 100%;
+}
+
+.Tema1-container {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.Text-Top {
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    align-items: center;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.indice img {
+    width: 25px;
+    height: 25px;
+}
+.indice a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.indice {
+    display: flex;
+    align-items: center;
+}
+
+.content-1-Top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+
+.content-1-Top-Left-Text p {
+    font-size: 17px;
+}
+
+.content-1-Top-Left {
+    display: flex;
+    align-items: center;
+}
+
+.content-1-Top-Left-Text {
+    padding-left: 15px;
+}
+
+.content-1-Top-Left-Buttons {
+    display: flex;
+    padding-right: 15px;
+    border-right: 1px solid #d9d9d9;
+}
+
+.content-1-Top-Left-Buttons img {
+    width: 28px;
+}
+
+.content-1-Top-Left-Buttons img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.content-1-Top-Left-Buttons img:not(:hover) {
+    transform: scale(1.0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.content-1-Top-Left-Buttons button {
+    border: none;
+    background: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.caja {
+    width: 25%;
+    display: grid;
+    padding-bottom: 50px;
+    justify-content: center;
+}
+
+.caja img {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+
+.estrellas {
+    display: flex;
+    justify-content: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.estrellas img {
+    width: 17px;
+    height: 17px;
+}
+
+div#right {
+    justify-content: end;
+    padding-bottom: 50px;
+}
+
+div#middle {
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+div#left {
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+.caja a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.caja button {
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+    width: 180px;
+    background: #d9d9d9;
+    align-items: center;
+    cursor: pointer;
+}
+
+#boton-palomita {
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Agrega transición al cambio de color del fondo y texto */
+    border: rgb(90, 90, 90) 1px;
+    color: rgb(43, 43, 43);
+  }
+
+  #boton-palomita:hover {
+    background-color: orange;
+    color: white;
+    border: rgb(211, 137, 0) 1px;
+  }
+
+  #boton-palomita:not(:hover) {
+    background-color: rgb(185, 185, 185);
+    color: rgb(43, 43, 43);
+    border: rgb(90, 90, 90) 1px;
+  }
+
+  .fade-in {
+    animation: fadeInFromLeft 0.3s ease-in-out;
+  }
+
+  .fade-out {
+    animation: fadeOutToLeft 0.3s ease-in-out;
+  } 
+  
+.caja img:hover {
+    transition: filter 0.2s ease-in-out;
+    filter: brightness(60%);
+}
+
+.caja img:not(:hover) {
+    transition: filter 0.2s ease-in-out;
+    filter: brightness(100%);
+}
+
+.text-float {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background: white;
+    display: flex;
+    width: 90px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.text-float a {
+    display: flex;
+}
+
+.text-float img {
+    width: 18px;
+    height: 18px;
+}
+
+.img-caja:hover .text-float {
+    opacity: 1;
+  }
+
+.img-caja {
+    height: 180px;
+    width: 180px;
+    position: relative;
+}
+
+img#ojo {
+    padding-left: 10px;
+    border-left: 1px solid black;
+    border-radius: 0px;
+}
+
+img#corazon {
+    padding-right: 10px;
+}
+
+.info-img h1 {
+    color: #06c;
+    font-size: 22px;
+}
+
+.info-img p {
+    display: none;
+}
+
+label#boton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 310px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    position: relative;
+    cursor: pointer;
+}
+
+.Ordenar-links label {
+    color: rgb(32, 32, 32);
+    font-size: 19px;
+    font-weight: bold;
+    width: 350px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.Ordenar-links {
+    position: absolute;
+    display: grid;
+    z-index: 1;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    box-shadow: 0px 0px 15px 0px #00000052;
+}
+
+.Ordenar-links label {
+    color: rgb(56, 56, 56);
+    width: 350px;
+    justify-content: space-between;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.Ordenar-links h1 {
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.Ordenar-links img {
+    display: none;
+}
+
+#Ordenar:checked + #boton + .Ordenar-links {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in-out;
+}
+
+label#boton h1 {
+    margin: 13px 0px 13px 0px;
+    font-size: 17px;
+}
+
+#boton img {
+    transition: transform 0.5s ease;
+    transform-origin: center;
+}
+
+#Ordenar:checked + #boton {
+    background-color: orange;
+    color: white; 
+}
+
+#Ordenar:checked + #boton img {
+    transform: rotate(180deg); 
+}
+
+#boton img.rotated {
+    transform: rotate(180deg);
+}
+
+label#boton-1, label#boton-2, label#boton-3, label#boton-4, label#boton-5, label#boton-6 {
+    background: white;
+    width: 310px;
+    height: 35px;
+    border-radius: 0px;
+    border-bottom: 1px solid #dddddd;
+}
+
+#Ordenar-1:checked + #boton-1 + .Ordenar-links {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in-out;
+}
+
+label#boton:hover {
+    transition: background-color, 0.2s ease-in-out;
+    background-color: orange;
+    color: white;
+    border: 1px solid rgb(73, 73, 73);}
+
+label#boton:not(:hover) {
+    transition: background-color, 0.2s ease-in-out;
+    background-color: rgb(238, 238, 238);
+    color: rgb(43, 43, 43);
+    border: 1px solid rgb(0, 0, 0) 1px;
+}
+
+label#boton-1:hover {
+    transition: background-color, 0.2s ease-in-out;
+    background-color: rgb(255, 207, 118);
+}
+
+label#boton-1:not(:hover) {
+    transition: background-color, 0.2s ease-in-out;
+}
+
+label#boton-2:hover {
+    transition: background-color, 0.2s ease-in-out;
+    background-color: rgb(255, 207, 118);
+}
+
+label#boton-2:not(:hover) {
+    transition: background-color, 0.2s ease-in-out;
+}
+
+label#boton-3:hover {
+    transition: background-color, 0.2s ease-in-out;
+    background-color: rgb(255, 207, 118);
+}
+
+label#boton-3:not(:hover) {
+    transition: background-color, 0.2s ease-in-out;
+}
+
+label#boton-4:hover {
+    transition: background-color, 0.2s ease-in-out;
+    background-color: rgb(255, 207, 118);
+}
+
+label#boton-4:not(:hover) {
+    transition: background-color, 0.2s ease-in-out;
+}
+
+label#boton-5:hover {
+    transition: background-color, 0.2s ease-in-out;
+    background-color: rgb(255, 207, 118);
+}
+
+label#boton-5:not(:hover) {
+    transition: background-color, 0.2s ease-in-out;
+}
+
+label#boton-6:hover {
+    transition: background-color, 0.2s ease-in-out;
+    background-color: rgb(255, 207, 118);
+}
+
+label#boton-6:not(:hover) {
+    transition: background-color, 0.2s ease-in-out;
+}

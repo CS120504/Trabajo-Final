@@ -1,0 +1,135 @@
+.Información img {
+    width: 14px;
+}
+
+.footer-Top {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    padding-top: 12vh;
+    padding-bottom: 12vh;
+}
+
+
+.Social img {
+    width: 20px;
+    padding: 6px;
+    background: white;
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+}
+
+.footer-Bottom {
+    margin-right: 3vw;
+    margin-left: 3vw;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(39, 39, 39);
+    align-items: center;
+}
+
+.footer-Top h2 {
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.footer-Top a {
+    font-size: 12px;
+    margin: 0px;
+    color: #9f9f9f;
+}
+
+.Información a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    color: #9f9f9f;
+    padding-left: 15px
+}
+
+
+.inforamcion img {
+    padding: 8px;
+    background: white;
+    border-radius: 50%;
+    height: 14px;
+}
+
+.inforamcion {
+    display: flex;
+    justify-content: left;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    align-items: center;
+}
+
+.Accesos.Directos a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #9f9f9f;
+    text-decoration: none;
+}
+
+.More a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #9f9f9f;
+    text-decoration: none;
+}
+
+.More {
+    display: grid;
+    align-content: flex-start;
+}
+
+.Accesos.Directos {
+    display: grid;
+    align-content: flex-start;
+}
+
+.inforamcion p {
+    font-size: 14px;
+    color: #9f9f9f;
+    padding-left: 15px
+}
+
+.footer-Bottom-Left p {
+    color: #9f9f9f;
+    font-size: 10px;
+}
+
+.footer-Bottom a {
+    color: #9f9f9f;
+    font-size: 10px;
+}
+
+.footer-Bottom-Right {
+    display: flex;
+    justify-content: space-between;
+    width: 11vw;
+}
+
+.Social {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.Social img {
+    width: 20px;
+    padding: 6px;
+    background: white;
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    margin: 0px 5px 0px 5px;
+}
+
+.Información {
+    margin-top: -70px;
+}

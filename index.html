@@ -1,0 +1,2837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>MrVinil.pe</title>
+</head>
+<body>
+    <header class="header-full">
+        <div class="header">
+            <div class="x-container">
+                <div class="Header-Top">
+                    <div class="menu">
+                        <label for="btn-menu" class="menu-icon"><img src="svg/menu.svg"></label>
+                        <div class="logo">
+                            <a href="#"><img src="img/logo.png" id="logo"></a>
+                        </div>
+                    </div>
+                    <div class="buscador">
+                        <img src="img/icon-abuela.png" style="width: 13px; position: absolute; left: 15px; opacity: 0.5;">
+                          <input type="text" id="Search" placeholder="Buscar...">
+                        <button><img src="svg/magnifying-glass-solid.svg"></button>
+                    </div>
+                    <div class="nav-user">
+                        <div class="user">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="div-user">
+                                    <p style="font-weight: bold; opacity: 0.7;">Ingreso</p>
+                                    <img src="img/user.png" id="user">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-2">
+            <div class="header-2-container">
+                <nav class="nav-bar">
+                    <a href="#">Inicio</a>
+                    <a href="#Recien-llegados">Recién llegados</a>
+                    <a href="#Tornamesas">Tornamesas</a>
+                    <a href="#CDs">CDs</a>
+                    <a href="#">Libros</a>
+                    <a href="#">Accesorios</a>
+                    <a href="#" style="border-right: none;">More</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--	--------------->
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+        <div class="cont-menu">
+            <div class="top-logo">
+                <img src="img/logo.png">
+            </div>
+            <div class="register-login">
+                <button>Registro</button>
+                <button>Ingreso</button>
+            </div>
+            <div class="promociones">
+                <a href="#"><img src="img/promo.png"></a>
+            </div>
+            <nav class="sections">
+                <h2 style="opacity: 0.4; padding-left: 10px; font-size: 20px;">Secciones</h2>
+                <a href="#">
+                    <p>Perfil</p>
+                    <img src="svg/mayor a.svg">
+                </a>
+                <a href="#">
+                    <p>Configuración de cuenta</p>
+                    <img src="svg/mayor a.svg">
+                </a>
+                <a href="#">
+                    <p>Centro de ayuda</p>
+                    <img src="svg/mayor a.svg">
+                </a>
+                <a href="#">
+                    <p>Cerra sesión</p>
+                    <img src="svg/mayor a.svg">
+                </a>
+            </nav>
+            <div class="pais-select">
+                <a href="#">
+                    <div class="pais">
+                        <img src="svg/peru.svg" style="width: 60px; margin-right: 10px; margin-left: 20px; border-radius: 10px;">
+                        <p>Perú</p>
+                    </div>
+                    <div>
+                        <img src="svg/mayor a.svg" style="width: 10px; opacity: 0.5;">
+                    </div>
+                </a>
+            </div>
+            <label for="btn-menu"><img src="img/equis.png" style="width: 30px; opacity: 0.5; cursor: pointer;"></label>
+        </div>
+    </div>
+
+    <div class="fondo-header" style="background-color: white; width: 100%; height: 110px;"></div>
+
+    <div class="slider-container">
+      <div class="slider" id="slider">
+        <div class="slider__section"><a href="#"><img src="img/slider-img-1.jpg"></a></div>
+        <div class="slider__section"><a href="#"><img src="img/slider-img-2.jpg"></a></div>
+        <div class="slider__section"><a href="#"><img src="img/slider-img-3.jpg"></a></div>
+        <div class="slider__section"><a href="#"><img src="img/slider-img-4.jpg"></a></div>
+      </div>
+      <button class="slider__btn slider__btn--right" id="btn-right"> <img src="img/menor a.png" style="rotate: 180deg;"> </button>
+      <button class="slider__btn slider__btn--left" id="btn-left"> <img src="img/menor a.png"> </button>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+  const slider = document.getElementById('slider');
+  const btnLeft = document.getElementById('btn-left');
+  const btnRight = document.getElementById('btn-right');
+
+  let currentIndex = 0;
+  const totalSlides = document.querySelectorAll('.slider__section').length;
+
+  // Función para mostrar el slide actual
+  function showSlide(index) {
+    slider.style.transform = `translateX(${-index * 100}%)`;
+  }
+
+  // Función para avanzar al siguiente slide
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    showSlide(currentIndex);
+  }
+
+  // Función para retroceder al slide anterior
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    showSlide(currentIndex);
+  }
+
+  // Event listeners para los botones de navegación
+  btnLeft.addEventListener('click', prevSlide);
+  btnRight.addEventListener('click', nextSlide);
+
+  // Configurar intervalo para cambiar automáticamente cada 3 segundos
+  setInterval(nextSlide, 5000);
+});
+
+    </script>
+        
+
+    <section class="body-full" style="position: absolute; z-index: -1; width: 100%;" >
+        <section class="Recien-llegados" id="Recien-llegados">
+            <div class="Tema1-container">
+                <div class="Text-Top">
+                    <h1 style="margin: 0px; font-size: 26px; color: #555555;">Recién Llegados</h1>
+                    <div class="indice">
+                        <a href="#" style="color: gray;">Inicio</a>
+                        <img src="img/mayor-que-el-simbolo.png">
+                        <a href="#" style="color: rgb(43, 43, 43); font-size: 16px;">Recién llegados</a>
+                    </div>
+                </div>
+                <div class="content-1">
+                    <div class="content-1-Top">
+                        <div class="content-1-Top-Left">
+                            <div class="content-1-Top-Left-Buttons">
+                                <button id="cuatroColumnas" style="padding-right: 10px;"><img src="img/4-cuadrados-redondeados.png" id="cuatroColumnas-img"></button>
+                                <button id="unaColumna" style="padding-left: 10px;"><img src="img/2-cuadrados-redondeados.png" id="unaColumna-img"></button>
+                            </div>
+                            <div class="content-1-Top-Left-Text">
+                                <p>Mostrando 1-16 de 16 resultados</p>
+                            </div>
+                        </div>
+                        <div class="content-1-Top-Right">
+                            <input type="checkbox" id="Ordenar" style="display: none;">
+                            <label for="Ordenar" id="boton">
+                                <h1 id="ordenarTitulo" style="padding-left: 10px;">Ordenar por defecto</h1>
+                                <img src="img/ordenar-abajo.png" class="flecha"  id="flecha" style="width: 15px; position: absolute;
+                                right: 10px;">
+                            </label>
+    
+                            <div class="Ordenar-links">
+                                <input type="checkbox" id="Ordenar-1" style="display: none;">
+                                <label for="Ordenar-1" id="boton-1" onclick="cambiarTitulo('Ordenar por defecto')">
+                                    <h1>Ordenar por defecto</h1>
+                                    <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                                </label>
+    
+                                <input type="checkbox" id="Ordenar-2"  min="1" max="16" style="display: none;">
+                                <label for="Ordenar-2" id="boton-2" onclick="cambiarTitulo('Ordenar por popularidad')">
+                                    <h1>Ordenar por popularidad</h1>
+                                    <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                                </label>
+    
+                                <input type="checkbox" id="Ordenar-3" style="display: none;">
+                                <label for="Ordenar-3" id="boton-3" onclick="cambiarTitulo('Ordenar por puntuación media')">
+                                    <h1>Ordenar por puntuación media</h1>
+                                    <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                                </label>
+    
+                                <input type="checkbox" id="Ordenar-4" style="display: none;">
+                                <label for="Ordenar-4" id="boton-4" onclick="cambiarTitulo('Ordenar por los últimos años')">
+                                    <h1>Ordenar por los últimos años</h1>
+                                    <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                                </label>
+    
+                                <input type="checkbox" id="Ordenar-5" style="display: none;">
+                                <label for="Ordenar-5" id="boton-5" onclick="cambiarTitulo('Ordenar por precio: Bajo a Alto')">
+                                    <h1>Ordenar por precio: Bajo a Alto</h1>
+                                    <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                                </label>
+    
+                                <input type="checkbox" id="Ordenar-6" style="display: none;">
+                                <label for="Ordenar-6" id="boton-6" onclick="cambiarTitulo('Ordenar por precio: Alto a Bajo')" style="border-bottom: none;">
+                                    <h1>Ordenar por precio: Alto a Bajo</h1>
+                                    <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contenedor">
+                        <div class="caja">
+                            <div class="img-caja">
+                                <img src="img/portada-1.jpg">
+                                <div class="text-float">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                    <img src="img/estrella.png">
+                                    </div>
+                                    <a href="#">Metro Boomin - Superhero</a>
+                                        <h1>S/ 70.00</h1>
+                                        <p>Año:2022</p>
+                                        <p>País: Estados Unidos</p>
+                                        <p style="padding-bottom: 20px;">Género: Hip-hop/rap</p>
+                                        <button id="boton-palomita-1" onclick="toggleImage('1')">
+                                        <img src="img/palomita.png" id="palomita-1">  
+                                          Añadir al carrito
+                                        </button>
+                                </div>
+                            </div>
+                        <div class="caja">
+                            <div class="img-caja">
+                                <img src="img/portada-2.png">
+                                <div class="text-float">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">J. Cole - All My Life</a>
+                                <h1>S/ 115.00</h1>
+                                <p>Año:2023</p>
+                                <p>País: Estados Unidos</p>
+                                <p style="padding-bottom: 20px;">Género: Hip-hop/rap</p>
+                                <button id="boton-palomita-2" onclick="toggleImage('2')">
+                                  <img src="img/palomita.png" id="palomita-2">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                        </div>
+                        <div class="caja">
+                            <div class="img-caja">
+                                <img src="img/portada-3.jpeg">
+                                <div class="text-float">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                    <img src="img/estrella.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Travis Scott - 90210</a>
+                                <h1>S/ 90.00</h1>
+                                <p>Año:2015</p>
+                                <p>País: Estados Unidos</p>
+                                <p style="padding-bottom: 20px;">Género: Hip-hop/rap</p>
+                                <button id="boton-palomita-3" onclick="toggleImage('3')">
+                                  <img src="img/palomita.png" id="palomita-3">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                        </div>
+                        <div class="caja">
+                            <div class="img-caja">
+                                <img src="img/portada-4.jpeg">
+                                <div class="text-float">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">MF-DOOM - Doomsday</a>
+                                <h1>S/ 100.00</h1>
+                                <p>Año: 1999</p>
+                                <p>País: Estados Unidos</p>
+                                <p style="padding-bottom: 20px;">Género: Hip-hop/rap</p>
+                                <button id="boton-palomita-4" onclick="toggleImage('4')">
+                                  <img src="img/palomita.png" id="palomita-4">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                          </div>
+                          <div class="caja">
+                            <div class="img-caja">
+                                <img src="img/portada-5jpg.jpg">
+                                <div class="text-float">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">infinity (888) - XXXTentación</a>
+                                  <h1>S/ 80.00</h1>
+                                  <p>Año: 2018</p>
+                                  <p>País: Estados Unidos</p>
+                                  <p style="padding-bottom: 20px;">Género: Hip-hop/rap</p>
+                                  <button id="boton-palomita-5" onclick="toggleImage('5')">
+                                    <img src="img/palomita.png" id="palomita-5">  
+                                      Añadir al carrito
+                                    </button>
+                            </div>
+                          </div>
+                          <div class="caja">
+                            <div class="img-caja">
+                                <img src="img/portada-6.jpg">
+                                <div class="text-float">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Mac Miller - Blue World</a>
+                                  <h1>S/ 85.00</h1>
+                                  <p>Año: 2020</p>
+                                  <p>País: Estados Unidos</p>
+                                  <p style="padding-bottom: 20px;">Género: Hip-hop/rap</p>
+                                  <button id="boton-palomita-6" onclick="toggleImage('6')">
+                                    <img src="img/palomita.png" id="palomita-6">  
+                                      Añadir al carrito
+                                    </button>
+                            </div>
+                        </div>
+                        <div class="caja">
+                            <div class="img-caja">
+                                <img src="img/portada-7.jpg">
+                                <div class="text-float">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Don Toliver - Embarrassed</a>
+                                <h1>S/ 115.00</h1>
+                                <p>Año: 2023</p>
+                                <p>País: Estados Unidos</p>
+                                <p style="padding-bottom: 20px;">Género: Hip-hop/rap</p>
+                                <button id="boton-palomita-7" onclick="toggleImage('7')">
+                                  <img src="img/palomita.png" id="palomita-7">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                          </div>
+                          <div class="caja">
+                            <div class="img-caja">
+                                <img src="img/portada-8.png">
+                                <div class="text-float">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Bryan Adams - Waking Up <br> the Neighbours</a>
+                                  <h1>S/ 120.00</h1>
+                                  <p>Año: 1991</p>
+                                  <p>País: Inglaterra</p>
+                                  <p style="padding-bottom: 20px;">Género: Rock, Pop rock, Soft rock, Hard rock, Rock alternativo, Adult contemporary</p>
+                                  <button id="boton-palomita-8" onclick="toggleImage('8')">
+                                    <img src="img/palomita.png" id="palomita-8">  
+                                      Añadir al carrito
+                                    </button>
+                            </div>
+                          </div>
+                          <div class="caja">
+                            <div class="img-caja">
+                                <img src="img/portada-9.jpg">
+                                <div class="text-float">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">J. Cole - Kevin's Heart</a>
+                                  <h1>S/ 80.00</h1>
+                                  <p>Año: 2018</p>
+                                  <p>País: Estados Unidos</p>
+                                  <p style="padding-bottom: 20px;">Género: Hip-hop/rap</p>
+                                  <button id="boton-palomita-9" onclick="toggleImage('9')">
+                                    <img src="img/palomita.png" id="palomita-9">  
+                                      Añadir al carrito
+                                    </button>
+                            </div>
+                        </div>
+                        <div class="caja">
+                            <div class="img-caja">
+                                <img src="img/portada-11.jpg">
+                                <div class="text-float">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Dire Straits - Brothers <br> in Arms</a>
+                                <h1>S/ 90.00</h1>
+                                <p>Año: 1985</p>
+                                <p>País: Reino Unido</p>
+                                <p style="padding-bottom: 20px;">Género: Rock, Rock and roll, Pop rock, Jazz, Blues rock, Soft rock, Roots rock</p>
+                                <button id="boton-palomita-10" onclick="toggleImage('10')">
+                                  <img src="img/palomita.png" id="palomita-10">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                          </div>
+                          <div class="caja">
+                            <div class="img-caja">
+                                <img src="img/portada-12.jpg">
+                                <div class="text-float">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">The Beatles - Let it Be</a>
+                                  <h1>S/ 115.00</h1>
+                                  <p>Año: 1970</p>
+                                  <p>País: Inglaterra</p>
+                                  <p style="padding-bottom: 20px;">Género: Rock, Pop, Soft rock</p>
+                                  <button id="boton-palomita-11" onclick="toggleImage('11')">
+                                    <img src="img/palomita.png" id="palomita-11">  
+                                      Añadir al carrito
+                                    </button>
+                            </div>
+                          </div>
+                          <div class="caja">
+                            <div class="img-caja">
+                                <img src="img/portada-13.jpg">
+                                <div class="text-float">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Wale the Sage - Bleue</a>
+                                  <h1>S/ 70.00</h1>
+                                  <p>Año: 2023</p>
+                                  <p>País: Estados Unidos</p>
+                                  <p style="padding-bottom: 20px;">Género: Hip-hop/rap</p>
+                                  <button id="boton-palomita-12" onclick="toggleImage('12')">
+                                    <img src="img/palomita.png" id="palomita-12">  
+                                      Añadir al carrito
+                                    </button>
+                            </div>
+                        </div>
+                        <div class="caja">
+                            <div class="img-caja">
+                                <img src="img/portada-14.jpg">
+                                <div class="text-float">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Mac Miller - Small Worlds</a>
+                                <h1>S/ 70.00</h1>
+                                <p>Año: 2018</p>
+                                <p>País: Estados Unidos</p>
+                                <p style="padding-bottom: 20px;">Género: Hip-hop/rap</p>
+                                <button id="boton-palomita-13" onclick="toggleImage('13')">
+                                  <img src="img/palomita.png" id="palomita-13">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                        </div>
+                        <div class="caja">
+                            <div class="img-caja">
+                                <img src="img/portada-15.jpg">
+                                <div class="text-float">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Guns and Roses - Apettite <br> for Destruction</a>
+                                <h1>S/ 120.00</h1>
+                                <p>Año: 1987</p>
+                                <p>País: Estados Unidos</p>
+                                <p style="padding-bottom: 20px;">Género: Hard rock, Heavy metal, Glam metal, Glam rock, Blues rock, Heavy metal tradicional, Pop metal</p>
+                                <button id="boton-palomita-14" onclick="toggleImage('14')">
+                                  <img src="img/palomita.png" id="palomita-14">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                        </div>
+                        <div class="caja">
+                            <div class="img-caja">
+                                <img src="img/portada-16.jpg">
+                                <div class="text-float">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Aerosmith - Dream On</a>
+                                <h1>S/ 90.00</h1>
+                                <p>Año: 1973</p>
+                                <p>País: Estados Unidos</p>
+                                <p style="padding-bottom: 20px;">Género: Rock</p>
+                                <button id="boton-palomita-15" onclick="toggleImage('15')">
+                                  <img src="img/palomita.png" id="palomita-15">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                        </div>
+                        <div class="caja">
+                            <div class="img-caja">
+                                <img src="img/portada-4.jpg">
+                                <div class="text-float">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Baby Keem - Honest</a>
+                                <h1>S/ 115.00</h1>
+                                <p>Año: 2019</p>
+                                <p>País: Estados Unidos</p>
+                                <p style="padding-bottom: 20px;">Género: Hip-hop/rap</p>
+                                <button id="boton-palomita-16" onclick="toggleImage('16')">
+                                  <img src="img/palomita.png" id="palomita-16">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                        </div>
+                      </div>
+                      
+                      <style>
+                      #contenedor {
+                        display: flex;
+                        flex-wrap: wrap;
+                      }
+                       
+                      #contenedor.unaColumna .caja {
+                        width: 100%;
+                        display: flex;
+                        gap: 90px;
+                        padding-bottom: 100px;
+                        justify-content: left;
+                      }
+                      
+                      #contenedor.unaColumna .estrellas {
+                        padding-top: 0px;
+                      }
+    
+                      #contenedor.unaColumna .caja img, #contenedor.unaColumna .img-caja {
+                            width: 200px;
+                            height: 200px;
+                        }
+    
+                     #contenedor.unaColumna .caja a {
+                            font-size: 18px;
+                            font-weight: bold;
+                        }
+    
+                      #contenedor.unaColumna img[id^="palomita-"] {
+                         width: 30px;
+                        height: 25px;
+                      }
+
+                      #contenedor.unaColumna .estrellas img {
+                        width: 17px;
+                        height: 17px;
+                      }  
+                      
+                      #contenedor.unaColumna .text-float img {
+                        width: 18px;
+                        height: 18px;
+                      }
+    
+                      #contenedor.unaColumna .info-img p {
+                        display: grid;
+                        justify-content: left;
+                      }
+    
+                      #contenedor.unaColumna .caja p {
+                        text-align: right;
+                        margin: 0px;
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        font-size: 13px;
+                      }
+    
+                      #contenedor.unaColumna .info-img h1 {
+                        color: #06c;
+                        font-size: 22px;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        }
+                      
+                      #contenedor.animate {
+                        animation-duration: 0.4s;
+                        animation-fill-mode: both;
+                      }
+                      
+                      #contenedor.fadeOut {
+                        animation-name: fadeOut;
+                      }
+                      
+                      #contenedor.fadeIn {
+                        animation-name: fadeIn;
+                      }
+    
+                      button.active {
+                        background-color: black;
+                      }
+                      
+                      @keyframes fadeOut {
+                        from { opacity: 1; }
+                        to { opacity: 0; }
+                      }
+                      
+                      @keyframes fadeIn {
+                        from { opacity: 0; }
+                        to { opacity: 1; }
+                      }
+                      </style>
+                      
+                      <script>
+                        const contenedor = document.getElementById('contenedor');
+                        const unaColumnaBtn = document.getElementById('unaColumna');
+                        const cuatroColumnasBtn = document.getElementById('cuatroColumnas');
+                        const cambiarPosicionInput1 = document.getElementById('Ordenar-1');
+                        const cambiarPosicionInput2 = document.getElementById('Ordenar-2');
+                        const cambiarPosicionInput3 = document.getElementById('Ordenar-3');
+                        const cambiarPosicionInput4 = document.getElementById('Ordenar-4');
+                        const cambiarPosicionInput5 = document.getElementById('Ordenar-5');
+                        const cambiarPosicionInput6 = document.getElementById('Ordenar-6');
+                        const unaColumnaImg = document.getElementById('unaColumna-img');
+                        const cuatroColumnasImg = document.getElementById('cuatroColumnas-img');
+                      
+                        unaColumnaImg.style.filter = 'invert(50%) sepia(38%) saturate(0%) hue-rotate(126deg) brightness(92%) contrast(96%)';
+                        unaColumnaBtn.addEventListener('click', () => {
+                          contenedor.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            contenedor.classList.remove('cuatroColumnas');
+                            contenedor.classList.add('unaColumna');
+                            contenedor.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                      
+                          unaColumnaImg.style.filter = 'invert(0%) sepia(3%) saturate(1486%) hue-rotate(208deg) brightness(89%) contrast(102%)';
+                          unaColumnaImg.style.color = 'white';
+                          cuatroColumnasImg.style.filter = 'invert(50%) sepia(38%) saturate(0%) hue-rotate(126deg) brightness(92%) contrast(96%)';
+                          cuatroColumnasImg.style.color = 'white';
+                        });
+                      
+                        cuatroColumnasBtn.addEventListener('click', () => {
+                          contenedor.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            contenedor.classList.remove('unaColumna');
+                            contenedor.classList.add('cuatroColumnas');
+                            contenedor.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                      
+                          cuatroColumnasImg.style.filter = 'invert(0%) sepia(3%) saturate(1486%) hue-rotate(208deg) brightness(89%) contrast(102%)';
+                          cuatroColumnasImg.style.color = 'white';
+                          unaColumnaImg.style.filter = 'invert(50%) sepia(38%) saturate(0%) hue-rotate(126deg) brightness(92%) contrast(96%)';
+                          unaColumnaImg.style.color = 'white';
+                        });
+                      
+                        cambiarPosicionInput2.addEventListener('change', () => {
+                          const posicionCaja1 = 0;
+                          const posicionCaja2 = 1;
+                          const posicionCaja4 = 3;
+                      
+                          contenedor.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            const cajas = document.querySelectorAll('.caja');
+                            const caja1 = cajas[posicionCaja1];
+                            const caja2 = cajas[posicionCaja2];
+                            const caja4 = cajas[posicionCaja4];
+                      
+                            contenedor.insertBefore(caja2, caja1);
+                            contenedor.insertBefore(caja1, caja4);
+                      
+                            contenedor.classList.remove('fadeOut');
+                            contenedor.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                        });
+    
+                        cambiarPosicionInput3.addEventListener('change', () => {
+                          const posicionCaja1 = 0;
+                          const posicionCaja2 = 1;
+                          const posicionCaja3 = 2;
+                          const posicionCaja4 = 3;
+                          const posicionCaja5 = 4;
+                          const posicionCaja6 = 5;
+                          const posicionCaja7 = 6;
+                          const posicionCaja8 = 7;
+                          const posicionCaja9 = 8;
+                          const posicionCaja10 = 9;
+                          const posicionCaja11 = 10;
+                          const posicionCaja12 = 11;
+                          const posicionCaja13 = 12;
+                          const posicionCaja14 = 13;
+                          const posicionCaja15 = 14;
+                          const posicionCaja16 = 15;
+                      
+                          contenedor.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            const cajas = document.querySelectorAll('.caja');
+                            const caja1 = cajas[posicionCaja1];
+                            const caja2 = cajas[posicionCaja2];
+                            const caja3 = cajas[posicionCaja3];
+                            const caja4 = cajas[posicionCaja4];
+                            const caja5 = cajas[posicionCaja5];
+                            const caja6 = cajas[posicionCaja6];
+                            const caja7 = cajas[posicionCaja7];
+                            const caja8 = cajas[posicionCaja8];
+                            const caja9 = cajas[posicionCaja9];
+                            const caja10 = cajas[posicionCaja10];
+                            const caja11 = cajas[posicionCaja11];
+                            const caja12 = cajas[posicionCaja12];
+                            const caja13 = cajas[posicionCaja13];
+                            const caja14 = cajas[posicionCaja14];
+                            const caja15 = cajas[posicionCaja15];
+                            const caja16 = cajas[posicionCaja16];
+                      
+                            contenedor.insertBefore(caja2, caja1);
+                            contenedor.insertBefore(caja4, caja2);
+                            contenedor.insertBefore(caja7, caja3);
+                            contenedor.insertBefore(caja5, caja4);
+                            contenedor.insertBefore(caja8, caja5);
+                            contenedor.insertBefore(caja9, caja6);
+                            contenedor.insertBefore(caja10, caja7);
+                            contenedor.insertBefore(caja12, caja8);
+                            contenedor.insertBefore(caja13, caja9);
+                            contenedor.insertBefore(caja15, caja10);
+                            contenedor.insertBefore(caja6, caja11);
+                            contenedor.insertBefore(caja11, caja12);
+                            contenedor.insertBefore(caja16, caja13);
+                            contenedor.insertBefore(caja14, caja14);
+                            contenedor.insertBefore(caja1, caja15);
+                            contenedor.insertBefore(caja3, caja16);
+                      
+                            contenedor.classList.remove('fadeOut');
+                            contenedor.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                        });
+    
+                        cambiarPosicionInput1.addEventListener('change', () => {
+                          const posicionCaja1 = 0;
+                          const posicionCaja2 = 1;
+                          const posicionCaja3 = 2;
+                          const posicionCaja4 = 3;
+                          const posicionCaja5 = 4;
+                          const posicionCaja6 = 5;
+                          const posicionCaja7 = 6;
+                          const posicionCaja8 = 7;
+                          const posicionCaja9 = 8;
+                          const posicionCaja10 = 9;
+                          const posicionCaja11 = 10;
+                          const posicionCaja12 = 11;
+                          const posicionCaja13 = 12;
+                          const posicionCaja14 = 13;
+                          const posicionCaja15 = 14;
+                          const posicionCaja16 = 15;
+                      
+                          contenedor.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            const cajas = document.querySelectorAll('.caja');
+                            const caja1 = cajas[posicionCaja1];
+                            const caja2 = cajas[posicionCaja2];
+                            const caja3 = cajas[posicionCaja3];
+                            const caja4 = cajas[posicionCaja4];
+                            const caja5 = cajas[posicionCaja5];
+                            const caja6 = cajas[posicionCaja6];
+                            const caja7 = cajas[posicionCaja7];
+                            const caja8 = cajas[posicionCaja8];
+                            const caja9 = cajas[posicionCaja9];
+                            const caja10 = cajas[posicionCaja10];
+                            const caja11 = cajas[posicionCaja11];
+                            const caja12 = cajas[posicionCaja12];
+                            const caja13 = cajas[posicionCaja13];
+                            const caja14 = cajas[posicionCaja14];
+                            const caja15 = cajas[posicionCaja15];
+                            const caja16 = cajas[posicionCaja16];
+                      
+                            contenedor.insertBefore(caja1, caja1);
+                            contenedor.insertBefore(caja2, caja2);
+                            contenedor.insertBefore(caja3, caja3);
+                            contenedor.insertBefore(caja4, caja4);
+                            contenedor.insertBefore(caja5, caja5);
+                            contenedor.insertBefore(caja6, caja6);
+                            contenedor.insertBefore(caja7, caja7);
+                            contenedor.insertBefore(caja8, caja8);
+                            contenedor.insertBefore(caja9, caja9);
+                            contenedor.insertBefore(caja10, caja10);
+                            contenedor.insertBefore(caja11, caja11);
+                            contenedor.insertBefore(caja12, caja12);
+                            contenedor.insertBefore(caja13, caja13);
+                            contenedor.insertBefore(caja14, caja14);
+                            contenedor.insertBefore(caja15, caja15);
+                            contenedor.insertBefore(caja16, caja16);
+                      
+                            contenedor.classList.remove('fadeOut');
+                            contenedor.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                        });
+    
+                        cambiarPosicionInput4.addEventListener('change', () => {
+                          const posicionCaja1 = 0;
+                          const posicionCaja2 = 1;
+                          const posicionCaja3 = 2;
+                          const posicionCaja4 = 3;
+                          const posicionCaja5 = 4;
+                          const posicionCaja6 = 5;
+                          const posicionCaja7 = 6;
+                          const posicionCaja8 = 7;
+                          const posicionCaja9 = 8;
+                          const posicionCaja10 = 9;
+                          const posicionCaja11 = 10;
+                          const posicionCaja12 = 11;
+                          const posicionCaja13 = 12;
+                          const posicionCaja14 = 13;
+                          const posicionCaja15 = 14;
+                          const posicionCaja16 = 15;
+                      
+                          contenedor.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            const cajas = document.querySelectorAll('.caja');
+                            const caja1 = cajas[posicionCaja1];
+                            const caja2 = cajas[posicionCaja2];
+                            const caja3 = cajas[posicionCaja3];
+                            const caja4 = cajas[posicionCaja4];
+                            const caja5 = cajas[posicionCaja5];
+                            const caja6 = cajas[posicionCaja6];
+                            const caja7 = cajas[posicionCaja7];
+                            const caja8 = cajas[posicionCaja8];
+                            const caja9 = cajas[posicionCaja9];
+                            const caja10 = cajas[posicionCaja10];
+                            const caja11 = cajas[posicionCaja11];
+                            const caja12 = cajas[posicionCaja12];
+                            const caja13 = cajas[posicionCaja13];
+                            const caja14 = cajas[posicionCaja14];
+                            const caja15 = cajas[posicionCaja15];
+                            const caja16 = cajas[posicionCaja16];
+                      
+                            contenedor.insertBefore(caja2, caja1);
+                            contenedor.insertBefore(caja4, caja2);
+                            contenedor.insertBefore(caja7, caja3);
+                            contenedor.insertBefore(caja5, caja4);
+                            contenedor.insertBefore(caja8, caja5);
+                            contenedor.insertBefore(caja9, caja6);
+                            contenedor.insertBefore(caja10, caja7);
+                            contenedor.insertBefore(caja12, caja8);
+                            contenedor.insertBefore(caja13, caja9);
+                            contenedor.insertBefore(caja15, caja10);
+                            contenedor.insertBefore(caja6, caja11);
+                            contenedor.insertBefore(caja11, caja12);
+                            contenedor.insertBefore(caja16, caja13);
+                            contenedor.insertBefore(caja14, caja14);
+                            contenedor.insertBefore(caja1, caja15);
+                            contenedor.insertBefore(caja3, caja16);
+                      
+                            contenedor.classList.remove('fadeOut');
+                            contenedor.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                        });
+    
+                        cambiarPosicionInput5.addEventListener('change', () => {
+                          const posicionCaja1 = 0;
+                          const posicionCaja2 = 1;
+                          const posicionCaja3 = 2;
+                          const posicionCaja4 = 3;
+                          const posicionCaja5 = 4;
+                          const posicionCaja6 = 5;
+                          const posicionCaja7 = 6;
+                          const posicionCaja8 = 7;
+                          const posicionCaja9 = 8;
+                          const posicionCaja10 = 9;
+                          const posicionCaja11 = 10;
+                          const posicionCaja12 = 11;
+                          const posicionCaja13 = 12;
+                          const posicionCaja14 = 13;
+                          const posicionCaja15 = 14;
+                          const posicionCaja16 = 15;
+                      
+                          contenedor.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            const cajas = document.querySelectorAll('.caja');
+                            const caja1 = cajas[posicionCaja1];
+                            const caja2 = cajas[posicionCaja2];
+                            const caja3 = cajas[posicionCaja3];
+                            const caja4 = cajas[posicionCaja4];
+                            const caja5 = cajas[posicionCaja5];
+                            const caja6 = cajas[posicionCaja6];
+                            const caja7 = cajas[posicionCaja7];
+                            const caja8 = cajas[posicionCaja8];
+                            const caja9 = cajas[posicionCaja9];
+                            const caja10 = cajas[posicionCaja10];
+                            const caja11 = cajas[posicionCaja11];
+                            const caja12 = cajas[posicionCaja12];
+                            const caja13 = cajas[posicionCaja13];
+                            const caja14 = cajas[posicionCaja14];
+                            const caja15 = cajas[posicionCaja15];
+                            const caja16 = cajas[posicionCaja16];
+                      
+                            contenedor.insertBefore(caja2, caja1);
+                            contenedor.insertBefore(caja4, caja2);
+                            contenedor.insertBefore(caja7, caja3);
+                            contenedor.insertBefore(caja5, caja4);
+                            contenedor.insertBefore(caja8, caja5);
+                            contenedor.insertBefore(caja9, caja6);
+                            contenedor.insertBefore(caja10, caja7);
+                            contenedor.insertBefore(caja12, caja8);
+                            contenedor.insertBefore(caja13, caja9);
+                            contenedor.insertBefore(caja15, caja10);
+                            contenedor.insertBefore(caja6, caja11);
+                            contenedor.insertBefore(caja11, caja12);
+                            contenedor.insertBefore(caja16, caja13);
+                            contenedor.insertBefore(caja14, caja14);
+                            contenedor.insertBefore(caja1, caja15);
+                            contenedor.insertBefore(caja3, caja16);
+                      
+                            contenedor.classList.remove('fadeOut');
+                            contenedor.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                        });
+    
+                        cambiarPosicionInput6.addEventListener('change', () => {
+                          const posicionCaja1 = 0;
+                          const posicionCaja2 = 1;
+                          const posicionCaja3 = 2;
+                          const posicionCaja4 = 3;
+                          const posicionCaja5 = 4;
+                          const posicionCaja6 = 5;
+                          const posicionCaja7 = 6;
+                          const posicionCaja8 = 7;
+                          const posicionCaja9 = 8;
+                          const posicionCaja10 = 9;
+                          const posicionCaja11 = 10;
+                          const posicionCaja12 = 11;
+                          const posicionCaja13 = 12;
+                          const posicionCaja14 = 13;
+                          const posicionCaja15 = 14;
+                          const posicionCaja16 = 15;
+                      
+                          contenedor.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            const cajas = document.querySelectorAll('.caja');
+                            const caja1 = cajas[posicionCaja1];
+                            const caja2 = cajas[posicionCaja2];
+                            const caja3 = cajas[posicionCaja3];
+                            const caja4 = cajas[posicionCaja4];
+                            const caja5 = cajas[posicionCaja5];
+                            const caja6 = cajas[posicionCaja6];
+                            const caja7 = cajas[posicionCaja7];
+                            const caja8 = cajas[posicionCaja8];
+                            const caja9 = cajas[posicionCaja9];
+                            const caja10 = cajas[posicionCaja10];
+                            const caja11 = cajas[posicionCaja11];
+                            const caja12 = cajas[posicionCaja12];
+                            const caja13 = cajas[posicionCaja13];
+                            const caja14 = cajas[posicionCaja14];
+                            const caja15 = cajas[posicionCaja15];
+                            const caja16 = cajas[posicionCaja16];
+                      
+                            contenedor.insertBefore(caja2, caja1);
+                            contenedor.insertBefore(caja4, caja2);
+                            contenedor.insertBefore(caja7, caja3);
+                            contenedor.insertBefore(caja5, caja4);
+                            contenedor.insertBefore(caja8, caja5);
+                            contenedor.insertBefore(caja9, caja6);
+                            contenedor.insertBefore(caja10, caja7);
+                            contenedor.insertBefore(caja12, caja8);
+                            contenedor.insertBefore(caja13, caja9);
+                            contenedor.insertBefore(caja15, caja10);
+                            contenedor.insertBefore(caja6, caja11);
+                            contenedor.insertBefore(caja11, caja12);
+                            contenedor.insertBefore(caja16, caja13);
+                            contenedor.insertBefore(caja14, caja14);
+                            contenedor.insertBefore(caja1, caja15);
+                            contenedor.insertBefore(caja3, caja16);
+                      
+                            contenedor.classList.remove('fadeOut');
+                            contenedor.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                        });
+                      </script>
+                </div>
+            </div>
+        </section>
+    
+        <section class="Tornamesas" id="Tornamesas">
+            <div class="Tema1-container">
+                <div class="Text-Top">
+                    <h1 style="margin: 0px; font-size: 26px; color: #555555;">Tornamesas</h1>
+                    <div class="indice">
+                        <a href="#" style="color: gray;">Inicio</a>
+                        <img src="img/mayor-que-el-simbolo.png">
+                        <a href="#" style="color: rgb(43, 43, 43); font-size: 16px;">Tornamesas</a>
+                    </div>
+                </div>
+                <div class="content-1">
+                    <div class="content-1-Top">
+                        <div class="content-1-Top-Left">
+                            <div class="content-1-Top-Left-Buttons">
+                                <button id="tresColumnas" style="padding-right: 10px;"><img src="img/4-cuadrados-redondeados.png" id="tresColumnas-img"></button>
+                                <button id="unaColumna1" style="padding-left: 10px;"><img src="img/2-cuadrados-redondeados.png" id="unaColumna1-img"></button>
+                            </div>
+                            <div class="content-1-Top-Left-Text">
+                                <p>Mostrando 1-9 de 9 resultados</p>
+                            </div>
+                        </div>
+                        <div class="content-1-Top-Right">
+                            <input type="checkbox" id="Ordenar-0" style="display: none;">
+                            <label for="Ordenar-0" id="boton-0">
+                                <h1 id="ordenarTitulo1" style="padding-left: 10px;">Ordenar por defecto</h1>
+                                <img src="img/ordenar-abajo.png" class="flecha"  id="flecha" style="width: 15px; position: absolute;
+                                right: 10px;">
+                            </label>
+    
+                            <div class="Ordenar-links-1">
+                                <input type="checkbox" id="Ordenar-11" style="display: none;">
+                                <label for="Ordenar-11" id="boton-11" onclick="cambiarTitulo1('Ordenar por defecto')">
+                                    <h1>Ordenar por defecto</h1>
+                                    <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                                </label>
+    
+                                <input type="checkbox" id="Ordenar-22"  min="1" max="16" style="display: none;">
+                                <label for="Ordenar-22" id="boton-22" onclick="cambiarTitulo1('Ordenar por popularidad')">
+                                    <h1>Ordenar por popularidad</h1>
+                                    <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                                </label>
+    
+                                <input type="checkbox" id="Ordenar-33" style="display: none;">
+                                <label for="Ordenar-33" id="boton-33" onclick="cambiarTitulo1('Ordenar por puntuación media')">
+                                    <h1>Ordenar por puntuación media</h1>
+                                    <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                                </label>
+    
+                                <input type="checkbox" id="Ordenar-44" style="display: none;">
+                                <label for="Ordenar-44" id="boton-44" onclick="cambiarTitulo1('Ordenar por los últimos años')">
+                                    <h1>Ordenar por los últimos años</h1>
+                                    <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                                </label>
+    
+                                <input type="checkbox" id="Ordenar-55" style="display: none;">
+                                <label for="Ordenar-55" id="boton-55" onclick="cambiarTitulo1('Ordenar por precio: Bajo a Alto')">
+                                    <h1>Ordenar por precio: Bajo a Alto</h1>
+                                    <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                                </label>
+    
+                                <input type="checkbox" id="Ordenar-66" style="display: none;">
+                                <label for="Ordenar-66" id="boton-66" onclick="cambiarTitulo1('Ordenar por precio: Alto a Bajo')" style="border-bottom: none;">
+                                    <h1>Ordenar por precio: Alto a Bajo</h1>
+                                    <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contenedor-1">
+                        <div class="caja-2">
+                            <div class="img-caja-2">
+                                <img src="img/tocadiscos-1.png">
+                                <div class="text-float-2">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-2">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                    <img src="img/estrella.png">
+                                    </div>
+                                    <a href="#">Tornamesa Audio Technica <br> AT-LP60X (Color Negro)</a>
+                                        <h1>S/ 849.00</h1>
+                                    <h2>CARACTERÍSTICAS</h2>
+                                        <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                            Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
+                                            Plato antiresonancia de aluminio fundido. <br>
+                                            Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
+                                            Cartucho fonográfico Dual Magnet™ integrado con aguja reemplazable (ATN3600L). <br>
+                                            Adaptador de CA que realiza la conversión CA/CC fuera del chasis, lo que reduce el ruido en la cadena de la señal.<br>
+                                            Preamplificador fonográfico conmutable integrado para una salida phono o de nivel de línea. <br>
+                                            Incluye: cable RCA desmontable (macho de 3,5 mm a macho RCA doble), , adaptador de 45 rpm y cubierta antipolvo abisagrada desmontable
+                                        </p>
+                                        <button id="boton-palomita-17" onclick="toggleImage('17')">
+                                          <img src="img/palomita.png" id="palomita-17">  
+                                            Añadir al carrito
+                                          </button>
+                                </div>
+                            </div>
+                        <div class="caja-2">
+                            <div class="img-caja-2">
+                                <img src="img/tocadiscos-2.png">
+                                <div class="text-float-2">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-2">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Tornamesa Audio Technica <br> AT-LP60XBT (Con Bluetooth) <br> (Color Rojo)</a>
+                                <h1>S/ 1099.00</h1>
+                                <h2>CARACTERÍSTICAS</h2>
+                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                    Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
+                                    Plato antiresonancia de aluminio fundido. <br>
+                                    Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
+                                    Cartucho fonográfico Dual Magnet™ integrado con aguja reemplazable (ATN3600L). <br>
+                                    Adaptador de CA que realiza la conversión CA/CC fuera del chasis, lo que reduce el ruido en la cadena de la señal.<br>
+                                    Preamplificador fonográfico conmutable integrado para una salida phono o de nivel de línea. <br>
+                                    Incluye: cable RCA desmontable (macho de 3,5 mm a macho RCA doble), , adaptador de 45 rpm y cubierta antipolvo abisagrada desmontable
+                                </p>
+                                <button id="boton-palomita-18" onclick="toggleImage('18')">
+                                  <img src="img/palomita.png" id="palomita-18">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                        </div>
+                        <div class="caja-2">
+                            <div class="img-caja-2">
+                                <img src="img/tocadiscos-3.png">
+                                <div class="text-float-2">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-2">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                    <img src="img/estrella.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Tornamesa Audio Technica <br> AT-LP60XBT (Con Bluetooth) <br> (Color Blanco)</a>
+                                <h1>S/ 1149.00</h1>
+                                <h2>CARACTERÍSTICAS</h2>
+                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                    Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
+                                    Plato antiresonancia de aluminio fundido. <br>
+                                    Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
+                                    Cartucho fonográfico Dual Magnet™ integrado con aguja reemplazable (ATN3600L). <br>
+                                    Adaptador de CA que realiza la conversión CA/CC fuera del chasis, lo que reduce el ruido en la cadena de la señal.<br>
+                                    Preamplificador fonográfico conmutable integrado para una salida phono o de nivel de línea. <br>
+                                    Incluye: cable RCA desmontable (macho de 3,5 mm a macho RCA doble), , adaptador de 45 rpm y cubierta antipolvo abisagrada desmontable
+                                </p>
+                                <button id="boton-palomita-19" onclick="toggleImage('19')">
+                                  <img src="img/palomita.png" id="palomita-19">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                        </div>
+                        <div class="caja-2">
+                            <div class="img-caja-2">
+                                <img src="img/tocadiscos-4.png">
+                                <div class="text-float-2">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-2">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Tornamesa Pioneer PLX-500</a>
+                                <h1>S/ 800.00</h1>
+                                <h2>CARACTERÍSTICAS</h2>
+                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                    Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
+                                    Plato antiresonancia de aluminio fundido. <br>
+                                    Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
+                                    Cartucho fonográfico Dual Magnet™ integrado con aguja reemplazable (ATN3600L). <br>
+                                    Adaptador de CA que realiza la conversión CA/CC fuera del chasis, lo que reduce el ruido en la cadena de la señal.<br>
+                                    Preamplificador fonográfico conmutable integrado para una salida phono o de nivel de línea. <br>
+                                    Incluye: cable RCA desmontable (macho de 3,5 mm a macho RCA doble), , adaptador de 45 rpm y cubierta antipolvo abisagrada desmontable
+                                </p>
+                                <button id="boton-palomita-20" onclick="toggleImage('20')">
+                                  <img src="img/palomita.png" id="palomita-20">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                          </div>
+                          <div class="caja-2">
+                            <div class="img-caja-2">
+                                <img src="img/tocadiscos-5.png">
+                                <div class="text-float-2">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-2">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Music Hall US-1</a>
+                                  <h1>S/ 1849.00</h1>
+                                <h2>CARACTERÍSTICAS</h2>
+                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                    Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
+                                    Plato antiresonancia de aluminio fundido. <br>
+                                    Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
+                                    Cartucho fonográfico Dual Magnet™ integrado con aguja reemplazable (ATN3600L). <br>
+                                    Adaptador de CA que realiza la conversión CA/CC fuera del chasis, lo que reduce el ruido en la cadena de la señal.<br>
+                                    Preamplificador fonográfico conmutable integrado para una salida phono o de nivel de línea. <br>
+                                    Incluye: cable RCA desmontable (macho de 3,5 mm a macho RCA doble), , adaptador de 45 rpm y cubierta antipolvo abisagrada desmontable
+                                </p>
+                                <button id="boton-palomita-21" onclick="toggleImage('21')">
+                                  <img src="img/palomita.png" id="palomita-21">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                          </div>
+                          <div class="caja-2">
+                            <div class="img-caja-2">
+                                <img src="img/tocadiscos-6.png">
+                                <div class="text-float-2">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-2">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Audio Technica AT-LPW40WN</a>
+                                  <h1>S/ 1659.00</h1>
+                                <h2>CARACTERÍSTICAS</h2>
+                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                    Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
+                                    Plato antiresonancia de aluminio fundido. <br>
+                                    Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
+                                    Cartucho fonográfico Dual Magnet™ integrado con aguja reemplazable (ATN3600L). <br>
+                                    Adaptador de CA que realiza la conversión CA/CC fuera del chasis, lo que reduce el ruido en la cadena de la señal.<br>
+                                    Preamplificador fonográfico conmutable integrado para una salida phono o de nivel de línea. <br>
+                                    Incluye: cable RCA desmontable (macho de 3,5 mm a macho RCA doble), , adaptador de 45 rpm y cubierta antipolvo abisagrada desmontable
+                                </p>
+                                <button id="boton-palomita-22" onclick="toggleImage('22')">
+                                  <img src="img/palomita.png" id="palomita-22">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                        </div>
+                        <div class="caja-2">
+                            <div class="img-caja-2">
+                                <img src="img/tocadiscos-7.png">
+                                <div class="text-float-2">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-2">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Music Hall MMF-1.5</a>
+                                <h1>S/ 1899.00</h1>
+                                <h2>CARACTERÍSTICAS</h2>
+                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                    Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
+                                    Plato antiresonancia de aluminio fundido. <br>
+                                    Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
+                                    Cartucho fonográfico Dual Magnet™ integrado con aguja reemplazable (ATN3600L). <br>
+                                    Adaptador de CA que realiza la conversión CA/CC fuera del chasis, lo que reduce el ruido en la cadena de la señal.<br>
+                                    Preamplificador fonográfico conmutable integrado para una salida phono o de nivel de línea. <br>
+                                    Incluye: cable RCA desmontable (macho de 3,5 mm a macho RCA doble), , adaptador de 45 rpm y cubierta antipolvo abisagrada desmontable
+                                </p>
+                                <button id="boton-palomita-23" onclick="toggleImage('23')">
+                                  <img src="img/palomita.png" id="palomita-23">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                          </div>
+                          <div class="caja-2">
+                            <div class="img-caja-2">
+                                <img src="img/tocadiscos-8.png">
+                                <div class="text-float-2">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-2">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Audio Technica AT-LPW50PB</a>
+                                  <h1>S/ 1359.00</h1>
+                                <h2>CARACTERÍSTICAS</h2>
+                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                    Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
+                                    Plato antiresonancia de aluminio fundido. <br>
+                                    Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
+                                    Cartucho fonográfico Dual Magnet™ integrado con aguja reemplazable (ATN3600L). <br>
+                                    Adaptador de CA que realiza la conversión CA/CC fuera del chasis, lo que reduce el ruido en la cadena de la señal.<br>
+                                    Preamplificador fonográfico conmutable integrado para una salida phono o de nivel de línea. <br>
+                                    Incluye: cable RCA desmontable (macho de 3,5 mm a macho RCA doble), , adaptador de 45 rpm y cubierta antipolvo abisagrada desmontable
+                                </p>
+                                <button id="boton-palomita-24" onclick="toggleImage('24')">
+                                  <img src="img/palomita.png" id="palomita-24">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                          </div>
+                          <div class="caja-2">
+                            <div class="img-caja-2">
+                                <img src="img/tocadiscos-9.png">
+                                <div class="text-float-2">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-2">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Audio Technica AT-LPW50BT <br>-RW</a>
+                                <h1>S/ 600.00</h1>
+                                <h2>CARACTERÍSTICAS</h2>
+                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                    Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
+                                    Plato antiresonancia de aluminio fundido. <br>
+                                    Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
+                                    Cartucho fonográfico Dual Magnet™ integrado con aguja reemplazable (ATN3600L). <br>
+                                    Adaptador de CA que realiza la conversión CA/CC fuera del chasis, lo que reduce el ruido en la cadena de la señal.<br>
+                                    Preamplificador fonográfico conmutable integrado para una salida phono o de nivel de línea. <br>
+                                    Incluye: cable RCA desmontable (macho de 3,5 mm a macho RCA doble), , adaptador de 45 rpm y cubierta antipolvo abisagrada desmontable
+                                </p>
+                                <button id="boton-palomita-25" onclick="toggleImage('25')">
+                                  <img src="img/palomita.png" id="palomita-25">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                      </div>
+                      
+                      <style>
+                      #contenedor-1 {
+                        display: flex;
+                        flex-wrap: wrap;
+                      }
+                       
+                      #contenedor-1.unaColumna1 .caja-2 {
+                        width: 100%;
+                        display: flex;
+                        gap: 90px;
+                        padding-bottom: 100px;
+                        justify-content: left;
+                      }
+                      
+                      #contenedor-1.unaColumna1 .estrellas-2 {
+                        padding-top: 0px;
+                      }
+    
+                      #contenedor-1.unaColumna1 .caja-2 img, #contenedor-1.unaColumna1 .img-caja-2 {
+                            width: 200px;
+                            height: 200px;
+                        }
+    
+                     #contenedor-1.unaColumna1 .caja-2 a {
+                            font-size: 18px;
+                        }
+    
+    
+                      #contenedor-1.unaColumna1 img[id^="palomita-"] {
+                        width: 30px;
+                        height: 25px;
+                      }
+
+                    #contenedor-1.unaColumna1 .info-img h2 {
+                        font-size: 18px;
+                        display: block;
+                    }
+    
+                      #contenedor-1.unaColumna1 .estrellas-2 img {
+                        width: 17px;
+                        height: 17px;
+                      }  
+                      
+                      #contenedor-1.unaColumna1 .text-float-2 img {
+                        width: 18px;
+                        height: 18px;
+                      }
+    
+                      #contenedor-1.unaColumna1 .info-img p {
+                        display: grid;
+                        justify-content: left;
+                      }
+    
+                      #contenedor-1.unaColumna1 .caja-2 p {
+                        text-align: left;
+                        margin: 0px;
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        font-size: 16px;
+                      }
+    
+                      #contenedor-1.unaColumna1 .info-img h1 {
+                        color: #06c;
+                        font-size: 24px;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        }
+                      
+                      #contenedor-1.animate {
+                        animation-duration: 0.4s;
+                        animation-fill-mode: both;
+                      }
+                      
+                      #contenedor-1.fadeOut {
+                        animation-name: fadeOut;
+                      }
+                      
+                      #contenedor-1.fadeIn {
+                        animation-name: fadeIn;
+                      }
+    
+                      button.active {
+                        background-color: black;
+                      }
+                      
+                      @keyframes fadeOut {
+                        from { opacity: 1; }
+                        to { opacity: 0; }
+                      }
+                      
+                      @keyframes fadeIn {
+                        from { opacity: 0; }
+                        to { opacity: 1; }
+                      }
+                      </style>
+                      
+                      <script>
+                        const contenedor1 = document.getElementById('contenedor-1');
+                        const unaColumnaBtn1 = document.getElementById('unaColumna1');
+                        const tresColumnasBtn = document.getElementById('tresColumnas');
+                        const cambiarPosicionInput11 = document.getElementById('Ordenar-11');
+                        const cambiarPosicionInput22 = document.getElementById('Ordenar-22');
+                        const cambiarPosicionInput33 = document.getElementById('Ordenar-33');
+                        const cambiarPosicionInput44 = document.getElementById('Ordenar-44');
+                        const cambiarPosicionInput55 = document.getElementById('Ordenar-55');
+                        const cambiarPosicionInput66 = document.getElementById('Ordenar-66');
+                        const unaColumnaImg1 = document.getElementById('unaColumna1-img');
+                        const tresColumnasImg = document.getElementById('tresColumnas-img');
+                      
+                        unaColumnaImg1.style.filter = 'invert(50%) sepia(38%) saturate(0%) hue-rotate(126deg) brightness(92%) contrast(96%)';
+                        unaColumnaBtn1.addEventListener('click', () => {
+                          contenedor1.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            contenedor1.classList.remove('tresColumnas');
+                            contenedor1.classList.add('unaColumna1');
+                            contenedor1.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor1.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                      
+                          unaColumnaImg1.style.filter = 'invert(0%) sepia(3%) saturate(1486%) hue-rotate(208deg) brightness(89%) contrast(102%)';
+                          unaColumnaImg1.style.color = 'white';
+                          tresColumnasImg.style.filter = 'invert(50%) sepia(38%) saturate(0%) hue-rotate(126deg) brightness(92%) contrast(96%)';
+                          tresColumnasImg.style.color = 'white';
+                        });
+                      
+                        tresColumnasBtn.addEventListener('click', () => {
+                          contenedor1.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            contenedor1.classList.remove('unaColumna1');
+                            contenedor1.classList.add('tresColumnas');
+                            contenedor1.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor1.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                      
+                          tresColumnasImg.style.filter = 'invert(0%) sepia(3%) saturate(1486%) hue-rotate(208deg) brightness(89%) contrast(102%)';
+                          tresColumnasImg.style.color = 'white';
+                          unaColumnaImg1.style.filter = 'invert(50%) sepia(38%) saturate(0%) hue-rotate(126deg) brightness(92%) contrast(96%)';
+                          unaColumnaImg1.style.color = 'white';
+                        });
+                      
+                        cambiarPosicionInput22.addEventListener('change', () => {
+                          const posicionCaja1 = 0;
+                          const posicionCaja2 = 1;
+                          const posicionCaja4 = 3;
+                      
+                          contenedor1.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            const cajas = document.querySelectorAll('.caja-2');
+                            const caja1 = cajas[posicionCaja1];
+                            const caja2 = cajas[posicionCaja2];
+                            const caja4 = cajas[posicionCaja4];
+                      
+                            contenedor1.insertBefore(caja2, caja1);
+                            contenedor1.insertBefore(caja1, caja4);
+                      
+                            contenedor1.classList.remove('fadeOut');
+                            contenedor1.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor1.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                        });
+    
+                        cambiarPosicionInput33.addEventListener('change', () => {
+                          const posicionCaja1 = 0;
+                          const posicionCaja2 = 1;
+                          const posicionCaja3 = 2;
+                          const posicionCaja4 = 3;
+                          const posicionCaja5 = 4;
+                          const posicionCaja6 = 5;
+                          const posicionCaja7 = 6;
+                          const posicionCaja8 = 7;
+                          const posicionCaja9 = 8;
+                      
+                          contenedor1.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            const cajas = document.querySelectorAll('.caja-2');
+                            const caja1 = cajas[posicionCaja1];
+                            const caja2 = cajas[posicionCaja2];
+                            const caja3 = cajas[posicionCaja3];
+                            const caja4 = cajas[posicionCaja4];
+                            const caja5 = cajas[posicionCaja5];
+                            const caja6 = cajas[posicionCaja6];
+                            const caja7 = cajas[posicionCaja7];
+                            const caja8 = cajas[posicionCaja8];
+                      
+                            contenedor1.insertBefore(caja2, caja1);
+                            contenedor1.insertBefore(caja4, caja2);
+                            contenedor1.insertBefore(caja7, caja3);
+                            contenedor1.insertBefore(caja5, caja4);
+                            contenedor1.insertBefore(caja8, caja5);
+                            contenedor1.insertBefore(caja6, caja6);
+                            contenedor1.insertBefore(caja3, caja7);
+                            contenedor1.insertBefore(caja1, caja8);
+                      
+                            contenedor1.classList.remove('fadeOut');
+                            contenedor1.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor1.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                        });
+    
+                        cambiarPosicionInput11.addEventListener('change', () => {
+                          const posicionCaja1 = 0;
+                          const posicionCaja2 = 1;
+                          const posicionCaja3 = 2;
+                          const posicionCaja4 = 3;
+                          const posicionCaja5 = 4;
+                          const posicionCaja6 = 5;
+                          const posicionCaja7 = 6;
+                          const posicionCaja8 = 7;
+                          const posicionCaja9 = 8;
+                      
+                          contenedor1.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            const cajas = document.querySelectorAll('.caja-2');
+                            const caja1 = cajas[posicionCaja1];
+                            const caja2 = cajas[posicionCaja2];
+                            const caja3 = cajas[posicionCaja3];
+                            const caja4 = cajas[posicionCaja4];
+                            const caja5 = cajas[posicionCaja5];
+                            const caja6 = cajas[posicionCaja6];
+                            const caja7 = cajas[posicionCaja7];
+                            const caja8 = cajas[posicionCaja8];
+                      
+                            contenedor1.insertBefore(caja2, caja1);
+                            contenedor1.insertBefore(caja4, caja2);
+                            contenedor1.insertBefore(caja7, caja3);
+                            contenedor1.insertBefore(caja5, caja4);
+                            contenedor1.insertBefore(caja8, caja5);
+                            contenedor1.insertBefore(caja6, caja6);
+                            contenedor1.insertBefore(caja3, caja7);
+                            contenedor1.insertBefore(caja1, caja8);
+                      
+                            contenedor1.classList.remove('fadeOut');
+                            contenedor1.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor1.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                        });
+
+                        cambiarPosicionInput44.addEventListener('change', () => {
+                          const posicionCaja1 = 0;
+                          const posicionCaja2 = 1;
+                          const posicionCaja3 = 2;
+                          const posicionCaja4 = 3;
+                          const posicionCaja5 = 4;
+                          const posicionCaja6 = 5;
+                          const posicionCaja7 = 6;
+                          const posicionCaja8 = 7;
+                          const posicionCaja9 = 8;
+                      
+                          contenedor1.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            const cajas = document.querySelectorAll('.caja-2');
+                            const caja1 = cajas[posicionCaja1];
+                            const caja2 = cajas[posicionCaja2];
+                            const caja3 = cajas[posicionCaja3];
+                            const caja4 = cajas[posicionCaja4];
+                            const caja5 = cajas[posicionCaja5];
+                            const caja6 = cajas[posicionCaja6];
+                            const caja7 = cajas[posicionCaja7];
+                            const caja8 = cajas[posicionCaja8];
+                      
+                            contenedor1.insertBefore(caja2, caja1);
+                            contenedor1.insertBefore(caja4, caja2);
+                            contenedor1.insertBefore(caja7, caja3);
+                            contenedor1.insertBefore(caja5, caja4);
+                            contenedor1.insertBefore(caja8, caja5);
+                            contenedor1.insertBefore(caja6, caja6);
+                            contenedor1.insertBefore(caja3, caja7);
+                            contenedor1.insertBefore(caja1, caja8);
+
+                      
+                            contenedor1.classList.remove('fadeOut');
+                            contenedor1.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor1.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                        });
+    
+                        cambiarPosicionInput55.addEventListener('change', () => {
+                          const posicionCaja1 = 0;
+                          const posicionCaja2 = 1;
+                          const posicionCaja3 = 2;
+                          const posicionCaja4 = 3;
+                          const posicionCaja5 = 4;
+                          const posicionCaja6 = 5;
+                          const posicionCaja7 = 6;
+                          const posicionCaja8 = 7;
+                          const posicionCaja9 = 8;
+                      
+                          contenedor1.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            const cajas = document.querySelectorAll('.caja-2');
+                            const caja1 = cajas[posicionCaja1];
+                            const caja2 = cajas[posicionCaja2];
+                            const caja3 = cajas[posicionCaja3];
+                            const caja4 = cajas[posicionCaja4];
+                            const caja5 = cajas[posicionCaja5];
+                            const caja6 = cajas[posicionCaja6];
+                            const caja7 = cajas[posicionCaja7];
+                            const caja8 = cajas[posicionCaja8];
+                      
+                            contenedor1.insertBefore(caja2, caja1);
+                            contenedor1.insertBefore(caja4, caja2);
+                            contenedor1.insertBefore(caja7, caja3);
+                            contenedor1.insertBefore(caja5, caja4);
+                            contenedor1.insertBefore(caja8, caja5);
+                            contenedor1.insertBefore(caja6, caja6);
+                            contenedor1.insertBefore(caja3, caja7);
+                            contenedor1.insertBefore(caja1, caja8);
+                      
+                            contenedor1.classList.remove('fadeOut');
+                            contenedor1.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor1.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                        });
+    
+                        cambiarPosicionInput66.addEventListener('change', () => {
+                          const posicionCaja1 = 0;
+                          const posicionCaja2 = 1;
+                          const posicionCaja3 = 2;
+                          const posicionCaja4 = 3;
+                          const posicionCaja5 = 4;
+                          const posicionCaja6 = 5;
+                          const posicionCaja7 = 6;
+                          const posicionCaja8 = 7;
+                          const posicionCaja9 = 8;
+                      
+                          contenedor1.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            const cajas = document.querySelectorAll('.caja-2');
+                            const caja1 = cajas[posicionCaja1];
+                            const caja2 = cajas[posicionCaja2];
+                            const caja3 = cajas[posicionCaja3];
+                            const caja4 = cajas[posicionCaja4];
+                            const caja5 = cajas[posicionCaja5];
+                            const caja6 = cajas[posicionCaja6];
+                            const caja7 = cajas[posicionCaja7];
+                            const caja8 = cajas[posicionCaja8];
+                      
+                            contenedor1.insertBefore(caja2, caja1);
+                            contenedor1.insertBefore(caja4, caja2);
+                            contenedor1.insertBefore(caja7, caja3);
+                            contenedor1.insertBefore(caja5, caja4);
+                            contenedor1.insertBefore(caja8, caja5);
+                            contenedor1.insertBefore(caja6, caja6);
+                            contenedor1.insertBefore(caja3, caja7);
+                            contenedor1.insertBefore(caja1, caja8);
+                      
+                            contenedor1.classList.remove('fadeOut');
+                            contenedor1.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor1.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                        });
+                      </script>
+                </div>
+            </div>
+        </section>
+    
+        <section class="CDs" id="CDs">
+            <div class="Tema1-container">
+                <div class="Text-Top">
+                    <h1 style="margin: 0px; font-size: 26px; color: #555555;">CDs</h1>
+                    <div class="indice">
+                        <a href="#" style="color: gray;">Inicio</a>
+                        <img src="img/mayor-que-el-simbolo.png">
+                        <a href="#" style="color: rgb(43, 43, 43); font-size: 16px;">CDs</a>
+                    </div>
+                </div>
+                <div class="content-1">
+                    <div class="content-1-Top">
+                        <div class="content-1-Top-Left">
+                            <div class="content-1-Top-Left-Buttons">
+                                <button id="tresColumnas1" style="padding-right: 10px;"><img src="img/4-cuadrados-redondeados.png" id="tresColumnas1-img"></button>
+                                <button id="unaColumna2" style="padding-left: 10px;"><img src="img/2-cuadrados-redondeados.png" id="unaColumna2-img"></button>
+                            </div>
+                            <div class="content-1-Top-Left-Text">
+                                <p>Mostrando 1-12 de 12 resultados</p>
+                            </div>
+                        </div>
+                        <div class="content-1-Top-Right">
+                            <input type="checkbox" id="Ordenar-00" style="display: none;">
+                            <label for="Ordenar-00" id="boton-00">
+                                <h1 id="ordenarTitulo2" style="padding-left: 10px;">Ordenar por defecto</h1>
+                                <img src="img/ordenar-abajo.png" class="flecha"  id="flecha" style="width: 15px; position: absolute;
+                                right: 10px;">
+                            </label>
+    
+                            <div class="Ordenar-links-2">
+                                <input type="checkbox" id="Ordenar-111" style="display: none;">
+                                <label for="Ordenar-111" id="boton-111" onclick="cambiarTitulo2('Ordenar por defecto')">
+                                    <h1>Ordenar por defecto</h1>
+                                    <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                                </label>
+    
+                                <input type="checkbox" id="Ordenar-222"  min="1" max="16" style="display: none;">
+                                <label for="Ordenar-222" id="boton-222" onclick="cambiarTitulo2('Ordenar por popularidad')">
+                                    <h1>Ordenar por popularidad</h1>
+                                    <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                                </label>
+    
+                                <input type="checkbox" id="Ordenar-333" style="display: none;">
+                                <label for="Ordenar-333" id="boton-333" onclick="cambiarTitulo2('Ordenar por puntuación media')">
+                                    <h1>Ordenar por puntuación media</h1>
+                                    <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                                </label>
+    
+                                <input type="checkbox" id="Ordenar-444" style="display: none;">
+                                <label for="Ordenar-444" id="boton-444" onclick="cambiarTitulo2('Ordenar por los últimos años')">
+                                    <h1>Ordenar por los últimos años</h1>
+                                    <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                                </label>
+    
+                                <input type="checkbox" id="Ordenar-555" style="display: none;">
+                                <label for="Ordenar-555" id="boton-555" onclick="cambiarTitulo2('Ordenar por precio: Bajo a Alto')">
+                                    <h1>Ordenar por precio: Bajo a Alto</h1>
+                                    <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                                </label>
+    
+                                <input type="checkbox" id="Ordenar-666" style="display: none;">
+                                <label for="Ordenar-666" id="boton-666" onclick="cambiarTitulo2('Ordenar por precio: Alto a Bajo')" style="border-bottom: none;">
+                                    <h1>Ordenar por precio: Alto a Bajo</h1>
+                                    <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contenedor-2">
+                        <div class="caja-3">
+                            <div class="img-caja-3">
+                                <img src="img/CD1.jpg">
+                                <div class="text-float-3">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-3">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                    <img src="img/estrella.png">
+                                    </div>
+                                    <a href="#">A-Ha - The Singles <br> 1984 - 2004 (CD)</a>
+                                        <h1>S/ 75.00</h1>
+                                        <p>Año: 2004</p>
+                                        <p>País: Estados Unidos</p>
+                                        <p>Género: Synth Pop</p>
+                                        <button id="boton-palomita-26" onclick="toggleImage('26')">
+                                          <img src="img/palomita.png" id="palomita-26">  
+                                            Añadir al carrito
+                                          </button>
+                                </div>
+                            </div>
+                        <div class="caja-3">
+                            <div class="img-caja-3">
+                                <img src="img/CD2.jpg">
+                                <div class="text-float-3">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-3">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">AC/DC - Iron Man 2 <br> (CD+DVD)</a>
+                                <h1>S/ 85.00</h1>
+                                <p>Año: 2010 </p>
+                                <p>País: Australia</p>
+                                <p>Género: Hard Rock | Soundtrack</p>
+                                <button id="boton-palomita-27" onclick="toggleImage('27')">
+                                  <img src="img/palomita.png" id="palomita-27">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                        </div>
+                        <div class="caja-3">
+                            <div class="img-caja-3">
+                                <img src="img/CD3.jpg">
+                                <div class="text-float-3">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-3">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                    <img src="img/estrella.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Alejandro Sanz - <br> La Gira Del Disco (CD)</a>
+                                <h1>S/ 85.00</h1>
+                                <p>Año: 2019</p>
+                                <p>País: Argentina</p>
+                                <p>Género: Pop Rock en español</p>
+                                <button id="boton-palomita-28" onclick="toggleImage('28')">
+                                  <img src="img/palomita.png" id="palomita-28">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                        </div>
+                        <div class="caja-3">
+                            <div class="img-caja-3">
+                                <img src="img/CD4.jpg">
+                                <div class="text-float-3">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-3">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Alicia Keys - The Diary <br> Of Alicia Keys (CD)</a>
+                                <h1>S/ 70.00</h1>
+                                <p>Año: 2004</p>
+                                <p>País: Europa</p>
+                                <p>Género: Neo Soul | R&B</p>
+                                <button id="boton-palomita-29" onclick="toggleImage('29')">
+                                  <img src="img/palomita.png" id="palomita-29">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                          </div>
+                          <div class="caja-3">
+                            <div class="img-caja-3">
+                                <img src="img/CD5.jpg">
+                                <div class="text-float-3">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-3">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Anthrax - Madhouse: The <br> Very Best Of Anthrax (CD)</a>
+                                  <h1>S/ 60.00</h1>
+                                  <p>Año: 2012</p>
+                                  <p>País: Europa/p>
+                                  <p>Género: Metal</p>
+                                <button id="boton-palomita-30" onclick="toggleImage('30')">
+                                  <img src="img/palomita.png" id="palomita-30">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                          </div>
+                          <div class="caja-3">
+                            <div class="img-caja-3">
+                                <img src="img/CD6.jpg">
+                                <div class="text-float-3">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-3">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Antonio Pinto, Amy Winehouse - <br> Amy: The Original Soundtrack (CD)</a>
+                                  <h1>S/ 85.00</h1>
+                                  <p>Año: 2015</p>
+                                  <p>País: Estados Unidos</p>
+                                  <p>Género: Jazz, Swing, Pop, Soul, Soundtrack</p>
+                                <button id="boton-palomita-31" onclick="toggleImage('31')">
+                                  <img src="img/palomita.png" id="palomita-31">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                        </div>
+                        <div class="caja-3">
+                            <div class="img-caja-3">
+                                <img src="img/CD7.jpg">
+                                <div class="text-float-3">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-3">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Arctic Monkeys - Humbug (CD)</a>
+                                <h1>S/ 80.00</h1>
+                                <p>Año: 2009</p>
+                                <p>País: Argentina>
+                                <p>Género: Indie Rock</p>
+                                <button id="boton-palomita-32" onclick="toggleImage('32')">
+                                  <img src="img/palomita.png" id="palomita-32">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                          </div>
+                          <div class="caja-3">
+                            <div class="img-caja-3">
+                                <img src="img/CD8.jpg">
+                                <div class="text-float-3">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-3">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Ariana Grande -<br>Dangerous Woman (CD)</a>
+                                  <h1>S/ 75.00</h1>
+                                  <p>Año: 2016</p>
+                                  <p>País: Argentina</p>
+                                  <p>Género: Pop | R&B Contemporáneo</p>
+                                <button id="boton-palomita-33" onclick="toggleImage('33')">
+                                  <img src="img/palomita.png" id="palomita-33">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                          </div>
+                          <div class="caja-3">
+                            <div class="img-caja-3">
+                                <img src="img/CD9.jpg">
+                                <div class="text-float-3">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-3">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Ariel Rot - Dúos, Tríos <br> Y Otras Perversiones (CD)</a>
+                                <h1>S/ 75.00</h1>
+                                <p>Año: 2007</p>
+                                <p>País: España</p>
+                                <p>Género: Rock</p>
+                                <button id="boton-palomita-34" onclick="toggleImage('34')">
+                                  <img src="img/palomita.png" id="palomita-34">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                        </div>
+                        <div class="caja-3">
+                            <div class="img-caja-3">
+                                <img src="img/CD10.jpeg">
+                                <div class="text-float-3">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-3">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Bandalos Chinos - El Big Blue (CD)</a>
+                                <h1>S/ 60.00</h1>
+                                <p>Año: 2022</p>
+                                <p>País: Argemtina</p>
+                                <p>Género: Indie Rock</p>
+                                <button id="boton-palomita-35" onclick="toggleImage('35')">
+                                  <img src="img/palomita.png" id="palomita-35">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                        </div>
+                        <div class="caja-3">
+                            <div class="img-caja-3">
+                                <img src="img/CD11.png">
+                                <div class="text-float-3">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-3">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Billie Eilish - Happier Than Ever (CD)</a>
+                                <h1>S/ 80.00</h1>
+                                <p>Año: 2021</p>
+                                <p>País: Estados Unidos</p>
+                                <p>Género: Pop</p>
+                                <button id="boton-palomita-36" onclick="toggleImage('36')">
+                                  <img src="img/palomita.png" id="palomita-36">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                        </div>   
+                        <div class="caja-3">
+                            <div class="img-caja-3">
+                                <img src="img/CD12.jpg">
+                                <div class="text-float-3">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-3">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Cementerio Club - ¡Directo! <br> (CD)</a>
+                                <h1>S/ 40.00</h1>
+                                <p>Año: 2022</p>
+                                <p>País: Perú</p>
+                                <p>Género: Pop Rock</p>
+                                <button id="boton-palomita-37" onclick="toggleImage('37')">
+                                  <img src="img/palomita.png" id="palomita-37">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                        </div>  
+                    <style>
+                      #contenedor-2 {
+                        display: flex;
+                        flex-wrap: wrap;
+                      }
+                       
+                      #contenedor-2.unaColumna2 .caja-3 {
+                        width: 100%;
+                        display: flex;
+                        gap: 90px;
+                        padding-bottom: 100px;
+                        justify-content: left;
+                      }
+                      
+                      #contenedor-2.unaColumna2 .estrellas-3 {
+                        padding-top: 0px;
+                      }
+    
+                      #contenedor-2.unaColumna2 .caja-3 img, #contenedor-2.unaColumna2 .img-caja-3 {
+                            width: 200px;
+                            height: 200px;
+                        }
+    
+                        #contenedor-2.unaColumna2 img[id^="palomita-"] {
+                        width: 30px;
+                        height: 25px;
+                      }
+
+    
+                    #contenedor-2.unaColumna2 .img-caja {
+                            width: 300px;
+                            height: 300px;
+                        }
+    
+                    #contenedor-2.unaColumna2 .info-img h2 {
+                        font-size: 27px;
+                        display: block;
+                    }
+    
+                      #contenedor-2.unaColumna2 .estrellas-3 img {
+                        width: 17px;
+                        height: 17px;
+                      }  
+                      
+                      #contenedor-2.unaColumna2 .text-float-3 img {
+                        width: 18px;
+                        height: 18px;
+                      }
+    
+                      #contenedor-2.unaColumna2 .info-img p {
+                        display: grid;
+                        justify-content: left;
+                      }
+    
+                      #contenedor-2.unaColumna2 .caja-3 p {
+                        text-align: left;
+                        margin: 0px;
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        font-size: 13px;
+                      }
+    
+                      #contenedor-2.unaColumna2 .info-img h1 {
+                        color: #06c;
+                        font-size: 22px;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        }
+                      
+                      #contenedor-2.animate {
+                        animation-duration: 0.4s;
+                        animation-fill-mode: both;
+                      }
+                      
+                      #contenedor-2.fadeOut {
+                        animation-name: fadeOut;
+                      }
+                      
+                      #contenedor-2.fadeIn {
+                        animation-name: fadeIn;
+                      }
+    
+                      button.active {
+                        background-color: black;
+                      }
+                      
+                      @keyframes fadeOut {
+                        from { opacity: 1; }
+                        to { opacity: 0; }
+                      }
+                      
+                      @keyframes fadeIn {
+                        from { opacity: 0; }
+                        to { opacity: 1; }
+                      }
+                      </style>
+                      
+                      <script>
+                        const contenedor2 = document.getElementById('contenedor-2');
+                        const unaColumnaBtn2 = document.getElementById('unaColumna2');
+                        const tresColumnasBtn1 = document.getElementById('tresColumnas1');
+                        const cambiarPosicionInput111 = document.getElementById('Ordenar-111');
+                        const cambiarPosicionInput222 = document.getElementById('Ordenar-222');
+                        const cambiarPosicionInput333 = document.getElementById('Ordenar-333');
+                        const cambiarPosicionInput444 = document.getElementById('Ordenar-444');
+                        const cambiarPosicionInput555 = document.getElementById('Ordenar-555');
+                        const cambiarPosicionInput666 = document.getElementById('Ordenar-666');
+                        const unaColumnaImg2 = document.getElementById('unaColumna2-img');
+                        const tresColumnasImg1= document.getElementById('tresColumnas1-img');
+                      
+                        unaColumnaImg2.style.filter = 'invert(50%) sepia(38%) saturate(0%) hue-rotate(126deg) brightness(92%) contrast(96%)';
+                        unaColumnaBtn2.addEventListener('click', () => {
+                          contenedor2.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            contenedor2.classList.remove('tresColumnas1');
+                            contenedor2.classList.add('unaColumna2');
+                            contenedor2.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor2.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                      
+                          unaColumnaImg2.style.filter = 'invert(0%) sepia(3%) saturate(1486%) hue-rotate(208deg) brightness(89%) contrast(102%)';
+                          unaColumnaImg2.style.color = 'white';
+                          tresColumnasImg1.style.filter = 'invert(50%) sepia(38%) saturate(0%) hue-rotate(126deg) brightness(92%) contrast(96%)';
+                          tresColumnasImg1.style.color = 'white';
+                        });
+                      
+                        tresColumnasBtn1.addEventListener('click', () => {
+                          contenedor2.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            contenedor2.classList.remove('unaColumna2');
+                            contenedor2.classList.add('tresColumnas1');
+                            contenedor2.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor2.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                      
+                          tresColumnasImg1.style.filter = 'invert(0%) sepia(3%) saturate(1486%) hue-rotate(208deg) brightness(89%) contrast(102%)';
+                          tresColumnasImg1.style.color = 'white';
+                          unaColumnaImg2.style.filter = 'invert(50%) sepia(38%) saturate(0%) hue-rotate(126deg) brightness(92%) contrast(96%)';
+                          unaColumnaImg2.style.color = 'white';
+                        });
+                      
+                        cambiarPosicionInput222.addEventListener('change', () => {
+                          const posicionCaja1 = 0;
+                          const posicionCaja2 = 1;
+                          const posicionCaja4 = 3;
+                      
+                          contenedor2.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            const cajas = document.querySelectorAll('.caja-3');
+                            const caja1 = cajas[posicionCaja1];
+                            const caja2 = cajas[posicionCaja2];
+                            const caja4 = cajas[posicionCaja4];
+                      
+                            contenedor2.insertBefore(caja2, caja1);
+                            contenedor2.insertBefore(caja1, caja4);
+                      
+                            contenedor2.classList.remove('fadeOut');
+                            contenedor2.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor2.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                        });
+    
+                        cambiarPosicionInput333.addEventListener('change', () => {
+                            const posicionCaja1 = 0;
+                          const posicionCaja2 = 1;
+                          const posicionCaja3 = 2;
+                          const posicionCaja4 = 3;
+                          const posicionCaja5 = 4;
+                          const posicionCaja6 = 5;
+                          const posicionCaja7 = 6;
+                          const posicionCaja8 = 7;
+                          const posicionCaja9 = 8;
+                          const posicionCaja10 = 9;
+                          const posicionCaja11 = 10;
+                          const posicionCaja12 = 11;
+
+                      
+                          contenedor2.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            const cajas = document.querySelectorAll('.caja-3');
+                            const caja1 = cajas[posicionCaja1];
+                            const caja2 = cajas[posicionCaja2];
+                            const caja3 = cajas[posicionCaja3];
+                            const caja4 = cajas[posicionCaja4];
+                            const caja5 = cajas[posicionCaja5];
+                            const caja6 = cajas[posicionCaja6];
+                            const caja7 = cajas[posicionCaja7];
+                            const caja8 = cajas[posicionCaja8];
+                            const caja9 = cajas[posicionCaja9];
+                            const caja10 = cajas[posicionCaja10];
+                            const caja11 = cajas[posicionCaja11];
+                            const caja12 = cajas[posicionCaja12];
+
+                      
+                            contenedor2.insertBefore(caja2, caja1);
+                            contenedor2.insertBefore(caja4, caja2);
+                            contenedor2.insertBefore(caja7, caja3);
+                            contenedor2.insertBefore(caja5, caja4);
+                            contenedor2.insertBefore(caja8, caja5);
+                            contenedor2.insertBefore(caja9, caja6);
+                            contenedor2.insertBefore(caja10, caja7);
+                            contenedor2.insertBefore(caja12, caja8);
+                            contenedor2.insertBefore(caja3, caja9);
+                            contenedor2.insertBefore(caja1, caja10);
+                            contenedor2.insertBefore(caja6, caja11);
+                            contenedor2.insertBefore(caja11, caja12);
+
+                      
+                            contenedor2.classList.remove('fadeOut');
+                            contenedor2.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor2.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                        });
+    
+                        cambiarPosicionInput111.addEventListener('change', () => {
+                            const posicionCaja1 = 0;
+                          const posicionCaja2 = 1;
+                          const posicionCaja3 = 2;
+                          const posicionCaja4 = 3;
+                          const posicionCaja5 = 4;
+                          const posicionCaja6 = 5;
+                          const posicionCaja7 = 6;
+                          const posicionCaja8 = 7;
+                          const posicionCaja9 = 8;
+                          const posicionCaja10 = 9;
+                          const posicionCaja11 = 10;
+                          const posicionCaja12 = 11;
+
+                      
+                          contenedor2.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            const cajas = document.querySelectorAll('.caja-3');
+                            const caja1 = cajas[posicionCaja1];
+                            const caja2 = cajas[posicionCaja2];
+                            const caja3 = cajas[posicionCaja3];
+                            const caja4 = cajas[posicionCaja4];
+                            const caja5 = cajas[posicionCaja5];
+                            const caja6 = cajas[posicionCaja6];
+                            const caja7 = cajas[posicionCaja7];
+                            const caja8 = cajas[posicionCaja8];
+                            const caja9 = cajas[posicionCaja9];
+                            const caja10 = cajas[posicionCaja10];
+                            const caja11 = cajas[posicionCaja11];
+                            const caja12 = cajas[posicionCaja12];
+
+                      
+                            contenedor2.insertBefore(caja2, caja1);
+                            contenedor2.insertBefore(caja4, caja2);
+                            contenedor2.insertBefore(caja7, caja3);
+                            contenedor2.insertBefore(caja5, caja4);
+                            contenedor2.insertBefore(caja8, caja5);
+                            contenedor2.insertBefore(caja9, caja6);
+                            contenedor2.insertBefore(caja10, caja7);
+                            contenedor2.insertBefore(caja12, caja8);
+                            contenedor2.insertBefore(caja3, caja9);
+                            contenedor2.insertBefore(caja1, caja10);
+                            contenedor2.insertBefore(caja6, caja11);
+                            contenedor2.insertBefore(caja11, caja12);
+
+                      
+                            contenedor2.classList.remove('fadeOut');
+                            contenedor2.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor2.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                        });
+
+                        cambiarPosicionInput444.addEventListener('change', () => {
+                        const posicionCaja1 = 0;
+                          const posicionCaja2 = 1;
+                          const posicionCaja3 = 2;
+                          const posicionCaja4 = 3;
+                          const posicionCaja5 = 4;
+                          const posicionCaja6 = 5;
+                          const posicionCaja7 = 6;
+                          const posicionCaja8 = 7;
+                          const posicionCaja9 = 8;
+                          const posicionCaja10 = 9;
+                          const posicionCaja11 = 10;
+                          const posicionCaja12 = 11;
+
+                      
+                          contenedor2.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            const cajas = document.querySelectorAll('.caja-3');
+                            const caja1 = cajas[posicionCaja1];
+                            const caja2 = cajas[posicionCaja2];
+                            const caja3 = cajas[posicionCaja3];
+                            const caja4 = cajas[posicionCaja4];
+                            const caja5 = cajas[posicionCaja5];
+                            const caja6 = cajas[posicionCaja6];
+                            const caja7 = cajas[posicionCaja7];
+                            const caja8 = cajas[posicionCaja8];
+                            const caja9 = cajas[posicionCaja9];
+                            const caja10 = cajas[posicionCaja10];
+                            const caja11 = cajas[posicionCaja11];
+                            const caja12 = cajas[posicionCaja12];
+
+                      
+                            contenedor2.insertBefore(caja2, caja1);
+                            contenedor2.insertBefore(caja4, caja2);
+                            contenedor2.insertBefore(caja7, caja3);
+                            contenedor2.insertBefore(caja5, caja4);
+                            contenedor2.insertBefore(caja8, caja5);
+                            contenedor2.insertBefore(caja9, caja6);
+                            contenedor2.insertBefore(caja10, caja7);
+                            contenedor2.insertBefore(caja12, caja8);
+                            contenedor2.insertBefore(caja3, caja9);
+                            contenedor2.insertBefore(caja1, caja10);
+                            contenedor2.insertBefore(caja6, caja11);
+                            contenedor2.insertBefore(caja11, caja12);
+
+
+                      
+                            contenedor2.classList.remove('fadeOut');
+                            contenedor2.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor2.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                        });
+    
+                        cambiarPosicionInput555.addEventListener('change', () => {
+                            const posicionCaja1 = 0;
+                          const posicionCaja2 = 1;
+                          const posicionCaja3 = 2;
+                          const posicionCaja4 = 3;
+                          const posicionCaja5 = 4;
+                          const posicionCaja6 = 5;
+                          const posicionCaja7 = 6;
+                          const posicionCaja8 = 7;
+                          const posicionCaja9 = 8;
+                          const posicionCaja10 = 9;
+                          const posicionCaja11 = 10;
+                          const posicionCaja12 = 11;
+
+                      
+                          contenedor2.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            const cajas = document.querySelectorAll('.caja-3');
+                            const caja1 = cajas[posicionCaja1];
+                            const caja2 = cajas[posicionCaja2];
+                            const caja3 = cajas[posicionCaja3];
+                            const caja4 = cajas[posicionCaja4];
+                            const caja5 = cajas[posicionCaja5];
+                            const caja6 = cajas[posicionCaja6];
+                            const caja7 = cajas[posicionCaja7];
+                            const caja8 = cajas[posicionCaja8];
+                            const caja9 = cajas[posicionCaja9];
+                            const caja10 = cajas[posicionCaja10];
+                            const caja11 = cajas[posicionCaja11];
+                            const caja12 = cajas[posicionCaja12];
+
+                      
+                            contenedor2.insertBefore(caja2, caja1);
+                            contenedor2.insertBefore(caja4, caja2);
+                            contenedor2.insertBefore(caja7, caja3);
+                            contenedor2.insertBefore(caja5, caja4);
+                            contenedor2.insertBefore(caja8, caja5);
+                            contenedor2.insertBefore(caja9, caja6);
+                            contenedor2.insertBefore(caja10, caja7);
+                            contenedor2.insertBefore(caja12, caja8);
+                            contenedor2.insertBefore(caja3, caja9);
+                            contenedor2.insertBefore(caja1, caja10);
+                            contenedor2.insertBefore(caja6, caja11);
+                            contenedor2.insertBefore(caja11, caja12);
+
+                      
+                            contenedor2.classList.remove('fadeOut');
+                            contenedor2.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor2.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                        });
+    
+                        cambiarPosicionInput666.addEventListener('change', () => {
+                            const posicionCaja1 = 0;
+                          const posicionCaja2 = 1;
+                          const posicionCaja3 = 2;
+                          const posicionCaja4 = 3;
+                          const posicionCaja5 = 4;
+                          const posicionCaja6 = 5;
+                          const posicionCaja7 = 6;
+                          const posicionCaja8 = 7;
+                          const posicionCaja9 = 8;
+                          const posicionCaja10 = 9;
+                          const posicionCaja11 = 10;
+                          const posicionCaja12 = 11;
+
+                      
+                          contenedor2.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            const cajas = document.querySelectorAll('.caja-3');
+                            const caja1 = cajas[posicionCaja1];
+                            const caja2 = cajas[posicionCaja2];
+                            const caja3 = cajas[posicionCaja3];
+                            const caja4 = cajas[posicionCaja4];
+                            const caja5 = cajas[posicionCaja5];
+                            const caja6 = cajas[posicionCaja6];
+                            const caja7 = cajas[posicionCaja7];
+                            const caja8 = cajas[posicionCaja8];
+                            const caja9 = cajas[posicionCaja9];
+                            const caja10 = cajas[posicionCaja10];
+                            const caja11 = cajas[posicionCaja11];
+                            const caja12 = cajas[posicionCaja12];
+
+                      
+                            contenedor2.insertBefore(caja2, caja1);
+                            contenedor2.insertBefore(caja4, caja2);
+                            contenedor2.insertBefore(caja7, caja3);
+                            contenedor2.insertBefore(caja5, caja4);
+                            contenedor2.insertBefore(caja8, caja5);
+                            contenedor2.insertBefore(caja9, caja6);
+                            contenedor2.insertBefore(caja10, caja7);
+                            contenedor2.insertBefore(caja12, caja8);
+                            contenedor2.insertBefore(caja3, caja9);
+                            contenedor2.insertBefore(caja1, caja10);
+                            contenedor2.insertBefore(caja6, caja11);
+                            contenedor2.insertBefore(caja11, caja12);
+
+                      
+                            contenedor2.classList.remove('fadeOut');
+                            contenedor2.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor2.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                        });
+                      </script>
+                </div>
+            </div>
+        </section>
+    
+        <section class="Libros">
+    
+        </section>
+    
+        <section class="Accesorios">
+    
+        </section>
+
+        <footer>
+          <div class="footer-container" style="width: 100%; background: #040b13;">
+            <div class="footer-Top">
+              <div class="Información">
+                <div style="display: flex;justify-content: center;">
+                  <img src="img/logo-footer.png" style="width: 120px;">
+                </div>
+                <div class="inforamcion">
+                  <img src="img/ciudad.png">
+                  <p>Av. Universitaria 5175, Los Olivos 15304</p>
+                </div>
+                <div class="inforamcion">
+                  <img src="img/telefono.png">
+                  <a href="#">(01) 5003100</a>
+                </div>
+                <div class="inforamcion">
+                  <img src="img/correo.png">
+                  <a href="#">carsanchezne@uch.pe</a>
+                </div>
+              </div>
+              <div class="Accesos Directos">
+                <h2>Accesos Directos</h2>
+                <a href="#" >Inicio</a>
+                <a href="#Recien-llegados">Recien llegados</a>
+                <a href="#Tornamesas">Tornamesas</a>
+                <a href="#CDs">CDs</a>
+                <a href="#">Libros</a>
+                <a href="#">Accesorios</a>
+              </div>
+              <div class="More">
+                <h2>More</h2>
+                <a href="#">Contáctanos</a>
+                <a href="#">Servicios</a>
+                <a href="#">Ayuda</a>
+                <a href="#">Preguntas frecuentes</a>
+              </div>
+              <div class="Redes Sociales">
+                <h2>Nuestras Redes Sociales</h2>
+                <div class="Social">
+                  <img src="img/youtube.png">
+                  <img src="img/instagram.png">
+                  <img src="img/linkedin.png">
+                  <img src="img/facebook.png">
+                </div>
+              </div>
+            </div>
+            <div class="footer-Bottom">
+              <div class="footer-Bottom-Left">
+                <p>© 2023 Carlos PE, All rights deserved</p>
+              </div>
+              <div class="footer-Bottom-Right">
+                <a href="#">Privacy</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Terms</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+    </section>
+
+</body>
+</html>

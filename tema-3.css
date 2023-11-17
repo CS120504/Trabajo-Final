@@ -1,0 +1,330 @@
+section.CDs {
+    width: 100%;
+}
+
+.caja-3 {
+    width: 25%;
+    display: grid;
+    padding-bottom: 50px;
+    justify-content: center;
+}
+
+.caja-3 img {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+}
+.caja-3 a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+
+.caja-3 button {
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 18px;
+    width: 180px;
+    background: #d9d9d9;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.caja-3 button:hover {
+    transition: background-color, 0.2s ease-in-out;
+    background-color: orange;
+    color: white;
+    border: rgb(211, 137, 0) 1px;
+}
+
+.caja-3 button:not(:hover) {
+    transition: background-color, 0.2s ease-in-out;
+    background-color: rgb(185, 185, 185);
+    color: rgb(43, 43, 43);
+    border: rgb(90, 90, 90) 1px;
+}
+
+.caja-3 img:hover {
+    transition: filter 0.2s ease-in-out;
+    filter: brightness(60%);
+}
+
+.caja-3 img:not(:hover) {
+    transition: filter 0.2s ease-in-out;
+    filter: brightness(100%);
+}
+
+.estrellas-3 {
+    display: flex;
+    justify-content: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.estrellas-3 img {
+    width: 17px;
+    height: 17px;
+}
+
+.text-float-3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background: white;
+    display: flex;
+    width: 90px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.text-float-3 a {
+    display: flex;
+}
+
+.text-float-3 img {
+    width: 18px;
+    height: 18px;
+}
+
+.img-caja-3:hover .text-float-3 {
+    opacity: 1;
+  }
+
+  #Ordenar-00:checked + #boton-00 + .Ordenar-links-2{
+    max-height: 500px;
+    transition: max-height 0.5s ease-in-out;
+}
+
+label#boton-00 h1 {
+    margin: 13px 0px 13px 0px;
+    font-size: 17px;
+}
+
+#boton-00 img {
+    transition: transform 0.5s ease;
+    transform-origin: center;
+}
+
+#Ordenar-00:checked + #boton-00 {
+    background-color: orange;
+    color: white; 
+}
+
+#Ordenar-00:checked + #boton-00 img {
+    transform: rotate(180deg); 
+}
+
+#boton-00 img.rotated {
+    transform: rotate(180deg);
+}
+
+label#boton-00 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 310px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    position: relative;
+    cursor: pointer;
+}
+
+.Ordenar-links-2 label {
+    color: rgb(32, 32, 32);
+    font-size: 19px;
+    font-weight: bold;
+    width: 350px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.Ordenar-links-2 {
+    position: absolute;
+    display: grid;
+    z-index: 1;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    box-shadow: 0px 0px 15px 0px #00000052;
+}
+
+.Ordenar-links-2 label {
+    color: rgb(56, 56, 56);
+    width: 350px;
+    justify-content: space-between;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.Ordenar-links-2 h1 {
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.Ordenar-links-2 img {
+    display: none;
+}
+
+label#boton-111, label#boton-222, label#boton-333, label#boton-444, label#boton-555, label#boton-666 {
+    background: white;
+    width: 310px;
+    height: 35px;
+    border-radius: 0px;
+    border-bottom: 1px solid #dddddd;
+}
+
+#Ordenar-11:checked + #boton-111 + .Ordenar-links-2 {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in-out;
+}
+
+label#boton-00:hover {
+    transition: background-color, 0.2s ease-in-out;
+    background-color: orange;
+    color: white;
+    border: 1px solid rgb(73, 73, 73);}
+
+label#boton-00:not(:hover) {
+    transition: background-color, 0.2s ease-in-out;
+    background-color: rgb(238, 238, 238);
+    color: rgb(43, 43, 43);
+    border: 1px solid rgb(0, 0, 0) 1px;
+}
+
+label#boton-111:hover {
+    transition: background-color, 0.2s ease-in-out;
+    background-color: rgb(255, 207, 118);
+}
+
+label#boton-111:not(:hover) {
+    transition: background-color, 0.2s ease-in-out;
+}
+
+label#boton-222:hover {
+    transition: background-color, 0.2s ease-in-out;
+    background-color: rgb(255, 207, 118);
+}
+
+label#boton-222:not(:hover) {
+    transition: background-color, 0.2s ease-in-out;
+}
+
+label#boton-333:hover {
+    transition: background-color, 0.2s ease-in-out;
+    background-color: rgb(255, 207, 118);
+}
+
+label#boton-333:not(:hover) {
+    transition: background-color, 0.2s ease-in-out;
+}
+
+label#boton-444:hover {
+    transition: background-color, 0.2s ease-in-out;
+    background-color: rgb(255, 207, 118);
+}
+
+label#boton-444:not(:hover) {
+    transition: background-color, 0.2s ease-in-out;
+}
+
+label#boton-555:hover {
+    transition: background-color, 0.2s ease-in-out;
+    background-color: rgb(255, 207, 118);
+}
+
+label#boton-555:not(:hover) {
+    transition: background-color, 0.2s ease-in-out;
+}
+
+label#boton-666:hover {
+    transition: background-color, 0.2s ease-in-out;
+    background-color: rgb(255, 207, 118);
+}
+
+label#boton-666:not(:hover) {
+    transition: background-color, 0.2s ease-in-out;
+}
+
+.img-caja-3 {
+    height: 180px;
+    width: 180px;
+    position: relative;
+}
+
+.info-img h2 {
+    font-size: 27px;
+    display: none;
+}
+
+button.boton-carrito img {
+    width: 35px;
+    height: 35px;
+    display: none;
+}
+
+@keyframes fadeInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeOutToLeft {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  img[id^="palomita-"] {
+    height: 25px;
+    width: 30px;
+}
+
+[id^="boton-palomita-"] {
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    border: rgb(90, 90, 90) 1px;
+    color: rgb(43, 43, 43);
+}
+
+  [id^="boton-palomita-"]:hover {
+    background-color: orange;
+    color: white;
+    border: rgb(211, 137, 0) 1px;
+}
+
+[id^="boton-palomita-"]:not(:hover) {
+    background-color: rgb(185, 185, 185);
+    color: rgb(43, 43, 43);
+    border: rgb(90, 90, 90) 1px;
+  }
+
+  
