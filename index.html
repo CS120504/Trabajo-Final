@@ -44,7 +44,7 @@
                     <a href="#Recien-llegados">Recién llegados</a>
                     <a href="#Tornamesas">Tornamesas</a>
                     <a href="#CDs">CDs</a>
-                    <a href="#">Libros</a>
+                    <a href="#Libros">Libros</a>
                     <a href="#">Accesorios</a>
                     <a href="#" style="border-right: none;">More</a>
                 </nav>
@@ -2760,9 +2760,847 @@
             </div>
         </section>
     
-        <section class="Libros">
-    
-        </section>
+        <section class="Libros" id="Libros">
+          <div class="Tema1-container">
+              <div class="Text-Top">
+                  <h1 style="margin: 0px; font-size: 26px; color: #555555;">Libros</h1>
+                  <div class="indice">
+                      <a href="#" style="color: gray;">Inicio</a>
+                      <img src="img/mayor-que-el-simbolo.png">
+                      <a href="#" style="color: rgb(43, 43, 43); font-size: 16px;">Librs</a>
+                  </div>
+              </div>
+              <div class="content-1">
+                  <div class="content-1-Top">
+                      <div class="content-1-Top-Left">
+                          <div class="content-1-Top-Left-Buttons">
+                              <button id="tresColumnas2" style="padding-right: 10px;"><img src="img/4-cuadrados-redondeados.png" id="tresColumnas2-img"></button>
+                              <button id="unaColumna3" style="padding-left: 10px;"><img src="img/2-cuadrados-redondeados.png" id="unaColumna3-img"></button>
+                          </div>
+                          <div class="content-1-Top-Left-Text">
+                              <p>Mostrando 1-12 de 12 resultados</p>
+                          </div>
+                      </div>
+                      <div class="content-1-Top-Right">
+                          <input type="checkbox" id="Ordenar-000" style="display: none;">
+                          <label for="Ordenar-000" id="boton-000">
+                              <h1 id="ordenarTitulo3" style="padding-left: 10px;">Ordenar por defecto</h1>
+                              <img src="img/ordenar-abajo.png" class="flecha"  id="flecha" style="width: 15px; position: absolute;
+                              right: 10px;">
+                          </label>
+  
+                          <div class="Ordenar-links-3">
+                              <input type="checkbox" id="Ordenar-1111" style="display: none;">
+                              <label for="Ordenar-1111" id="boton-1111" onclick="cambiarTitulo3('Ordenar por defecto')">
+                                  <h1>Ordenar por defecto</h1>
+                                  <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                              </label>
+  
+                              <input type="checkbox" id="Ordenar-2222"  min="1" max="16" style="display: none;">
+                              <label for="Ordenar-2222" id="boton-2222" onclick="cambiarTitulo3('Ordenar por popularidad')">
+                                  <h1>Ordenar por popularidad</h1>
+                                  <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                              </label>
+  
+                              <input type="checkbox" id="Ordenar-3333" style="display: none;">
+                              <label for="Ordenar-3333" id="boton-3333" onclick="cambiarTitulo3('Ordenar por puntuación media')">
+                                  <h1>Ordenar por puntuación media</h1>
+                                  <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                              </label>
+  
+                              <input type="checkbox" id="Ordenar-4444" style="display: none;">
+                              <label for="Ordenar-4444" id="boton-4444" onclick="cambiarTitulo3('Ordenar por los últimos años')">
+                                  <h1>Ordenar por los últimos años</h1>
+                                  <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                              </label>
+  
+                              <input type="checkbox" id="Ordenar-5555" style="display: none;">
+                              <label for="Ordenar-5555" id="boton-5555" onclick="cambiarTitulo3('Ordenar por precio: Bajo a Alto')">
+                                  <h1>Ordenar por precio: Bajo a Alto</h1>
+                                  <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                              </label>
+  
+                              <input type="checkbox" id="Ordenar-6666" style="display: none;">
+                              <label for="Ordenar-6666" id="boton-6666" onclick="cambiarTitulo3('Ordenar por precio: Alto a Bajo')" style="border-bottom: none;">
+                                  <h1>Ordenar por precio: Alto a Bajo</h1>
+                                  <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                              </label>
+                          </div>
+                      </div>
+                  </div>
+                  <div id="contenedor-4">
+                      <div class="caja-4">
+                          <div class="img-caja-4">
+                              <img src="img/CD1.jpg">
+                              <div class="text-float-4">
+                                  <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                  <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                              </div>
+                          </div>
+                          <div class="info-img">
+                              <div class="estrellas-4">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella.png">
+                                  <img src="img/estrella.png">
+                                  </div>
+                                  <a href="#">A-Ha - The Singles <br> 1984 - 2004 (CD)</a>
+                                      <h1>S/ 75.00</h1>
+                                      <p>Año: 2004</p>
+                                      <p>País: Estados Unidos</p>
+                                      <p>Género: Synth Pop</p>
+                                      <button id="boton-palomita-38" onclick="toggleImage('38')">
+                                        <img src="img/palomita.png" id="palomita-38">  
+                                          Añadir al carrito
+                                        </button>
+                              </div>
+                          </div>
+                      <div class="caja-4">
+                          <div class="img-caja-4">
+                              <img src="img/CD2.jpg">
+                              <div class="text-float-4">
+                                  <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                  <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                              </div>
+                          </div>
+                          <div class="info-img">
+                              <div class="estrellas-4">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella.png">
+                              </div>
+                              <a href="#">AC/DC - Iron Man 2 <br> (CD+DVD)</a>
+                              <h1>S/ 85.00</h1>
+                              <p>Año: 2010 </p>
+                              <p>País: Australia</p>
+                              <p>Género: Hard Rock | Soundtrack</p>
+                              <button id="boton-palomita-39" onclick="toggleImage('39')">
+                                <img src="img/palomita.png" id="palomita-39">  
+                                  Añadir al carrito
+                                </button>
+                          </div>
+                      </div>
+                      <div class="caja-4">
+                          <div class="img-caja-4">
+                              <img src="img/CD3.jpg">
+                              <div class="text-float-4">
+                                  <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                  <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                              </div>
+                          </div>
+                          <div class="info-img">
+                              <div class="estrellas-4">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella.png">
+                                  <img src="img/estrella.png">
+                                  <img src="img/estrella.png">
+                              </div>
+                              <a href="#">Alejandro Sanz - <br> La Gira Del Disco (CD)</a>
+                              <h1>S/ 85.00</h1>
+                              <p>Año: 2019</p>
+                              <p>País: Argentina</p>
+                              <p>Género: Pop Rock en español</p>
+                              <button id="boton-palomita-40" onclick="toggleImage('40')">
+                                <img src="img/palomita.png" id="palomita-40">  
+                                  Añadir al carrito
+                                </button>
+                          </div>
+                      </div>
+                      <div class="caja-4">
+                          <div class="img-caja-4">
+                              <img src="img/CD4.jpg">
+                              <div class="text-float-4">
+                                  <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                  <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                              </div>
+                          </div>
+                          <div class="info-img">
+                              <div class="estrellas-4">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella.png">
+                              </div>
+                              <a href="#">Alicia Keys - The Diary <br> Of Alicia Keys (CD)</a>
+                              <h1>S/ 70.00</h1>
+                              <p>Año: 2004</p>
+                              <p>País: Europa</p>
+                              <p>Género: Neo Soul | R&B</p>
+                              <button id="boton-palomita-41" onclick="toggleImage('41')">
+                                <img src="img/palomita.png" id="palomita-41">  
+                                  Añadir al carrito
+                                </button>
+                          </div>
+                        </div>
+                        <div class="caja-4">
+                          <div class="img-caja-4">
+                              <img src="img/CD5.jpg">
+                              <div class="text-float-4">
+                                  <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                  <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                              </div>
+                          </div>
+                          <div class="info-img">
+                              <div class="estrellas-4">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella.png">
+                              </div>
+                              <a href="#">Anthrax - Madhouse: The <br> Very Best Of Anthrax (CD)</a>
+                                <h1>S/ 60.00</h1>
+                                <p>Año: 2012</p>
+                                <p>País: Europa/p>
+                                <p>Género: Metal</p>
+                              <button id="boton-palomita-42" onclick="toggleImage('42')">
+                                <img src="img/palomita.png" id="palomita-42">  
+                                  Añadir al carrito
+                                </button>
+                          </div>
+                        </div>
+                        <div class="caja-4">
+                          <div class="img-caja-4">
+                              <img src="img/CD6.jpg">
+                              <div class="text-float-4">
+                                  <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                  <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                              </div>
+                          </div>
+                          <div class="info-img">
+                              <div class="estrellas-4">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella.png">
+                                  <img src="img/estrella.png">
+                              </div>
+                              <a href="#">Antonio Pinto, Amy Winehouse - <br> Amy: The Original Soundtrack (CD)</a>
+                                <h1>S/ 85.00</h1>
+                                <p>Año: 2015</p>
+                                <p>País: Estados Unidos</p>
+                                <p>Género: Jazz, Swing, Pop, Soul, Soundtrack</p>
+                              <button id="boton-palomita-43" onclick="toggleImage('43')">
+                                <img src="img/palomita.png" id="palomita-43">  
+                                  Añadir al carrito
+                                </button>
+                          </div>
+                      </div>
+                      <div class="caja-4">
+                          <div class="img-caja-4">
+                              <img src="img/CD7.jpg">
+                              <div class="text-float-4">
+                                  <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                  <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                              </div>
+                          </div>
+                          <div class="info-img">
+                              <div class="estrellas-4">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella.png">
+                              </div>
+                              <a href="#">Arctic Monkeys - Humbug (CD)</a>
+                              <h1>S/ 80.00</h1>
+                              <p>Año: 2009</p>
+                              <p>País: Argentina>
+                              <p>Género: Indie Rock</p>
+                              <button id="boton-palomita-44" onclick="toggleImage('44')">
+                                <img src="img/palomita.png" id="palomita-44">  
+                                  Añadir al carrito
+                                </button>
+                          </div>
+                        </div>
+                        <div class="caja-4">
+                          <div class="img-caja-4">
+                              <img src="img/CD8.jpg">
+                              <div class="text-float-4">
+                                  <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                  <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                              </div>
+                          </div>
+                          <div class="info-img">
+                              <div class="estrellas-4">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella.png">
+                              </div>
+                              <a href="#">Ariana Grande -<br>Dangerous Woman (CD)</a>
+                                <h1>S/ 75.00</h1>
+                                <p>Año: 2016</p>
+                                <p>País: Argentina</p>
+                                <p>Género: Pop | R&B Contemporáneo</p>
+                              <button id="boton-palomita-45" onclick="toggleImage('45')">
+                                <img src="img/palomita.png" id="palomita-45">  
+                                  Añadir al carrito
+                                </button>
+                          </div>
+                        </div>
+                        <div class="caja-4">
+                          <div class="img-caja-4">
+                              <img src="img/CD9.jpg">
+                              <div class="text-float-4">
+                                  <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                  <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                              </div>
+                          </div>
+                          <div class="info-img">
+                              <div class="estrellas-4">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella.png">
+                              </div>
+                              <a href="#">Ariel Rot - Dúos, Tríos <br> Y Otras Perversiones (CD)</a>
+                              <h1>S/ 75.00</h1>
+                              <p>Año: 2007</p>
+                              <p>País: España</p>
+                              <p>Género: Rock</p>
+                              <button id="boton-palomita-46" onclick="toggleImage('46')">
+                                <img src="img/palomita.png" id="palomita-46">  
+                                  Añadir al carrito
+                                </button>
+                          </div>
+                      </div>
+                      <div class="caja-4">
+                          <div class="img-caja-4">
+                              <img src="img/CD10.jpeg">
+                              <div class="text-float-4">
+                                  <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                  <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                              </div>
+                          </div>
+                          <div class="info-img">
+                              <div class="estrellas-4">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella.png">
+                              </div>
+                              <a href="#">Bandalos Chinos - El Big Blue (CD)</a>
+                              <h1>S/ 60.00</h1>
+                              <p>Año: 2022</p>
+                              <p>País: Argemtina</p>
+                              <p>Género: Indie Rock</p>
+                              <button id="boton-palomita-47" onclick="toggleImage('47')">
+                                <img src="img/palomita.png" id="palomita-47">  
+                                  Añadir al carrito
+                                </button>
+                          </div>
+                      </div>
+                      <div class="caja-4">
+                          <div class="img-caja-4">
+                              <img src="img/CD11.png">
+                              <div class="text-float-4">
+                                  <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                  <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                              </div>
+                          </div>
+                          <div class="info-img">
+                              <div class="estrellas-4">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella.png">
+                              </div>
+                              <a href="#">Billie Eilish - Happier Than Ever (CD)</a>
+                              <h1>S/ 80.00</h1>
+                              <p>Año: 2021</p>
+                              <p>País: Estados Unidos</p>
+                              <p>Género: Pop</p>
+                              <button id="boton-palomita-48" onclick="toggleImage('48')">
+                                <img src="img/palomita.png" id="palomita-48">  
+                                  Añadir al carrito
+                                </button>
+                          </div>
+                      </div>   
+                      <div class="caja-4">
+                          <div class="img-caja-4">
+                              <img src="img/CD12.jpg">
+                              <div class="text-float-4">
+                                  <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                  <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                              </div>
+                          </div>
+                          <div class="info-img">
+                              <div class="estrellas-4">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella-dorada.png">
+                                  <img src="img/estrella.png">
+                              </div>
+                              <a href="#">Cementerio Club - ¡Directo! <br> (CD)</a>
+                              <h1>S/ 40.00</h1>
+                              <p>Año: 2022</p>
+                              <p>País: Perú</p>
+                              <p>Género: Pop Rock</p>
+                              <button id="boton-palomita-49" onclick="toggleImage('49')">
+                                <img src="img/palomita.png" id="palomita-49">  
+                                  Añadir al carrito
+                                </button>
+                          </div>
+                      </div>  
+                  <style>
+                    #contenedor-4 {
+                      display: flex;
+                      flex-wrap: wrap;
+                    }
+                     
+                    #contenedor-4.unaColumna3 .caja-4 {
+                      width: 100%;
+                      display: flex;
+                      gap: 90px;
+                      padding-bottom: 100px;
+                      justify-content: left;
+                    }
+                    
+                    #contenedor-4.unaColumna3 .estrellas-4 {
+                      padding-top: 0px;
+                    }
+  
+                    #contenedor-4.unaColumna3 .caja-4 img, #contenedor-4.unaColumna3 .img-caja-4 {
+                          width: 200px;
+                          height: 200px;
+                      }
+  
+                      #contenedor-4.unaColumna3 img[id^="palomita-"] {
+                      width: 30px;
+                      height: 25px;
+                    }
+
+  
+                  #contenedor-4.unaColumna3 .img-caja {
+                          width: 300px;
+                          height: 300px;
+                      }
+  
+                  #contenedor-4.unaColumna3 .info-img h2 {
+                      font-size: 27px;
+                      display: block;
+                  }
+  
+                    #contenedor-4.unaColumna3 .estrellas-4 img {
+                      width: 17px;
+                      height: 17px;
+                    }  
+                    
+                    #contenedor-4.unaColumna3 .text-float-4 img {
+                      width: 18px;
+                      height: 18px;
+                    }
+  
+                    #contenedor-4.unaColumna3 .info-img p {
+                      display: grid;
+                      justify-content: left;
+                    }
+  
+                    #contenedor-4.unaColumna3 .caja-4 p {
+                      text-align: left;
+                      margin: 0px;
+                      padding-top: 8px;
+                      padding-bottom: 8px;
+                      font-size: 13px;
+                    }
+  
+                    #contenedor-4.unaColumna3 .info-img h1 {
+                      color: #06c;
+                      font-size: 22px;
+                      margin-top: 10px;
+                      margin-bottom: 10px;
+                      }
+                    
+                    #contenedor-4.animate {
+                      animation-duration: 0.4s;
+                      animation-fill-mode: both;
+                    }
+                    
+                    #contenedor-4.fadeOut {
+                      animation-name: fadeOut;
+                    }
+                    
+                    #contenedor-4.fadeIn {
+                      animation-name: fadeIn;
+                    }
+  
+                    button.active {
+                      background-color: black;
+                    }
+                    
+                    @keyframes fadeOut {
+                      from { opacity: 1; }
+                      to { opacity: 0; }
+                    }
+                    
+                    @keyframes fadeIn {
+                      from { opacity: 0; }
+                      to { opacity: 1; }
+                    }
+                    </style>
+                    
+                    <script>
+const contenedor4 = document.getElementById('contenedor-4');
+const unaColumnaBtn3 = document.getElementById('unaColumna3');
+const tresColumnasBtn2 = document.getElementById('tresColumnas2');
+const cambiarPosicionInput1111 = document.getElementById('Ordenar-1111');
+const cambiarPosicionInput2222 = document.getElementById('Ordenar-2222');
+const cambiarPosicionInput3333 = document.getElementById('Ordenar-3333');
+const cambiarPosicionInput4444 = document.getElementById('Ordenar-4444');
+const cambiarPosicionInput5555 = document.getElementById('Ordenar-5555');
+const cambiarPosicionInput6666 = document.getElementById('Ordenar-6666');
+const unaColumnaImg3 = document.getElementById('unaColumna3-img');
+const tresColumnasImg2 = document.getElementById('tresColumnas2-img');
+
+unaColumnaImg3.style.filter = 'invert(50%) sepia(38%) saturate(0%) hue-rotate(126deg) brightness(92%) contrast(96%)';
+
+unaColumnaBtn3.addEventListener('click', () => {
+  contenedor4.classList.add('animate', 'fadeOut');
+
+  setTimeout(() => {
+    contenedor4.classList.remove('tresColumnas2');
+    contenedor4.classList.add('unaColumna3');
+    contenedor4.classList.add('fadeIn');
+
+    setTimeout(() => {
+      contenedor4.classList.remove('animate', 'fadeOut', 'fadeIn');
+    }, 300);
+  }, 300);
+
+  unaColumnaImg3.style.filter = 'invert(0%) sepia(3%) saturate(1486%) hue-rotate(208deg) brightness(89%) contrast(102%)';
+  unaColumnaImg3.style.color = 'white';
+  tresColumnasImg2.style.filter = 'invert(50%) sepia(38%) saturate(0%) hue-rotate(126deg) brightness(92%) contrast(96%)';
+  tresColumnasImg2.style.color = 'white';
+});
+
+tresColumnasBtn2.addEventListener('click', () => {
+  contenedor4.classList.add('animate', 'fadeOut');
+
+  setTimeout(() => {
+    contenedor4.classList.remove('unaColumna3');
+    contenedor4.classList.add('tresColumnas2');
+    contenedor4.classList.add('fadeIn');
+
+    setTimeout(() => {
+      contenedor4.classList.remove('animate', 'fadeOut', 'fadeIn');
+    }, 300);
+  }, 300);
+
+  tresColumnasImg2.style.filter = 'invert(0%) sepia(3%) saturate(1486%) hue-rotate(208deg) brightness(89%) contrast(102%)';
+  tresColumnasImg2.style.color = 'white';
+  unaColumnaImg3.style.filter = 'invert(50%) sepia(38%) saturate(0%) hue-rotate(126deg) brightness(92%) contrast(96%)';
+  unaColumnaImg3.style.color = 'white';
+});
+                    
+cambiarPosicionInput2222.addEventListener('change', () => {
+  const posicionCaja1 = 0;
+  const posicionCaja2 = 1;
+  const posicionCaja4 = 3;
+
+  contenedor4.classList.add('animate', 'fadeOut');
+
+  setTimeout(() => {
+    const cajas = document.querySelectorAll('.caja-4');
+    const caja1 = cajas[posicionCaja1];
+    const caja2 = cajas[posicionCaja2];
+    const caja4 = cajas[posicionCaja4];
+
+    contenedor4.insertBefore(caja2, caja1);
+    contenedor4.insertBefore(caja1, caja4);
+
+    contenedor4.classList.remove('fadeOut');
+    contenedor4.classList.add('fadeIn');
+
+    setTimeout(() => {
+      contenedor4.classList.remove('animate', 'fadeOut', 'fadeIn');
+    }, 300);
+  }, 300);
+});
+
+cambiarPosicionInput3333.addEventListener('change', () => {
+  const posicionCaja1 = 0;
+  const posicionCaja2 = 1;
+  const posicionCaja3 = 2;
+  const posicionCaja4 = 3;
+  const posicionCaja5 = 4;
+  const posicionCaja6 = 5;
+  const posicionCaja7 = 6;
+  const posicionCaja8 = 7;
+  const posicionCaja9 = 8;
+  const posicionCaja10 = 9;
+  const posicionCaja11 = 10;
+  const posicionCaja12 = 11;
+
+  contenedor4.classList.add('animate', 'fadeOut');
+
+  setTimeout(() => {
+    const cajas = document.querySelectorAll('.caja-4');
+    const caja1 = cajas[posicionCaja1];
+    const caja2 = cajas[posicionCaja2];
+    const caja3 = cajas[posicionCaja3];
+    const caja4 = cajas[posicionCaja4];
+    const caja5 = cajas[posicionCaja5];
+    const caja6 = cajas[posicionCaja6];
+    const caja7 = cajas[posicionCaja7];
+    const caja8 = cajas[posicionCaja8];
+    const caja9 = cajas[posicionCaja9];
+    const caja10 = cajas[posicionCaja10];
+    const caja11 = cajas[posicionCaja11];
+    const caja12 = cajas[posicionCaja12];
+
+    contenedor4.insertBefore(caja2, caja1);
+    contenedor4.insertBefore(caja4, caja2);
+    contenedor4.insertBefore(caja7, caja3);
+    contenedor4.insertBefore(caja5, caja4);
+    contenedor4.insertBefore(caja8, caja5);
+    contenedor4.insertBefore(caja9, caja6);
+    contenedor4.insertBefore(caja10, caja7);
+    contenedor4.insertBefore(caja12, caja8);
+    contenedor4.insertBefore(caja3, caja9);
+    contenedor4.insertBefore(caja1, caja10);
+    contenedor4.insertBefore(caja6, caja11);
+    contenedor4.insertBefore(caja11, caja12);
+
+    contenedor4.classList.remove('fadeOut');
+    contenedor4.classList.add('fadeIn');
+
+    setTimeout(() => {
+      contenedor4.classList.remove('animate', 'fadeOut', 'fadeIn');
+    }, 300);
+  }, 300);
+});
+
+
+cambiarPosicionInput1111.addEventListener('change', () => {
+  const posicionCaja1 = 0;
+  const posicionCaja2 = 1;
+  const posicionCaja3 = 2;
+  const posicionCaja4 = 3;
+  const posicionCaja5 = 4;
+  const posicionCaja6 = 5;
+  const posicionCaja7 = 6;
+  const posicionCaja8 = 7;
+  const posicionCaja9 = 8;
+  const posicionCaja10 = 9;
+  const posicionCaja11 = 10;
+  const posicionCaja12 = 11;
+
+  contenedor4.classList.add('animate', 'fadeOut');
+
+  setTimeout(() => {
+    const cajas = document.querySelectorAll('.caja-4');
+    const caja1 = cajas[posicionCaja1];
+    const caja2 = cajas[posicionCaja2];
+    const caja3 = cajas[posicionCaja3];
+    const caja4 = cajas[posicionCaja4];
+    const caja5 = cajas[posicionCaja5];
+    const caja6 = cajas[posicionCaja6];
+    const caja7 = cajas[posicionCaja7];
+    const caja8 = cajas[posicionCaja8];
+    const caja9 = cajas[posicionCaja9];
+    const caja10 = cajas[posicionCaja10];
+    const caja11 = cajas[posicionCaja11];
+    const caja12 = cajas[posicionCaja12];
+
+    contenedor4.insertBefore(caja2, caja1);
+    contenedor4.insertBefore(caja4, caja2);
+    contenedor4.insertBefore(caja7, caja3);
+    contenedor4.insertBefore(caja5, caja4);
+    contenedor4.insertBefore(caja8, caja5);
+    contenedor4.insertBefore(caja9, caja6);
+    contenedor4.insertBefore(caja10, caja7);
+    contenedor4.insertBefore(caja12, caja8);
+    contenedor4.insertBefore(caja3, caja9);
+    contenedor4.insertBefore(caja1, caja10);
+    contenedor4.insertBefore(caja6, caja11);
+    contenedor4.insertBefore(caja11, caja12);
+
+    contenedor4.classList.remove('fadeOut');
+    contenedor4.classList.add('fadeIn');
+
+    setTimeout(() => {
+      contenedor4.classList.remove('animate', 'fadeOut', 'fadeIn');
+    }, 300);
+  }, 300);
+});
+
+cambiarPosicionInput4444.addEventListener('change', () => {
+  const posicionCaja1 = 0;
+  const posicionCaja2 = 1;
+  const posicionCaja3 = 2;
+  const posicionCaja4 = 3;
+  const posicionCaja5 = 4;
+  const posicionCaja6 = 5;
+  const posicionCaja7 = 6;
+  const posicionCaja8 = 7;
+  const posicionCaja9 = 8;
+  const posicionCaja10 = 9;
+  const posicionCaja11 = 10;
+  const posicionCaja12 = 11;
+
+  contenedor4.classList.add('animate', 'fadeOut');
+
+  setTimeout(() => {
+    const cajas = document.querySelectorAll('.caja-4');
+    const caja1 = cajas[posicionCaja1];
+    const caja2 = cajas[posicionCaja2];
+    const caja3 = cajas[posicionCaja3];
+    const caja4 = cajas[posicionCaja4];
+    const caja5 = cajas[posicionCaja5];
+    const caja6 = cajas[posicionCaja6];
+    const caja7 = cajas[posicionCaja7];
+    const caja8 = cajas[posicionCaja8];
+    const caja9 = cajas[posicionCaja9];
+    const caja10 = cajas[posicionCaja10];
+    const caja11 = cajas[posicionCaja11];
+    const caja12 = cajas[posicionCaja12];
+
+    contenedor4.insertBefore(caja2, caja1);
+    contenedor4.insertBefore(caja4, caja2);
+    contenedor4.insertBefore(caja7, caja3);
+    contenedor4.insertBefore(caja5, caja4);
+    contenedor4.insertBefore(caja8, caja5);
+    contenedor4.insertBefore(caja9, caja6);
+    contenedor4.insertBefore(caja10, caja7);
+    contenedor4.insertBefore(caja12, caja8);
+    contenedor4.insertBefore(caja3, caja9);
+    contenedor4.insertBefore(caja1, caja10);
+    contenedor4.insertBefore(caja6, caja11);
+    contenedor4.insertBefore(caja11, caja12);
+
+    contenedor4.classList.remove('fadeOut');
+    contenedor4.classList.add('fadeIn');
+
+    setTimeout(() => {
+      contenedor4.classList.remove('animate', 'fadeOut', 'fadeIn');
+    }, 300);
+  }, 300);
+});
+
+
+  
+cambiarPosicionInput5555.addEventListener('change', () => {
+  const posicionCaja1 = 0;
+  const posicionCaja2 = 1;
+  const posicionCaja3 = 2;
+  const posicionCaja4 = 3;
+  const posicionCaja5 = 4;
+  const posicionCaja6 = 5;
+  const posicionCaja7 = 6;
+  const posicionCaja8 = 7;
+  const posicionCaja9 = 8;
+  const posicionCaja10 = 9;
+  const posicionCaja11 = 10;
+  const posicionCaja12 = 11;
+
+  contenedor4.classList.add('animate', 'fadeOut');
+
+  setTimeout(() => {
+    const cajas = document.querySelectorAll('.caja-4');
+    const caja1 = cajas[posicionCaja1];
+    const caja2 = cajas[posicionCaja2];
+    const caja3 = cajas[posicionCaja3];
+    const caja4 = cajas[posicionCaja4];
+    const caja5 = cajas[posicionCaja5];
+    const caja6 = cajas[posicionCaja6];
+    const caja7 = cajas[posicionCaja7];
+    const caja8 = cajas[posicionCaja8];
+    const caja9 = cajas[posicionCaja9];
+    const caja10 = cajas[posicionCaja10];
+    const caja11 = cajas[posicionCaja11];
+    const caja12 = cajas[posicionCaja12];
+
+    contenedor4.insertBefore(caja2, caja1);
+    contenedor4.insertBefore(caja4, caja2);
+    contenedor4.insertBefore(caja7, caja3);
+    contenedor4.insertBefore(caja5, caja4);
+    contenedor4.insertBefore(caja8, caja5);
+    contenedor4.insertBefore(caja9, caja6);
+    contenedor4.insertBefore(caja10, caja7);
+    contenedor4.insertBefore(caja12, caja8);
+    contenedor4.insertBefore(caja3, caja9);
+    contenedor4.insertBefore(caja1, caja10);
+    contenedor4.insertBefore(caja6, caja11);
+    contenedor4.insertBefore(caja11, caja12);
+
+    contenedor4.classList.remove('fadeOut');
+    contenedor4.classList.add('fadeIn');
+
+    setTimeout(() => {
+      contenedor4.classList.remove('animate', 'fadeOut', 'fadeIn');
+    }, 300);
+  }, 300);
+});
+
+cambiarPosicionInput6666.addEventListener('change', () => {
+  const posicionCaja1 = 0;
+  const posicionCaja2 = 1;
+  const posicionCaja3 = 2;
+  const posicionCaja4 = 3;
+  const posicionCaja5 = 4;
+  const posicionCaja6 = 5;
+  const posicionCaja7 = 6;
+  const posicionCaja8 = 7;
+  const posicionCaja9 = 8;
+  const posicionCaja10 = 9;
+  const posicionCaja11 = 10;
+  const posicionCaja12 = 11;
+
+  contenedor4.classList.add('animate', 'fadeOut');
+
+  setTimeout(() => {
+    const cajas = document.querySelectorAll('.caja-4');
+    const caja1 = cajas[posicionCaja1];
+    const caja2 = cajas[posicionCaja2];
+    const caja3 = cajas[posicionCaja3];
+    const caja4 = cajas[posicionCaja4];
+    const caja5 = cajas[posicionCaja5];
+    const caja6 = cajas[posicionCaja6];
+    const caja7 = cajas[posicionCaja7];
+    const caja8 = cajas[posicionCaja8];
+    const caja9 = cajas[posicionCaja9];
+    const caja10 = cajas[posicionCaja10];
+    const caja11 = cajas[posicionCaja11];
+    const caja12 = cajas[posicionCaja12];
+
+    contenedor4.insertBefore(caja2, caja1);
+    contenedor4.insertBefore(caja4, caja2);
+    contenedor4.insertBefore(caja7, caja3);
+    contenedor4.insertBefore(caja5, caja4);
+    contenedor4.insertBefore(caja8, caja5);
+    contenedor4.insertBefore(caja9, caja6);
+    contenedor4.insertBefore(caja10, caja7);
+    contenedor4.insertBefore(caja12, caja8);
+    contenedor4.insertBefore(caja3, caja9);
+    contenedor4.insertBefore(caja1, caja10);
+    contenedor4.insertBefore(caja6, caja11);
+    contenedor4.insertBefore(caja11, caja12);
+
+    contenedor4.classList.remove('fadeOut');
+    contenedor4.classList.add('fadeIn');
+
+    setTimeout(() => {
+      contenedor4.classList.remove('animate', 'fadeOut', 'fadeIn');
+    }, 300);
+  }, 300);
+});
+
+
+                    </script>
+              </div>
+          </div>
+      </section>
     
         <section class="Accesorios">
     

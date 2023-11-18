@@ -1,6 +1,5 @@
   
   document.addEventListener('DOMContentLoaded', function() {
-    // Oculta todas las imágenes al cargar la página
     const palomitaImgs = document.querySelectorAll('[id^="palomita"]');
     palomitaImgs.forEach(img => img.style.display = 'none');
     const botonPalomitas = document.querySelectorAll('[id^="boton-palomita"]');
@@ -11,7 +10,6 @@
     const palomitaImg = document.getElementById(`palomita-${buttonNumber}`);
     const botonPalomita = document.getElementById(`boton-palomita-${buttonNumber}`);
 
-    // Toggle la visibilidad de la imagen
     if (palomitaImg.style.display === 'none' || palomitaImg.style.display === '') {
       palomitaImg.style.display = 'inline-block';
       setTimeout(() => {
@@ -78,4 +76,16 @@ function cambiarTitulo2(nuevoTexto2) {
 function cambiarTitulo2(nuevoTitulo2) {
     document.getElementById('ordenarTitulo2').innerText = nuevoTitulo2;
     document.getElementById('Ordenar-00').checked = false; // Desmarca el checkbox principal
+}
+
+
+
+
+function cambiarTitulo3(nuevoTexto3) {
+  document.getElementById("ordenarTitulo3").innerText = nuevoTexto3;
+}
+
+function cambiarTitulo3(nuevoTitulo3) {
+  document.getElementById('ordenarTitulo3').innerText = nuevoTitulo3;
+  document.getElementById('Ordenar-000').checked = false; // Desmarca el checkbox principal
 }
