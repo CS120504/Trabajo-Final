@@ -9,7 +9,6 @@
   .slider{
     height: 300px;
     display: flex;
-    width: 400%;
     transition: transform 0.4s ease-in-out;
   }
   .slider img{

@@ -19,7 +19,7 @@
                         </div>
                     </div>
                     <div class="buscador">
-                        <img src="img/icon-abuela.png" style="width: 13px; position: absolute; left: 15px; opacity: 0.5;">
+                        <img src="img/icon-abuela.png" id="icon-disco" style="width: 13px; position: absolute; left: 15px; opacity: 0.5;">
                           <input type="text" id="Search" placeholder="Buscar...">
                         <button><img src="svg/magnifying-glass-solid.svg"></button>
                     </div>
@@ -120,28 +120,23 @@
   let currentIndex = 0;
   const totalSlides = document.querySelectorAll('.slider__section').length;
 
-  // Función para mostrar el slide actual
   function showSlide(index) {
     slider.style.transform = `translateX(${-index * 100}%)`;
   }
 
-  // Función para avanzar al siguiente slide
   function nextSlide() {
     currentIndex = (currentIndex + 1) % totalSlides;
     showSlide(currentIndex);
   }
 
-  // Función para retroceder al slide anterior
   function prevSlide() {
     currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
     showSlide(currentIndex);
   }
 
-  // Event listeners para los botones de navegación
   btnLeft.addEventListener('click', prevSlide);
   btnRight.addEventListener('click', nextSlide);
 
-  // Configurar intervalo para cambiar automáticamente cada 3 segundos
   setInterval(nextSlide, 5000);
 });
 
@@ -152,7 +147,7 @@
         <section class="Recien-llegados" id="Recien-llegados">
             <div class="Tema1-container">
                 <div class="Text-Top">
-                    <h1 style="margin: 0px; font-size: 26px; color: #555555;">Recién Llegados</h1>
+                    <h1 style="margin: 0px; color: #555555;">Recién Llegados</h1>
                     <div class="indice">
                         <a href="#" style="color: gray;">Inicio</a>
                         <img src="img/mayor-que-el-simbolo.png">

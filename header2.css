@@ -38,3 +38,17 @@ nav.nav-bar a:not(:hover) {
     transition-duration: 0.3s;
 }
 
+@media (max-width:390px) {
+    input#Search {
+        display: none;
+    }
+    img#icon-disco {
+        display: none;
+    }
+    label.menu-icon img {
+        width: 20px;
+    }
+    nav.nav-bar a {
+        font-size: 10px;
+    }
+}
