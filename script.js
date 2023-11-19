@@ -89,3 +89,14 @@ function cambiarTitulo3(nuevoTitulo3) {
   document.getElementById('ordenarTitulo3').innerText = nuevoTitulo3;
   document.getElementById('Ordenar-000').checked = false; // Desmarca el checkbox principal
 }
+
+
+
+function cambiarTitulo5(nuevoTexto5) {
+  document.getElementById("ordenarTitulo5").innerText = nuevoTexto5;
+}
+
+function cambiarTitulo5(nuevoTitulo5) {
+  document.getElementById('ordenarTitulo5').innerText = nuevoTitulo5;
+  document.getElementById('Ordenar-0000').checked = false; // Desmarca el checkbox principal
+}
