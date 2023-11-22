@@ -5,7 +5,7 @@ section.Recien-llegados {
 .Tema1-container {
     margin-left: 5vw;
     margin-right: 5vw;
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: 1px solid orange;
 }
 
 .Text-Top {
@@ -13,12 +13,13 @@ section.Recien-llegados {
     justify-content: space-between;
     height: 110px;
     align-items: center;
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: 1px solid orange;
 }
 
 .indice img {
     width: 25px;
     height: 25px;
+    filter: invert(47%) sepia(99%) saturate(531%) hue-rotate(5deg) brightness(87%) contrast(101%);
 }
 .indice a {
     text-decoration: none;

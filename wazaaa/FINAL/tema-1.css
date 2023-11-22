@@ -1,0 +1,199 @@
+section.Recien-llegados {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    z-index: -1;
+    position: absolute;
+}
+
+.Text-Top {
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    align-items: center;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.indice img {
+    width: 25px;
+    height: 25px;
+}
+.indice a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.indice {
+    display: flex;
+    align-items: center;
+}
+
+.content-1-Top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.content-1-Top-Left-Text p {
+    font-size: 20px;
+}
+
+.content-1-Top-Left {
+    display: flex;
+    align-items: center;
+}
+
+.content-1-Top-Left-Text {
+    padding-left: 15px;
+}
+
+.content-1-Top-Left-Buttons {
+    display: flex;
+    padding-right: 15px;
+    border-right: 1px solid #d9d9d9;
+    z-index: -2;
+}
+
+.content-1-Top-Left-Buttons img {
+    width: 37px;
+    opacity: 0.5;
+}
+
+.content-1-Top-Left-Buttons button {
+    border: none;
+    background: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.caja {
+    width: 25%;
+    display: grid;
+    padding-bottom: 50px;
+}
+
+.caja img {
+    width: 260px;
+    height: 260px;
+}
+
+.estrellas {
+    display: flex;
+    justify-content: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.estrellas img {
+    width: 25px;
+    height: 25px;
+}
+
+div#right {
+    justify-content: end;
+    padding-bottom: 50px;
+}
+
+div#middle {
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+div#left {
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+.caja a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.caja button {
+    font-size: 23px;
+    font-weight: bold;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    width: 230px;
+    background: #d9d9d9;
+    align-items: center;
+    cursor: pointer;
+}
+
+.caja button:hover {
+    transition: background-color, 0.2s ease-in-out;
+    background-color: orange;
+    color: white;
+    border: rgb(211, 137, 0) 1px;
+}
+
+.caja button:not(:hover) {
+    transition: background-color, 0.2s ease-in-out;
+    background-color: rgb(185, 185, 185);
+    color: rgb(43, 43, 43);
+    border: rgb(90, 90, 90) 1px;
+}
+
+.caja img:hover {
+    transition: filter 0.2s ease-in-out;
+    filter: brightness(60%);
+}
+
+.caja img:not(:hover) {
+    transition: filter 0.2s ease-in-out;
+    filter: brightness(100%);
+}
+
+.text-float {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background: white;
+    display: flex;
+    width: 120px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.text-float a {
+    display: flex;
+}
+
+.text-float img {
+    width: 25px;
+    height: 25px;
+}
+
+.img-caja:hover .text-float {
+    opacity: 1;
+  }
+
+.img-caja {
+    height: 260px;
+    width: 260px;
+    position: relative;
+}
+
+img#ojo {
+    padding-left: 10px;
+    border-left: 1px solid black;
+}
+
+img#corazon {
+    padding-right: 10px;
+}

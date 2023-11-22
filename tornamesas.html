@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>MrVinil.pe</title>
+    <link rel="icon" href="svg/logo.ico">
+</head>
+<body>
+    <header class="header-full">
+        <div class="header">
+            <div class="x-container">
+                <div class="Header-Top">
+                    <div class="menu">
+                        <label for="btn-menu" class="menu-icon"><img src="svg/menu.svg"></label>
+                        <div class="logo">
+                            <a href="#"><img src="img/logo.png" id="logo"></a>
+                        </div>
+                    </div>
+                    <div class="buscador">
+                        <img src="img/icon-abuela.png" id="icon-disco" style="width: 13px; position: absolute; left: 15px; opacity: 0.5;">
+                          <input type="text" id="Search" placeholder="Buscar...">
+                        <button><img src="svg/magnifying-glass-solid.svg"></button>
+                    </div>
+                    <div class="nav-user">
+                        <div class="user">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="div-user">
+                                    <p style="font-weight: bold; opacity: 0.7;">Ingreso</p>
+                                    <img src="img/user.png" id="user">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-2">
+            <div class="header-2-container">
+                <nav class="nav-bar">
+                    <a href="index.html">Inicio</a>
+                    <a href="recien_llegados.html">Recién llegados</a>
+                    <a href="tornamesas.html">Tornamesas</a>
+                    <a href="CDs.html">CDs</a>
+                    <a href="Libros.html">Libros</a>
+                    <a href="Accesorios.html">Accesorios</a>
+                    <a href="#" style="border-right: none;">More</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--	--------------->
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+        <div class="cont-menu">
+            <div class="top-logo">
+                <img src="img/logo.png">
+            </div>
+            <div class="register-login">
+                <button>Registro</button>
+                <button>Ingreso</button>
+            </div>
+            <div class="promociones">
+                <a href="#"><img src="img/promo.png"></a>
+            </div>
+            <nav class="sections">
+                <h2 style="opacity: 0.4; padding-left: 10px; font-size: 20px;">Secciones</h2>
+                <a href="#">
+                    <p>Perfil</p>
+                    <img src="svg/mayor a.svg">
+                </a>
+                <a href="#">
+                    <p>Configuración de cuenta</p>
+                    <img src="svg/mayor a.svg">
+                </a>
+                <a href="#">
+                    <p>Centro de ayuda</p>
+                    <img src="svg/mayor a.svg">
+                </a>
+                <a href="#">
+                    <p>Cerra sesión</p>
+                    <img src="svg/mayor a.svg">
+                </a>
+            </nav>
+            <div class="pais-select">
+                <a href="#">
+                    <div class="pais">
+                        <img src="svg/peru.svg" style="width: 60px; margin-right: 10px; margin-left: 20px; border-radius: 10px;">
+                        <p>Perú</p>
+                    </div>
+                    <div>
+                        <img src="svg/mayor a.svg" style="width: 10px; opacity: 0.5;">
+                    </div>
+                </a>
+            </div>
+            <label for="btn-menu"><img src="img/equis.png" style="width: 30px; opacity: 0.5; cursor: pointer;"></label>
+        </div>
+    </div>
+
+    <div class="fondo-header" style="background-color: white; width: 100%; height: 110px;"></div>
+
+    <div class="slider-container">
+      <div class="slider" id="slider">
+        <div class="slider__section"><a href="#"><img src="img/RECIEN-LLEGADOS.png"></a></div>
+        <div class="slider__section"><a href="#"><img src="img/IMG-SLIDER.png"></a></div>
+        <div class="slider__section"><a href="#"><img src="img/slider-img-3.jpg"></a></div>
+        <div class="slider__section"><a href="#"><img src="img/slider-img-4.jpg"></a></div>
+      </div>
+      <button class="slider__btn slider__btn--right" id="btn-right"> <img src="img/menor a.png" style="rotate: 180deg;"> </button>
+      <button class="slider__btn slider__btn--left" id="btn-left"> <img src="img/menor a.png"> </button>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+  const slider = document.getElementById('slider');
+  const btnLeft = document.getElementById('btn-left');
+  const btnRight = document.getElementById('btn-right');
+
+  let currentIndex = 0;
+  const totalSlides = document.querySelectorAll('.slider__section').length;
+
+  function showSlide(index) {
+    slider.style.transform = `translateX(${-index * 100}%)`;
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    showSlide(currentIndex);
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    showSlide(currentIndex);
+  }
+
+  btnLeft.addEventListener('click', prevSlide);
+  btnRight.addEventListener('click', nextSlide);
+
+  setInterval(nextSlide, 5000);
+});
+
+    </script>
+        <section class="Tornamesas" id="Tornamesas">
+            <div class="Tema1-container">
+                <div class="Text-Top">
+                    <h1 style="margin: 0px; font-size: 26px; color: #555555;">Tornamesas</h1>
+                    <div class="indice">
+                        <a href="#" style="color: gray;">Inicio</a>
+                        <img src="img/mayor-que-el-simbolo.png">
+                        <a href="#" style="color: rgb(43, 43, 43); font-size: 16px;">Tornamesas</a>
+                    </div>
+                </div>
+                <div class="content-1">
+                    <div class="content-1-Top">
+                        <div class="content-1-Top-Left">
+                            <div class="content-1-Top-Left-Buttons">
+                                <button id="tresColumnas" style="padding-right: 10px;"><img src="img/4-cuadrados-redondeados.png" id="tresColumnas-img"></button>
+                                <button id="unaColumna1" style="padding-left: 10px;"><img src="img/2-cuadrados-redondeados.png" id="unaColumna1-img"></button>
+                            </div>
+                            <div class="content-1-Top-Left-Text">
+                                <p>Mostrando 1-9 de 9 resultados</p>
+                            </div>
+                        </div>
+                        <div class="content-1-Top-Right">
+                            <input type="checkbox" id="Ordenar-0" style="display: none;">
+                            <label for="Ordenar-0" id="boton-0">
+                                <h1 id="ordenarTitulo1" style="padding-left: 10px;">Ordenar por defecto</h1>
+                                <img src="img/ordenar-abajo.png" class="flecha"  id="flecha" style="width: 15px; position: absolute;
+                                right: 10px;">
+                            </label>
+    
+                            <div class="Ordenar-links-1">
+                                <input type="checkbox" id="Ordenar-11" style="display: none;">
+                                <label for="Ordenar-11" id="boton-11" onclick="cambiarTitulo1('Ordenar por defecto')">
+                                    <h1>Ordenar por defecto</h1>
+                                    <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                                </label>
+    
+                                <input type="checkbox" id="Ordenar-22"  min="1" max="16" style="display: none;">
+                                <label for="Ordenar-22" id="boton-22" onclick="cambiarTitulo1('Ordenar por popularidad')">
+                                    <h1>Ordenar por popularidad</h1>
+                                    <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                                </label>
+    
+                                <input type="checkbox" id="Ordenar-33" style="display: none;">
+                                <label for="Ordenar-33" id="boton-33" onclick="cambiarTitulo1('Ordenar por puntuación media')">
+                                    <h1>Ordenar por puntuación media</h1>
+                                    <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                                </label>
+    
+                                <input type="checkbox" id="Ordenar-44" style="display: none;">
+                                <label for="Ordenar-44" id="boton-44" onclick="cambiarTitulo1('Ordenar por los últimos años')">
+                                    <h1>Ordenar por los últimos años</h1>
+                                    <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                                </label>
+    
+                                <input type="checkbox" id="Ordenar-55" style="display: none;">
+                                <label for="Ordenar-55" id="boton-55" onclick="cambiarTitulo1('Ordenar por precio: Bajo a Alto')">
+                                    <h1>Ordenar por precio: Bajo a Alto</h1>
+                                    <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                                </label>
+    
+                                <input type="checkbox" id="Ordenar-66" style="display: none;">
+                                <label for="Ordenar-66" id="boton-66" onclick="cambiarTitulo1('Ordenar por precio: Alto a Bajo')" style="border-bottom: none;">
+                                    <h1>Ordenar por precio: Alto a Bajo</h1>
+                                    <img src="img/ordenar-abajo.png" style="width: 15px; padding-right: 10px;">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contenedor-1">
+                        <div class="caja-2">
+                            <div class="img-caja-2">
+                                <img src="img/tocadiscos-1.png">
+                                <div class="text-float-2">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-2">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                    <img src="img/estrella.png">
+                                    </div>
+                                    <a href="#">Tornamesa Audio Technica <br> AT-LP60X (Color Negro)</a>
+                                        <h1>S/ 849.00</h1>
+                                    <h2>CARACTERÍSTICAS</h2>
+                                        <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                            Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
+                                            Plato antiresonancia de aluminio fundido. <br>
+                                            Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
+                                            Cartucho fonográfico Dual Magnet™ integrado con aguja reemplazable (ATN3600L). <br>
+                                            Adaptador de CA que realiza la conversión CA/CC fuera del chasis, lo que reduce el ruido en la cadena de la señal.<br>
+                                            Preamplificador fonográfico conmutable integrado para una salida phono o de nivel de línea. <br>
+                                            Incluye: cable RCA desmontable (macho de 3,5 mm a macho RCA doble), , adaptador de 45 rpm y cubierta antipolvo abisagrada desmontable
+                                        </p>
+                                        <button id="boton-palomita-17" onclick="toggleImage('17')">
+                                          <img src="img/palomita.png" id="palomita-17">  
+                                            Añadir al carrito
+                                          </button>
+                                </div>
+                            </div>
+                        <div class="caja-2">
+                            <div class="img-caja-2">
+                                <img src="img/tocadiscos-2.png">
+                                <div class="text-float-2">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-2">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Tornamesa Audio Technica <br> AT-LP60XBT (Con Bluetooth) <br> (Color Rojo)</a>
+                                <h1>S/ 1099.00</h1>
+                                <h2>CARACTERÍSTICAS</h2>
+                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                    Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
+                                    Plato antiresonancia de aluminio fundido. <br>
+                                    Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
+                                    Cartucho fonográfico Dual Magnet™ integrado con aguja reemplazable (ATN3600L). <br>
+                                    Adaptador de CA que realiza la conversión CA/CC fuera del chasis, lo que reduce el ruido en la cadena de la señal.<br>
+                                    Preamplificador fonográfico conmutable integrado para una salida phono o de nivel de línea. <br>
+                                    Incluye: cable RCA desmontable (macho de 3,5 mm a macho RCA doble), , adaptador de 45 rpm y cubierta antipolvo abisagrada desmontable
+                                </p>
+                                <button id="boton-palomita-18" onclick="toggleImage('18')">
+                                  <img src="img/palomita.png" id="palomita-18">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                        </div>
+                        <div class="caja-2">
+                            <div class="img-caja-2">
+                                <img src="img/tocadiscos-3.png">
+                                <div class="text-float-2">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-2">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                    <img src="img/estrella.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Tornamesa Audio Technica <br> AT-LP60XBT (Con Bluetooth) <br> (Color Blanco)</a>
+                                <h1>S/ 1149.00</h1>
+                                <h2>CARACTERÍSTICAS</h2>
+                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                    Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
+                                    Plato antiresonancia de aluminio fundido. <br>
+                                    Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
+                                    Cartucho fonográfico Dual Magnet™ integrado con aguja reemplazable (ATN3600L). <br>
+                                    Adaptador de CA que realiza la conversión CA/CC fuera del chasis, lo que reduce el ruido en la cadena de la señal.<br>
+                                    Preamplificador fonográfico conmutable integrado para una salida phono o de nivel de línea. <br>
+                                    Incluye: cable RCA desmontable (macho de 3,5 mm a macho RCA doble), , adaptador de 45 rpm y cubierta antipolvo abisagrada desmontable
+                                </p>
+                                <button id="boton-palomita-19" onclick="toggleImage('19')">
+                                  <img src="img/palomita.png" id="palomita-19">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                        </div>
+                        <div class="caja-2">
+                            <div class="img-caja-2">
+                                <img src="img/tocadiscos-4.png">
+                                <div class="text-float-2">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-2">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Tornamesa Pioneer PLX-500</a>
+                                <h1>S/ 800.00</h1>
+                                <h2>CARACTERÍSTICAS</h2>
+                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                    Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
+                                    Plato antiresonancia de aluminio fundido. <br>
+                                    Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
+                                    Cartucho fonográfico Dual Magnet™ integrado con aguja reemplazable (ATN3600L). <br>
+                                    Adaptador de CA que realiza la conversión CA/CC fuera del chasis, lo que reduce el ruido en la cadena de la señal.<br>
+                                    Preamplificador fonográfico conmutable integrado para una salida phono o de nivel de línea. <br>
+                                    Incluye: cable RCA desmontable (macho de 3,5 mm a macho RCA doble), , adaptador de 45 rpm y cubierta antipolvo abisagrada desmontable
+                                </p>
+                                <button id="boton-palomita-20" onclick="toggleImage('20')">
+                                  <img src="img/palomita.png" id="palomita-20">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                          </div>
+                          <div class="caja-2">
+                            <div class="img-caja-2">
+                                <img src="img/tocadiscos-5.png">
+                                <div class="text-float-2">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-2">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Music Hall US-1</a>
+                                  <h1>S/ 1849.00</h1>
+                                <h2>CARACTERÍSTICAS</h2>
+                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                    Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
+                                    Plato antiresonancia de aluminio fundido. <br>
+                                    Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
+                                    Cartucho fonográfico Dual Magnet™ integrado con aguja reemplazable (ATN3600L). <br>
+                                    Adaptador de CA que realiza la conversión CA/CC fuera del chasis, lo que reduce el ruido en la cadena de la señal.<br>
+                                    Preamplificador fonográfico conmutable integrado para una salida phono o de nivel de línea. <br>
+                                    Incluye: cable RCA desmontable (macho de 3,5 mm a macho RCA doble), , adaptador de 45 rpm y cubierta antipolvo abisagrada desmontable
+                                </p>
+                                <button id="boton-palomita-21" onclick="toggleImage('21')">
+                                  <img src="img/palomita.png" id="palomita-21">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                          </div>
+                          <div class="caja-2">
+                            <div class="img-caja-2">
+                                <img src="img/tocadiscos-6.png">
+                                <div class="text-float-2">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-2">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Audio Technica AT-LPW40WN</a>
+                                  <h1>S/ 1659.00</h1>
+                                <h2>CARACTERÍSTICAS</h2>
+                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                    Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
+                                    Plato antiresonancia de aluminio fundido. <br>
+                                    Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
+                                    Cartucho fonográfico Dual Magnet™ integrado con aguja reemplazable (ATN3600L). <br>
+                                    Adaptador de CA que realiza la conversión CA/CC fuera del chasis, lo que reduce el ruido en la cadena de la señal.<br>
+                                    Preamplificador fonográfico conmutable integrado para una salida phono o de nivel de línea. <br>
+                                    Incluye: cable RCA desmontable (macho de 3,5 mm a macho RCA doble), , adaptador de 45 rpm y cubierta antipolvo abisagrada desmontable
+                                </p>
+                                <button id="boton-palomita-22" onclick="toggleImage('22')">
+                                  <img src="img/palomita.png" id="palomita-22">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                        </div>
+                        <div class="caja-2">
+                            <div class="img-caja-2">
+                                <img src="img/tocadiscos-7.png">
+                                <div class="text-float-2">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-2">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Music Hall MMF-1.5</a>
+                                <h1>S/ 1899.00</h1>
+                                <h2>CARACTERÍSTICAS</h2>
+                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                    Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
+                                    Plato antiresonancia de aluminio fundido. <br>
+                                    Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
+                                    Cartucho fonográfico Dual Magnet™ integrado con aguja reemplazable (ATN3600L). <br>
+                                    Adaptador de CA que realiza la conversión CA/CC fuera del chasis, lo que reduce el ruido en la cadena de la señal.<br>
+                                    Preamplificador fonográfico conmutable integrado para una salida phono o de nivel de línea. <br>
+                                    Incluye: cable RCA desmontable (macho de 3,5 mm a macho RCA doble), , adaptador de 45 rpm y cubierta antipolvo abisagrada desmontable
+                                </p>
+                                <button id="boton-palomita-23" onclick="toggleImage('23')">
+                                  <img src="img/palomita.png" id="palomita-23">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                          </div>
+                          <div class="caja-2">
+                            <div class="img-caja-2">
+                                <img src="img/tocadiscos-8.png">
+                                <div class="text-float-2">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-2">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Audio Technica AT-LPW50PB</a>
+                                  <h1>S/ 1359.00</h1>
+                                <h2>CARACTERÍSTICAS</h2>
+                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                    Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
+                                    Plato antiresonancia de aluminio fundido. <br>
+                                    Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
+                                    Cartucho fonográfico Dual Magnet™ integrado con aguja reemplazable (ATN3600L). <br>
+                                    Adaptador de CA que realiza la conversión CA/CC fuera del chasis, lo que reduce el ruido en la cadena de la señal.<br>
+                                    Preamplificador fonográfico conmutable integrado para una salida phono o de nivel de línea. <br>
+                                    Incluye: cable RCA desmontable (macho de 3,5 mm a macho RCA doble), , adaptador de 45 rpm y cubierta antipolvo abisagrada desmontable
+                                </p>
+                                <button id="boton-palomita-24" onclick="toggleImage('24')">
+                                  <img src="img/palomita.png" id="palomita-24">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                          </div>
+                          <div class="caja-2">
+                            <div class="img-caja-2">
+                                <img src="img/tocadiscos-9.png">
+                                <div class="text-float-2">
+                                    <a href="#"><img src="img/corazon.png"  id="corazon"></a>
+                                    <a href="#"><img src="img/ojo.png" id="ojo"></a>
+                                </div>
+                            </div>
+                            <div class="info-img">
+                                <div class="estrellas-2">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella-dorada.png">
+                                    <img src="img/estrella.png">
+                                </div>
+                                <a href="#">Audio Technica AT-LPW50BT <br>-RW</a>
+                                <h1>S/ 600.00</h1>
+                                <h2>CARACTERÍSTICAS</h2>
+                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                    Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
+                                    Plato antiresonancia de aluminio fundido. <br>
+                                    Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
+                                    Cartucho fonográfico Dual Magnet™ integrado con aguja reemplazable (ATN3600L). <br>
+                                    Adaptador de CA que realiza la conversión CA/CC fuera del chasis, lo que reduce el ruido en la cadena de la señal.<br>
+                                    Preamplificador fonográfico conmutable integrado para una salida phono o de nivel de línea. <br>
+                                    Incluye: cable RCA desmontable (macho de 3,5 mm a macho RCA doble), , adaptador de 45 rpm y cubierta antipolvo abisagrada desmontable
+                                </p>
+                                <button id="boton-palomita-25" onclick="toggleImage('25')">
+                                  <img src="img/palomita.png" id="palomita-25">  
+                                    Añadir al carrito
+                                  </button>
+                            </div>
+                      </div>
+                      
+                      <style>
+                      #contenedor-1 {
+                        display: flex;
+                        flex-wrap: wrap;
+                      }
+                       
+                      #contenedor-1.unaColumna1 .caja-2 {
+                        width: 100%;
+                        display: flex;
+                        gap: 90px;
+                        padding-bottom: 100px;
+                        justify-content: left;
+                      }
+                      
+                      #contenedor-1.unaColumna1 .estrellas-2 {
+                        padding-top: 0px;
+                      }
+    
+                      #contenedor-1.unaColumna1 .caja-2 img, #contenedor-1.unaColumna1 .img-caja-2 {
+                            width: 200px;
+                            height: 200px;
+                        }
+    
+                     #contenedor-1.unaColumna1 .caja-2 a {
+                            font-size: 18px;
+                        }
+    
+    
+                      #contenedor-1.unaColumna1 img[id^="palomita-"] {
+                        width: 30px;
+                        height: 25px;
+                      }
+
+                    #contenedor-1.unaColumna1 .info-img h2 {
+                        font-size: 18px;
+                        display: block;
+                    }
+    
+                      #contenedor-1.unaColumna1 .estrellas-2 img {
+                        width: 17px;
+                        height: 17px;
+                      }  
+                      
+                      #contenedor-1.unaColumna1 .text-float-2 img {
+                        width: 18px;
+                        height: 18px;
+                      }
+    
+                      #contenedor-1.unaColumna1 .info-img p {
+                        display: grid;
+                        justify-content: left;
+                      }
+    
+                      #contenedor-1.unaColumna1 .caja-2 p {
+                        text-align: left;
+                        margin: 0px;
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        font-size: 16px;
+                      }
+    
+                      #contenedor-1.unaColumna1 .info-img h1 {
+                        color: #06c;
+                        font-size: 24px;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        }
+                      
+                      #contenedor-1.animate {
+                        animation-duration: 0.4s;
+                        animation-fill-mode: both;
+                      }
+                      
+                      #contenedor-1.fadeOut {
+                        animation-name: fadeOut;
+                      }
+                      
+                      #contenedor-1.fadeIn {
+                        animation-name: fadeIn;
+                      }
+    
+                      button.active {
+                        background-color: black;
+                      }
+                      
+                      @keyframes fadeOut {
+                        from { opacity: 1; }
+                        to { opacity: 0; }
+                      }
+                      
+                      @keyframes fadeIn {
+                        from { opacity: 0; }
+                        to { opacity: 1; }
+                      }
+                      </style>
+                      
+                      <script>
+                        const contenedor1 = document.getElementById('contenedor-1');
+                        const unaColumnaBtn1 = document.getElementById('unaColumna1');
+                        const tresColumnasBtn = document.getElementById('tresColumnas');
+                        const cambiarPosicionInput11 = document.getElementById('Ordenar-11');
+                        const cambiarPosicionInput22 = document.getElementById('Ordenar-22');
+                        const cambiarPosicionInput33 = document.getElementById('Ordenar-33');
+                        const cambiarPosicionInput44 = document.getElementById('Ordenar-44');
+                        const cambiarPosicionInput55 = document.getElementById('Ordenar-55');
+                        const cambiarPosicionInput66 = document.getElementById('Ordenar-66');
+                        const unaColumnaImg1 = document.getElementById('unaColumna1-img');
+                        const tresColumnasImg = document.getElementById('tresColumnas-img');
+                      
+                        unaColumnaImg1.style.filter = 'invert(50%) sepia(38%) saturate(0%) hue-rotate(126deg) brightness(92%) contrast(96%)';
+                        unaColumnaBtn1.addEventListener('click', () => {
+                          contenedor1.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            contenedor1.classList.remove('tresColumnas');
+                            contenedor1.classList.add('unaColumna1');
+                            contenedor1.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor1.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                      
+                          unaColumnaImg1.style.filter = 'invert(0%) sepia(3%) saturate(1486%) hue-rotate(208deg) brightness(89%) contrast(102%)';
+                          unaColumnaImg1.style.color = 'white';
+                          tresColumnasImg.style.filter = 'invert(50%) sepia(38%) saturate(0%) hue-rotate(126deg) brightness(92%) contrast(96%)';
+                          tresColumnasImg.style.color = 'white';
+                        });
+                      
+                        tresColumnasBtn.addEventListener('click', () => {
+                          contenedor1.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            contenedor1.classList.remove('unaColumna1');
+                            contenedor1.classList.add('tresColumnas');
+                            contenedor1.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor1.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                      
+                          tresColumnasImg.style.filter = 'invert(0%) sepia(3%) saturate(1486%) hue-rotate(208deg) brightness(89%) contrast(102%)';
+                          tresColumnasImg.style.color = 'white';
+                          unaColumnaImg1.style.filter = 'invert(50%) sepia(38%) saturate(0%) hue-rotate(126deg) brightness(92%) contrast(96%)';
+                          unaColumnaImg1.style.color = 'white';
+                        });
+                      
+                        cambiarPosicionInput22.addEventListener('change', () => {
+                          const posicionCaja1 = 0;
+                          const posicionCaja2 = 1;
+                          const posicionCaja4 = 3;
+                      
+                          contenedor1.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            const cajas = document.querySelectorAll('.caja-2');
+                            const caja1 = cajas[posicionCaja1];
+                            const caja2 = cajas[posicionCaja2];
+                            const caja4 = cajas[posicionCaja4];
+                      
+                            contenedor1.insertBefore(caja2, caja1);
+                            contenedor1.insertBefore(caja1, caja4);
+                      
+                            contenedor1.classList.remove('fadeOut');
+                            contenedor1.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor1.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                        });
+    
+                        cambiarPosicionInput33.addEventListener('change', () => {
+                          const posicionCaja1 = 0;
+                          const posicionCaja2 = 1;
+                          const posicionCaja3 = 2;
+                          const posicionCaja4 = 3;
+                          const posicionCaja5 = 4;
+                          const posicionCaja6 = 5;
+                          const posicionCaja7 = 6;
+                          const posicionCaja8 = 7;
+                          const posicionCaja9 = 8;
+                      
+                          contenedor1.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            const cajas = document.querySelectorAll('.caja-2');
+                            const caja1 = cajas[posicionCaja1];
+                            const caja2 = cajas[posicionCaja2];
+                            const caja3 = cajas[posicionCaja3];
+                            const caja4 = cajas[posicionCaja4];
+                            const caja5 = cajas[posicionCaja5];
+                            const caja6 = cajas[posicionCaja6];
+                            const caja7 = cajas[posicionCaja7];
+                            const caja8 = cajas[posicionCaja8];
+                      
+                            contenedor1.insertBefore(caja2, caja1);
+                            contenedor1.insertBefore(caja4, caja2);
+                            contenedor1.insertBefore(caja7, caja3);
+                            contenedor1.insertBefore(caja5, caja4);
+                            contenedor1.insertBefore(caja8, caja5);
+                            contenedor1.insertBefore(caja6, caja6);
+                            contenedor1.insertBefore(caja3, caja7);
+                            contenedor1.insertBefore(caja1, caja8);
+                      
+                            contenedor1.classList.remove('fadeOut');
+                            contenedor1.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor1.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                        });
+    
+                        cambiarPosicionInput11.addEventListener('change', () => {
+                          const posicionCaja1 = 0;
+                          const posicionCaja2 = 1;
+                          const posicionCaja3 = 2;
+                          const posicionCaja4 = 3;
+                          const posicionCaja5 = 4;
+                          const posicionCaja6 = 5;
+                          const posicionCaja7 = 6;
+                          const posicionCaja8 = 7;
+                          const posicionCaja9 = 8;
+                      
+                          contenedor1.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            const cajas = document.querySelectorAll('.caja-2');
+                            const caja1 = cajas[posicionCaja1];
+                            const caja2 = cajas[posicionCaja2];
+                            const caja3 = cajas[posicionCaja3];
+                            const caja4 = cajas[posicionCaja4];
+                            const caja5 = cajas[posicionCaja5];
+                            const caja6 = cajas[posicionCaja6];
+                            const caja7 = cajas[posicionCaja7];
+                            const caja8 = cajas[posicionCaja8];
+                      
+                            contenedor1.insertBefore(caja2, caja1);
+                            contenedor1.insertBefore(caja4, caja2);
+                            contenedor1.insertBefore(caja7, caja3);
+                            contenedor1.insertBefore(caja5, caja4);
+                            contenedor1.insertBefore(caja8, caja5);
+                            contenedor1.insertBefore(caja6, caja6);
+                            contenedor1.insertBefore(caja3, caja7);
+                            contenedor1.insertBefore(caja1, caja8);
+                      
+                            contenedor1.classList.remove('fadeOut');
+                            contenedor1.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor1.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                        });
+
+                        cambiarPosicionInput44.addEventListener('change', () => {
+                          const posicionCaja1 = 0;
+                          const posicionCaja2 = 1;
+                          const posicionCaja3 = 2;
+                          const posicionCaja4 = 3;
+                          const posicionCaja5 = 4;
+                          const posicionCaja6 = 5;
+                          const posicionCaja7 = 6;
+                          const posicionCaja8 = 7;
+                          const posicionCaja9 = 8;
+                      
+                          contenedor1.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            const cajas = document.querySelectorAll('.caja-2');
+                            const caja1 = cajas[posicionCaja1];
+                            const caja2 = cajas[posicionCaja2];
+                            const caja3 = cajas[posicionCaja3];
+                            const caja4 = cajas[posicionCaja4];
+                            const caja5 = cajas[posicionCaja5];
+                            const caja6 = cajas[posicionCaja6];
+                            const caja7 = cajas[posicionCaja7];
+                            const caja8 = cajas[posicionCaja8];
+                      
+                            contenedor1.insertBefore(caja2, caja1);
+                            contenedor1.insertBefore(caja4, caja2);
+                            contenedor1.insertBefore(caja7, caja3);
+                            contenedor1.insertBefore(caja5, caja4);
+                            contenedor1.insertBefore(caja8, caja5);
+                            contenedor1.insertBefore(caja6, caja6);
+                            contenedor1.insertBefore(caja3, caja7);
+                            contenedor1.insertBefore(caja1, caja8);
+
+                      
+                            contenedor1.classList.remove('fadeOut');
+                            contenedor1.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor1.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                        });
+    
+                        cambiarPosicionInput55.addEventListener('change', () => {
+                          const posicionCaja1 = 0;
+                          const posicionCaja2 = 1;
+                          const posicionCaja3 = 2;
+                          const posicionCaja4 = 3;
+                          const posicionCaja5 = 4;
+                          const posicionCaja6 = 5;
+                          const posicionCaja7 = 6;
+                          const posicionCaja8 = 7;
+                          const posicionCaja9 = 8;
+                      
+                          contenedor1.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            const cajas = document.querySelectorAll('.caja-2');
+                            const caja1 = cajas[posicionCaja1];
+                            const caja2 = cajas[posicionCaja2];
+                            const caja3 = cajas[posicionCaja3];
+                            const caja4 = cajas[posicionCaja4];
+                            const caja5 = cajas[posicionCaja5];
+                            const caja6 = cajas[posicionCaja6];
+                            const caja7 = cajas[posicionCaja7];
+                            const caja8 = cajas[posicionCaja8];
+                      
+                            contenedor1.insertBefore(caja2, caja1);
+                            contenedor1.insertBefore(caja4, caja2);
+                            contenedor1.insertBefore(caja7, caja3);
+                            contenedor1.insertBefore(caja5, caja4);
+                            contenedor1.insertBefore(caja8, caja5);
+                            contenedor1.insertBefore(caja6, caja6);
+                            contenedor1.insertBefore(caja3, caja7);
+                            contenedor1.insertBefore(caja1, caja8);
+                      
+                            contenedor1.classList.remove('fadeOut');
+                            contenedor1.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor1.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                        });
+    
+                        cambiarPosicionInput66.addEventListener('change', () => {
+                          const posicionCaja1 = 0;
+                          const posicionCaja2 = 1;
+                          const posicionCaja3 = 2;
+                          const posicionCaja4 = 3;
+                          const posicionCaja5 = 4;
+                          const posicionCaja6 = 5;
+                          const posicionCaja7 = 6;
+                          const posicionCaja8 = 7;
+                          const posicionCaja9 = 8;
+                      
+                          contenedor1.classList.add('animate', 'fadeOut');
+                      
+                          setTimeout(() => {
+                            const cajas = document.querySelectorAll('.caja-2');
+                            const caja1 = cajas[posicionCaja1];
+                            const caja2 = cajas[posicionCaja2];
+                            const caja3 = cajas[posicionCaja3];
+                            const caja4 = cajas[posicionCaja4];
+                            const caja5 = cajas[posicionCaja5];
+                            const caja6 = cajas[posicionCaja6];
+                            const caja7 = cajas[posicionCaja7];
+                            const caja8 = cajas[posicionCaja8];
+                      
+                            contenedor1.insertBefore(caja2, caja1);
+                            contenedor1.insertBefore(caja4, caja2);
+                            contenedor1.insertBefore(caja7, caja3);
+                            contenedor1.insertBefore(caja5, caja4);
+                            contenedor1.insertBefore(caja8, caja5);
+                            contenedor1.insertBefore(caja6, caja6);
+                            contenedor1.insertBefore(caja3, caja7);
+                            contenedor1.insertBefore(caja1, caja8);
+                      
+                            contenedor1.classList.remove('fadeOut');
+                            contenedor1.classList.add('fadeIn');
+                      
+                            setTimeout(() => {
+                              contenedor1.classList.remove('animate', 'fadeOut', 'fadeIn');
+                            }, 300);
+                          }, 300);
+                        });
+                      </script>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+          <div class="footer-container" style="width: 100%; background: #040b13;">
+            <div class="footer-Top">
+              <div class="Información">
+                <div style="display: flex;justify-content: center;">
+                  <img src="img/logo-footer.png" style="width: 120px;">
+                </div>
+                <div class="inforamcion">
+                  <img src="img/ciudad.png">
+                  <p>Av. Universitaria 5175, Los Olivos 15304</p>
+                </div>
+                <div class="inforamcion">
+                  <img src="img/telefono.png">
+                  <a href="#">(01) 5003100</a>
+                </div>
+                <div class="inforamcion">
+                  <img src="img/correo.png">
+                  <a href="#">carsanchezne@uch.pe</a>
+                </div>
+              </div>
+              <div class="Accesos Directos">
+                <h2>Accesos Directos</h2>
+                <a href="index.html">Inicio</a>
+                <a href="recien_llegados.html">Recien llegados</a>
+                <a href="tornamesas.html">Tornamesas</a>
+                <a href="CDs.html">CDs</a>
+                <a href="Libros.html">Libros</a>
+                <a href="Accesorios.html">Accesorios</a>
+              </div>
+              <div class="More">
+                <h2>More</h2>
+                <a href="#">Contáctanos</a>
+                <a href="#">Servicios</a>
+                <a href="#">Ayuda</a>
+                <a href="#">Preguntas frecuentes</a>
+              </div>
+              <div class="Redes Sociales">
+                <h2>Nuestras Redes Sociales</h2>
+                <div class="Social">
+                  <a href="https://www.youtube.com/user/UCHCANAL" target="_blank"><img src="img/youtube.png"></a>
+                  <a href="https://www.instagram.com/uch_peru/" target="_blank"><img src="img/instagram.png"></a>
+                  <a href="https://www.linkedin.com/school/uchperu/" target="_blank"><img src="img/linkedin.png"></a>
+                  <a href="https://www.facebook.com/UCH.PERU/" target="_blank"><img src="img/facebook.png"></a>
+                </div>
+              </div>
+            </div>
+            <div class="footer-Bottom">
+              <div class="footer-Bottom-Left">
+                <p>© 2023 Diseñada por Carlos Sánchez Negrete | 2023 PE | All rights deserved</p>
+              </div>
+              <div class="footer-Bottom-Right">
+                <a href="#">Privacy</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Terms</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+    </section>
+
+</body>
+</html>
