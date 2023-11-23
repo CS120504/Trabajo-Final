@@ -1,13 +1,22 @@
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
 body {
     margin: 0px;
 }
 
-.header {
+section [id] {
+    scroll-margin-top: 120px;
+}
+
+header.header-full {
     position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.header {
     width: 100%;
     border-bottom: 1px solid #80808080;
     background-color: white;
@@ -17,7 +26,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 75px;
+    height: 70px;
 }
 
 .logo {
@@ -30,7 +39,7 @@ body {
     align-items: center;
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 16px;
     gap: 10px;
 }
   
@@ -48,7 +57,7 @@ body {
 
 img#logo {
     height: 75px;
-    width: 70px;
+    width: 75px;
     transition: transform 0.3 ease-in-out;
 }
   
@@ -79,7 +88,7 @@ img#logo:not(:hover) {
 }
 
 img#user {
-    height: 45px;
+    height: 35px;
     opacity: 0.6;
 }
 
@@ -96,13 +105,12 @@ img#user {
 input#btn-menu:checked ~ .container-menu {
     opacity: 1;
     visibility: visible;
-    z-index: 1;
+ 
 }
 
 input#btn-menu:checked ~ .container-menu .cont-menu{
     transform: translateX(0%);
     overflow: scroll;
-    z-index: 1;
 }
 
 label.menu-icon {
@@ -111,7 +119,8 @@ label.menu-icon {
 }
 
 nav.sections img {
-    width: 15px;
+    width: 10px;
+    opacity: 0.5;
 }
 
 input#btn-menu {
@@ -126,10 +135,11 @@ input#btn-menu {
     transition: all 500ms ease;
     opacity: 0;
     visibility: hidden;
+    z-index: 2;
 }
 
 .top-logo img {
-    width: 135px;
+    width: 100px;
 }
 
 .top-logo {
@@ -148,8 +158,8 @@ input#btn-menu {
 }
 
 .register-login button {
-    padding: 15px 20px 15px 20px;
-    font-size: 20px;
+    padding: 10px 15px 10px 15px;
+    font-size: 18px;
     color: white;
     background: #29D884;
     border: #29D884;
@@ -170,7 +180,7 @@ input#btn-menu {
 }
 
 .promociones img {
-    width: 290px;
+    width: 240px;
     border-radius: 15px;
 }
 
@@ -185,7 +195,7 @@ input#btn-menu {
 }
 
 .buscador button {
-    width: 40px;
+    width: 35px;
     position: absolute;
     padding: 10px;
     border: 0;
@@ -243,17 +253,108 @@ nav.sections a:not(:hover) {
 }
 
 nav.sections p {
-    font-size: 22px;
-}
-
-nav.sections img {
-    opacity: 0.5;
+    font-size: 16px;
 }
 
 .pais-select {
-    padding: 20px 0px 20px 0px;
+    padding: 20px 15px 20px 0px;
 }
-/*desde aca es */
+
+.pais-select a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pais-select a:hover {
+    border-left: 10px solid #29D884;
+    background: #74747418;
+    transition: border-left, 0.15s ease-in-out;
+}
+
+.pais-select a:not(:hover) {
+    transition: border-left,background-color 0.15s ease-in-out;
+}
+
+.pais {
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+    align-items: center;
+    font-size: 16px;
+    gap: 10px;
+}
+
+label.menu-icon img {
+    width: 30px;
+    opacity: 0.6;
+}
+
+label.menu-icon img:hover {
+    transform: scale(1.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+label.menu-icon img:not(:hover) {
+    transform: scale(1.0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cont-menu label {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+input[type="text"] {
+    width: 680px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    background: #00000014;
+    font-size: 14px;
+    padding: 8px 13px 8px 50px;
+}
+
+input[type="text"]:focus {
+    border-color: transparent;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.126);
+    transition-property: background-color;
+    transition-duration: 0.4s;
+}
+
+input[type="text"]:not(:focus) {
+    border-color: transparent;
+    outline: none;
+    background-color: #00000014;
+    transition-property: background-color;
+    transition-duration: 0.4s;
+}
+
+.cont-menu {
+    width: 100%;
+    max-width: 310px;
+    background: white;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+    font-weight: bold;
+}
+
+
+.div-user:hover {
+    filter: invert(60%) sepia(58%) saturate(962%) hue-rotate(359deg) brightness(102%) contrast(106%);
+    transition: filter 0.15s ease-in-out;
+}
+
+.div-user:not(:hover) {
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(96%) contrast(104%);
+    transition: filter 0.15s ease-in-out;
+}
 .pais-select a {
     display: flex;
     text-decoration: none;
@@ -305,198 +406,19 @@ nav.sections img {
     height: 45px; width: 70px; margin-right: 10px; margin-left: 20px; border-radius: 10px;
 }
 
-
-
-/*es todo el sidebar, aun falta que al hacer click en cada uno pase algo o poder cambiar la bandera*/
-
-.pais-select a:hover {
-    border-left: 10px solid #29D884;
-    background: #74747418;
-    transition: border-left, 0.15s ease-in-out;
-}
-
-.pais-select a:not(:hover) {
-    transition: border-left,background-color 0.15s ease-in-out;
-}
-
-.pais {
-    display: flex;
-    padding-left: 5px;
-    padding-right: 5px;
-    align-items: center;
-    font-size: 17px;
-    gap: 10px;
-}
-
-label.menu-icon img {
-    width: 40px;
-    opacity: 0.6;
-}
-
-label.menu-icon img:hover {
-    transform: scale(1.15);
-    transition: transform 0.3s ease-in-out;
-}
-
-label.menu-icon img:not(:hover) {
-    transform: scale(1.0);
-    transition: transform 0.3s ease-in-out;
-}
-
-.cont-menu label {
-    position: absolute;
-    right: 10px;
-    top: 15px;
-}
-
-input[type="text"] {
-    width: 700px;
-    height: 40px;
-    border-radius: 15px;
-    border: none;
-    background: #00000014;
-    font-size: 17px;
-    padding: 8px 13px 8px 50px;
-}
-
-input[type="text"]:focus {
-    border-color: transparent;
-    outline: none;
-    background-color: rgba(0, 0, 0, 0.126);
-    transition-property: background-color;
-    transition-duration: 0.4s;
-}
-
-input[type="text"]:not(:focus) {
-    border-color: transparent;
-    outline: none;
-    background-color: #00000014;
-    transition-property: background-color;
-    transition-duration: 0.4s;
-}
-
-.cont-menu {
+.preload{
+    position: fixed;
     width: 100%;
-    max-width: 350px;
-    background: white;
-    height: 100vh;
-    position: relative;
-    transition: all 500ms ease;
-    transform: translateX(-100%);
-    font-weight: bold;
+    height: 100%;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    background: #040b13;
+    z-index: 999;
 }
-
-
-.div-user:hover {
-    filter: invert(60%) sepia(58%) saturate(962%) hue-rotate(359deg) brightness(102%) contrast(106%);
-    transition: filter 0.15s ease-in-out;
+.preload img{
+    width: 250px;
+    height: 250px;
 }
-
-.div-user:not(:hover) {
-    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(96%) contrast(104%);
-    transition: filter 0.15s ease-in-out;
-}
-
-
-@media (max-width:1100px) {
-    input[type="text"] {
-        width: 500px;
-        height: 40px;
-        border-radius: 15px;
-        border: none;
-        background: #00000014;
-        font-size: 15px;
-        padding: 8px 13px 8px 13px;
-    }
-    
-}
-
-@media (max-width:900px) {
-    input[type="text"] {
-        width: 400px;
-        height: 40px;
-        border-radius: 15px;
-        border: none;
-        background: #00000014;
-        font-size: 15px;
-        padding: 8px 13px 8px 13px;
-    }
-
-    img#user {
-        height: 35px;
-    }
-
-    .user p {
-        font-size: 18px;
-    }
-    
-}
-
-@media (max-width:760px) {
-    .user p {
-        display: none;
-    }
-
-    img#logo {
-        height: 75px;
-    }
-
-    input[type="text"] {
-        width: 380px;
-        height: 40px;
-        border-radius: 15px;
-        border: none;
-        background: #00000014;
-        font-size: 15px;
-        padding: 5px 13px 5px 13px;
-    }
-}
-
-@media (max-width:630px) {
-    .cont-menu {
-        width: 100%;
-        max-width: 300px;
-        background: white;
-        height: 100vh;
-        position: relative;
-        transition: all 500ms ease;
-        transform: translateX(-100%);
-    }
-
-    .promociones img {
-        width: 230px;
-        border-radius: 15px;
-    }
-
-    .top-logo img {
-        width: 110px;
-    }
-
-    img#logo {
-        height: 70px;
-    }
-
-    img#user {
-        height: 45px;
-    }
-
-    label.menu-icon img {
-        width: 30px;
-    }
-
-    input[type="text"] {
-        width: 270px;
-        height: 40px;
-        border-radius: 15px;
-        border: none;
-        background: #00000014;
-        font-size: 15px;
-        padding: 5px 13px 5px 13px;
-    }
-    img-caja {
-        width: 40px;
-    }
-
-}
-
-

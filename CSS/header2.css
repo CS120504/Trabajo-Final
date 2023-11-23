@@ -1,16 +1,12 @@
 
 .header-2 {
-    position: fixed;
-    top: 75.67px;
-    border-bottom: 1px solid #80808080;
     width: 100%;
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(213,213,213,1) 100%);
+    background: rgb(0, 0, 0);
 }
 
 .header-2-container {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 nav.nav-bar {
@@ -21,11 +17,11 @@ nav.nav-bar {
 nav.nav-bar a {
     text-decoration: none;
     color: black;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: bold;
     padding-left: 3.5vw;
     padding-right: 3.5vw;
-    border-right: 1px solid #00000029;
+    border-right: 1px solid rgb(150, 150, 150);
 }
 
 nav.nav-bar a:hover {
@@ -36,8 +32,21 @@ nav.nav-bar a:hover {
 
 nav.nav-bar a:not(:hover) {
     transition-property: color;
-    color: rgb(0, 0, 0);
+    color: rgb(187, 187, 187);
     transition-duration: 0.3s;
 }
 
-
+@media (max-width:390px) {
+    input#Search {
+        display: none;
+    }
+    img#icon-disco {
+        display: none;
+    }
+    label.menu-icon img {
+        width: 20px;
+    }
+    nav.nav-bar a {
+        font-size: 10px;
+    }
+}

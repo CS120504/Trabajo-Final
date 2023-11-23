@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <script src="/script/script.js"></script>
     <title>MrVinil.pe</title>
     <link rel="icon" href="svg/logo.ico">
 </head>
@@ -53,53 +53,235 @@
         </div>
     </header>
     <!--	--------------->
-<input type="checkbox" id="btn-menu">
-<div class="container-menu">
-        <div class="cont-menu">
-            <div class="top-logo">
-                <img src="img/logo.png">
-            </div>
-            <div class="register-login">
-                <button>Registro</button>
-                <button>Ingreso</button>
-            </div>
-            <div class="promociones">
-                <a href="#"><img src="img/promo.png"></a>
-            </div>
-            <nav class="sections">
-                <h2 style="opacity: 0.4; padding-left: 10px; font-size: 20px;">Secciones</h2>
-                <a href="#">
-                    <p>Perfil</p>
-                    <img src="svg/mayor a.svg">
-                </a>
-                <a href="#">
-                    <p>Configuración de cuenta</p>
-                    <img src="svg/mayor a.svg">
-                </a>
-                <a href="#">
-                    <p>Centro de ayuda</p>
-                    <img src="svg/mayor a.svg">
-                </a>
-                <a href="#">
-                    <p>Cerra sesión</p>
-                    <img src="svg/mayor a.svg">
-                </a>
-            </nav>
-            <div class="pais-select">
-                <a href="#">
-                    <div class="pais">
-                        <img src="svg/peru.svg" style="width: 60px; margin-right: 10px; margin-left: 20px; border-radius: 10px;">
-                        <p>Perú</p>
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+            <div class="cont-menu">
+                <div class="top-logo">
+                    <img src="img/logo.png">
+                </div>
+                <div class="register-login">
+                    <button>Registro</button>
+                    <button>Ingreso</button>
+                </div>
+                <div class="promociones">
+                    <a href="#"><img src="img/promo.png"></a>
+                </div>
+                        <nav class="sections">
+                            <h2 style="opacity: 0.4; padding-left: 10px;">Secciones</h2>
+                            <a class="sub-btn">
+                                <p>Perfil</p>
+                                <img src="svg/mayor a.svg">
+                            </a>
+                            <div class="sub-menu">   
+                                <a href=”#” class=”sub-item”>
+                                    <p>Cambiar Foto de Perfil </p>
+                                </a>
+                                <a href=”#” class=”sub-item”>
+                                     <p>Cambiar nombre de Perfil </p>
+                                </a> 
+                                <a href=”#” class=”sub-item”>
+                                    <p>Borrar cuenta </p>
+                                </a>    
+                                
+                            </div>
+    
+                            <a class="sub-btn">
+                                <p>Configuración de cuenta</p>
+                                <img src="svg/mayor a.svg">
+                            </a>
+                            <div class="sub-menu">
+                                <a href=”#” class=”sub-item”>
+                                    <p>Cambiar ubicacion </p>
+                                </a>    
+                                <a href=”#” class=”sub-item”>
+                                    <p>Tipo de pago </p>
+                                </a>    
+                                <a href=”#” class=”sub-item”>
+                                    <p>idiomas </p>
+                                </a>    
+                            </div>
+                            <a class="sub-btn"  href="ayuda.html">
+                                <p>Centro de ayuda</p>
+                                <img src="svg/mayor a.svg">
+                            </a>                       
+                            <a class="sub-btn">
+                                <p>Apariencia</p>
+                                <img src="svg/mayor a.svg">
+                            </a>
+                            <div class="sub-menu">
+                                <a href=”#” class=”sub-item”>
+                                    <p>Modo nocturno</p>
+                                </a>    
+                            </div>
+                            <a href="#">
+                            <p>Cerra sesión</p>
+                            <img src="svg/mayor a.svg">
+                            </a>
+                        </nav>
+                <div class="pais-select">
+                    <a class="sub-btn">
+                        <div class="pais">
+                            <img src="svg/peru.svg" style="height: 45px; width: 70px; margin-right: 10px; margin-left: 20px; border-radius: 10px;">
+                            <p>Perú</p>
+                        </div>
+                        <div>
+                            <img src="svg/mayor a.svg" style="width: 15px; opacity: 0.5;">
+                        </div>
+                    </a>
+                    <div class="sub-menu">
+                        <div class="pais-sub">
+                        <a href="" class="sub-item">
+                            <img src="svg/alemania.svg">
+                            <p>Alemania</p>
+                        </a>
+                        </div>
+                       
+                        <div class="pais-sub">
+                            <a href="" class="sub-item">
+                                <img src="svg/andorra.svg">
+                                <p>Andorra</p>
+                            </a>
+                        </div>
+                        <div class="pais-sub">
+                            <a href="" class="sub-item">
+                                <img src="svg/argentina.svg" >
+                                <p>Argentina</p>
+                            </a>
+                        </div>
+                        <div class="pais-sub">
+                            <a href="" class="sub-item">
+                                <img src="svg/australia.svg">
+                                <p>Australia</p>
+                            </a>
+                        </div>
+                        <div class="pais-sub">
+                            <a href="" class="sub-item">
+                                <img src="svg/bolivia.svg">
+                                <p>Bolivia</p>
+                            </a>                                     
+                        </div>
+                        <div class="pais-sub">
+                            <a href="" class="sub-item">
+                                <img src="svg/brazil.svg">
+                                <p>Brazil</p>
+                            </a>                                     
+                        </div>
+                        <div class="pais-sub">
+                            <a href="" class="sub-item">
+                                <img src="svg/canada.svg">
+                                <p>Canada</p>
+                            </a>                                     
+                        </div>
+                        <div class="pais-sub">
+                            <a href="" class="sub-item">
+                                <img src="svg/chile.svg">
+                                <p>Chile</p>
+                            </a>                                     
+                        </div>
+                        <div class="pais-sub">
+                            <a href="" class="sub-item">
+                                <img src="svg/china.svg">
+                                <p>China</p>
+                            </a>                                     
+                        </div>
+                        <div class="pais-sub">
+                            <a href="" class="sub-item">
+                                <img src="svg/colombia.svg">
+                                <p>Colombia</p>
+                            </a>                                     
+                        </div>
+                        <div class="pais-sub">
+                            <a href="" class="sub-item">
+                                <img src="svg/costarica.svg">
+                                <p>Costa Rica</p>
+                            </a>                                     
+                        </div>
+                        <div class="pais-sub">
+                            <a href="" class="sub-item">
+                                <img src="svg/ecuador.svg">
+                                <p>Ecuador</p>
+                            </a>                                     
+                        </div>
+                        <div class="pais-sub">
+                            <a href="" class="sub-item">
+                                <img src="svg/españa.svg">
+                                <p>España</p>
+                            </a>                                     
+                        </div>
+                        <div class="pais-sub">
+                            <a href="" class="sub-item">
+                                <img src="svg/guyana.svg">
+                                <p>Guyana</p>
+                            </a>                                     
+                        </div>
+                        <div class="pais-sub">
+                            <a href="" class="sub-item">
+                                <img src="svg/india.svg">
+                                <p>India</p>
+                            </a>                                     
+                        </div>
+                        <div class="pais-sub">
+                            <a href="" class="sub-item">
+                                <img src="svg/inglaterra.svg">
+                                <p>Inglaterra</p>
+                            </a>                                     
+                        </div>
+                        <div class="pais-sub">
+                            <a href="" class="sub-item">
+                                <img src="svg/japon.svg" >
+                                <p>Japon</p>
+                            </a>                                     
+                        </div>
+                        <div class="pais-sub">
+                            <a href="" class="sub-item">
+                                <img src="svg/mexico.svg" >
+                                <p>Mexico</p>
+                            </a>                                     
+                        </div>
+                        <div class="pais-sub">
+                            <a href="" class="sub-item">
+                                <img src="svg/peru.svg" >
+                                <p>Peru</p>
+                            </a>                                     
+                        </div>
+                        <div class="pais-sub">
+                            <a href="" class="sub-item">
+                                <img src="svg/republica dominicana.svg" >
+                                <p>Republica Dominicana</p>
+                            </a>                                     
+                        </div>
+                        <div class="pais-sub">
+                            <a href="" class="sub-item">
+                                <img src="svg/uruguay.svg" >
+                                <p>Uruguay</p>
+                            </a>                                     
+                        </div>
+                        <div class="pais-sub">
+                            <a href="" class="sub-item">
+                                <img src="svg/usa.svg">
+                                <p>USA</p>
+                            </a>                                     
+                        </div>
                     </div>
-                    <div>
-                        <img src="svg/mayor a.svg" style="width: 10px; opacity: 0.5;">
-                    </div>
-                </a>
+                </div>
+                <label for="btn-menu"><img src="img/equis.png" style="width: 30px; opacity: 0.5; cursor: pointer;"></label>
             </div>
-            <label for="btn-menu"><img src="img/equis.png" style="width: 30px; opacity: 0.5; cursor: pointer;"></label>
         </div>
-    </div>
-
+  </script>
+  <!--  el jquery para la sidebar, falta  pero es lo que avanzo-->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+      $(document).ready(function () {
+          $('.sub-btn').click(function () {
+              // oculta todos los sub-menus excepto el actual
+              $('.sub-menu').not($(this).next('.sub-menu')).slideUp();
+  
+              // alterna la visibilidad del sub-menú actual
+              $(this).next('.sub-menu').slideToggle();
+          });
+      });
+      
+  </script>
     <div class="fondo-header" style="background-color: white; width: 100%; height: 110px;"></div>
 
     <div class="slider-container">
