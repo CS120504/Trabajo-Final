@@ -38,23 +38,14 @@ header.header-full {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: black;
-    font-size: 16px;
-    gap: 10px;
 }
-  
-.logo::before {
+#carrito::before{
     content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
+    height: 15px;
     width: 1px;
-    background-color: #80808040;
-    transform: scaleY(0.5);
-    border-radius: 5px;
+    background: black;
+    position: absolute;
 }
-
 img#logo {
     height: 75px;
     width: 75px;
@@ -111,6 +102,8 @@ input#btn-menu:checked ~ .container-menu {
 input#btn-menu:checked ~ .container-menu .cont-menu{
     transform: translateX(0%);
     overflow: scroll;
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(254,234,191,1) 37%, rgba(254,219,145,1) 52%, rgba(253,187,45,1) 68%);
 }
 
 label.menu-icon {
@@ -238,7 +231,7 @@ nav.sections a {
 }
 
 nav.sections a:hover {
-    border-left: 10px solid #29D884;
+    border-left: 10px solid rgb(70, 70, 70);
     background: #74747418;
     transition: border-left, 0.15s ease-in-out;
 }
@@ -346,12 +339,12 @@ input[type="text"]:not(:focus) {
 }
 
 
-.div-user:hover {
+#user:hover,#carrito:hover {
     filter: invert(60%) sepia(58%) saturate(962%) hue-rotate(359deg) brightness(102%) contrast(106%);
     transition: filter 0.15s ease-in-out;
 }
 
-.div-user:not(:hover) {
+#user:not(:hover),#carrito:not(:hover) {
     filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(96%) contrast(104%);
     transition: filter 0.15s ease-in-out;
 }
@@ -406,19 +399,3 @@ input[type="text"]:not(:focus) {
     height: 45px; width: 70px; margin-right: 10px; margin-left: 20px; border-radius: 10px;
 }
 
-.preload{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    align-items: center;
-    justify-content: center;
-    display: none;
-    background: #040b13;
-    z-index: 999;
-}
-.preload img{
-    width: 250px;
-    height: 250px;
-}

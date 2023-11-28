@@ -1,7 +1,7 @@
 
 .header-2 {
     width: 100%;
-    background: rgb(0, 0, 0);
+    background: #040b13;
 }
 
 .header-2-container {
@@ -23,7 +23,17 @@ nav.nav-bar a {
     padding-right: 3.5vw;
     border-right: 1px solid rgb(150, 150, 150);
 }
-
+nav.nav-bar a::before{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    background: #FFD28F;
+    bottom: -5px;
+    transition: 0.3s;
+    left: 50%;
+    transform: translateX(-50%);
+}
 nav.nav-bar a:hover {
     transition-property: color;
     color: orange;
@@ -32,7 +42,7 @@ nav.nav-bar a:hover {
 
 nav.nav-bar a:not(:hover) {
     transition-property: color;
-    color: rgb(187, 187, 187);
+    color: rgb(255, 255, 255);
     transition-duration: 0.3s;
 }
 
