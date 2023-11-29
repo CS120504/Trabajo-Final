@@ -120,9 +120,18 @@
                             <a href="#"><img src="img/logo.png" id="logo"></a>
                         </div>
                     </div>
-                    <div class="buscador">
+                    <div class="buscador" id="search-bar" onclick="mostrarCover()">
                         <img src="img/icon-abuela.png" id="icon-disco" style="width: 13px; position: absolute; left: 15px; opacity: 0.5;">
                           <input type="text" id="Search" placeholder="Buscar...">
+                          <div id = "article_list" style="display: none;">
+                            <ul>
+                              <li><a href="#Recien-llegados" class="articulo"style="border-radius: 15px 15px 0px 0px">Recien llegados <img src="svg/magnifying-glass-solid.svg"></a></li>
+                              <li><a href="#Tornamesas" class="articulo">Tornamesas<img src="svg/magnifying-glass-solid.svg"></a></li>
+                              <li><a href="#CDs" class="articulo">CDs<img src="svg/magnifying-glass-solid.svg"></a></li>
+                              <li><a href="#Libros" class="articulo">Libros<img src="svg/magnifying-glass-solid.svg"></a></li>
+                              <li><a href="#Accesorios" class="articulo" style="border-radius: 0px 0px 15px 15px">Accesorios<img src="svg/magnifying-glass-solid.svg"></a></li>
+                            </ul>
+                          </div>
                         <button><img src="svg/magnifying-glass-solid.svg"></button>
                     </div>
                     <div class="nav-user">
@@ -138,16 +147,16 @@
                 </div>
             </div>
         </div>
-
+        <div id="cover-ctn-search" onclick="ocultarCover()"></div>
         <div class="header-2">
             <div class="header-2-container">
                 <nav class="nav-bar">
-                    <a href="index.html">Inicio</a>
-                    <a href="recien_llegados.html">Recién llegados</a>
-                    <a href="tornamesas.html">Tornamesas</a>
-                    <a href="CDs.html">CDs</a>
-                    <a href="Libros.html">Libros</a>
-                    <a href="Accesorios.html">Accesorios</a>
+                    <a href="#">Inicio</a>
+                    <a href="#Recien-llegados">Recién llegados</a>
+                    <a href="#Tornamesas">Tornamesas</a>
+                    <a href="#CDs">CDs</a>
+                    <a href="#Libros">Libros</a>
+                    <a href="#Accesorios">Accesorios</a>
                     <a href="#" style="border-right: none;">Más</a>
                 </nav>
             </div>
@@ -938,7 +947,7 @@
                       }
                        
                       #contenedor.unaColumna .caja {
-                        width: 100%;
+                        width: 50%;
                         display: flex;
                         gap: 90px;
                         padding-bottom: 100px;
@@ -1516,7 +1525,7 @@
                                     <a href="#">Tornamesa Audio Technica <br> AT-LP60X (Color Negro)</a>
                                         <h1>S/ 849.00</h1>
                                     <h2>CARACTERÍSTICAS</h2>
-                                        <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                        <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;margin-right: 60px">Disfrute del audio de alta fidelidad de sus vinilos. <br>
                                             Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
                                             Plato antiresonancia de aluminio fundido. <br>
                                             Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
@@ -1550,7 +1559,7 @@
                                 <a href="#">Tornamesa Audio Technica <br> AT-LP60XBT (Con Bluetooth) <br> (Color Rojo)</a>
                                 <h1>S/ 1099.00</h1>
                                 <h2>CARACTERÍSTICAS</h2>
-                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e; margin-right: 60px;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
                                     Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
                                     Plato antiresonancia de aluminio fundido. <br>
                                     Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
@@ -1584,7 +1593,7 @@
                                 <a href="#">Tornamesa Audio Technica <br> AT-LP60XBT (Con Bluetooth) <br> (Color Blanco)</a>
                                 <h1>S/ 1149.00</h1>
                                 <h2>CARACTERÍSTICAS</h2>
-                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;margin-right: 60px">Disfrute del audio de alta fidelidad de sus vinilos. <br>
                                     Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
                                     Plato antiresonancia de aluminio fundido. <br>
                                     Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
@@ -1618,7 +1627,7 @@
                                 <a href="#">Tornamesa Pioneer PLX-500</a>
                                 <h1>S/ 800.00</h1>
                                 <h2>CARACTERÍSTICAS</h2>
-                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;margin-right: 60px">Disfrute del audio de alta fidelidad de sus vinilos. <br>
                                     Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
                                     Plato antiresonancia de aluminio fundido. <br>
                                     Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
@@ -1652,7 +1661,7 @@
                                 <a href="#">Music Hall US-1</a>
                                   <h1>S/ 1849.00</h1>
                                 <h2>CARACTERÍSTICAS</h2>
-                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;margin-right: 60px">Disfrute del audio de alta fidelidad de sus vinilos. <br>
                                     Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
                                     Plato antiresonancia de aluminio fundido. <br>
                                     Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
@@ -1686,7 +1695,7 @@
                                 <a href="#">Audio Technica AT-LPW40WN</a>
                                   <h1>S/ 1659.00</h1>
                                 <h2>CARACTERÍSTICAS</h2>
-                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;margin-right: 60px">Disfrute del audio de alta fidelidad de sus vinilos. <br>
                                     Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
                                     Plato antiresonancia de aluminio fundido. <br>
                                     Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
@@ -1720,7 +1729,7 @@
                                 <a href="#">Music Hall MMF-1.5</a>
                                 <h1>S/ 1899.00</h1>
                                 <h2>CARACTERÍSTICAS</h2>
-                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;margin-right: 60px">Disfrute del audio de alta fidelidad de sus vinilos. <br>
                                     Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
                                     Plato antiresonancia de aluminio fundido. <br>
                                     Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
@@ -1754,7 +1763,7 @@
                                 <a href="#">Audio Technica AT-LPW50PB</a>
                                   <h1>S/ 1359.00</h1>
                                 <h2>CARACTERÍSTICAS</h2>
-                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;margin-right: 60px">Disfrute del audio de alta fidelidad de sus vinilos. <br>
                                     Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
                                     Plato antiresonancia de aluminio fundido. <br>
                                     Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
@@ -1788,7 +1797,7 @@
                                 <a href="#">Audio Technica AT-LPW50BT <br>-RW</a>
                                 <h1>S/ 600.00</h1>
                                 <h2>CARACTERÍSTICAS</h2>
-                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;">Disfrute del audio de alta fidelidad de sus vinilos. <br>
+                                <p style="padding-bottom: 30px; justify-content: right; font-size: 16px; color: #5e5e5e;margin-right: 60px">Disfrute del audio de alta fidelidad de sus vinilos. <br>
                                     Tocadiscos de transmisión por correa totalmente automático con dos velocidades: 33 -1/3 y 45 rpm. <br>
                                     Plato antiresonancia de aluminio fundido. <br>
                                     Base y cabezal del brazo de lectura rediseñados para mejorar la lectura y reducir la resonancia. <br>
@@ -1803,19 +1812,41 @@
                                   </button>
                             </div>
                       </div>
-                      
+                      <div class="caja-2-prox">
+                        <div class="proximamente">
+                          <img src="img/logo.png">
+                          <h1>Próximamente...</h1>
+                        </div>
+                      </div>
                       <style>
+                        .caja-2-prox{
+                          display: none;
+                          opacity: 0.6;
+                        }
+                        .caja-2-prox img, .caja-2-prox h1 {
+                            width: 280px;
+                            font-size: 30px;
+                        }
                       #contenedor-1 {
                         display: flex;
                         flex-wrap: wrap;
                       }
                        
                       #contenedor-1.unaColumna1 .caja-2 {
-                        width: 100%;
+                        width: 50%;
                         display: flex;
                         gap: 90px;
                         padding-bottom: 100px;
                         justify-content: left;
+                      }
+                      #contenedor-1.unaColumna1 .caja-2-prox {
+                          width: 50%;
+                          display: flex;
+                          gap: 90px;
+                          padding-bottom: 100px;
+                          justify-content: center;
+                          align-items: center;
+                          text-align: center;
                       }
                       
                       #contenedor-1.unaColumna1 .estrellas-2 {
@@ -2592,7 +2623,7 @@
                       }
                        
                       #contenedor-2.unaColumna2 .caja-3 {
-                        width: 100%;
+                        width: 50%;
                         display: flex;
                         gap: 90px;
                         padding-bottom: 100px;
@@ -3115,7 +3146,7 @@
                   <div id="contenedor-4">
                       <div class="caja-4">
                           <div class="img-caja-4">
-                              <img src="img/CD1.jpg">
+                              <img src="img/libro1.jpg">
                               <div class="text-float-4">
                                   <a href="#"><img src="img/corazon.png"  id="corazon"></a>
                                   <a href="#"><img src="img/ojo.png" id="ojo"></a>
@@ -3129,7 +3160,7 @@
                                   <img src="img/estrella.png">
                                   <img src="img/estrella.png">
                                   </div>
-                                  <a href="#">A-Ha - The Singles <br> 1984 - 2004 (CD)</a>
+                                  <a href="#">Heavier than Heaven <br> Kurt Cobain (Libro)</a>
                                       <h1>S/ 75.00</h1>
                                       <p>Año: 2004</p>
                                       <p>País: Estados Unidos</p>
@@ -3142,7 +3173,7 @@
                           </div>
                       <div class="caja-4">
                           <div class="img-caja-4">
-                              <img src="img/CD2.jpg">
+                              <img src="img/libro2.jpeg">
                               <div class="text-float-4">
                                   <a href="#"><img src="img/corazon.png"  id="corazon"></a>
                                   <a href="#"><img src="img/ojo.png" id="ojo"></a>
@@ -3156,7 +3187,7 @@
                                   <img src="img/estrella-dorada.png">
                                   <img src="img/estrella.png">
                               </div>
-                              <a href="#">AC/DC - Iron Man 2 <br> (CD+DVD)</a>
+                              <a href="#">Cash: Main in Black (Libro)</a>
                               <h1>S/ 85.00</h1>
                               <p>Año: 2010 </p>
                               <p>País: Australia</p>
@@ -3169,7 +3200,7 @@
                       </div>
                       <div class="caja-4">
                           <div class="img-caja-4">
-                              <img src="img/CD3.jpg">
+                              <img src="img/libro3.jpg">
                               <div class="text-float-4">
                                   <a href="#"><img src="img/corazon.png"  id="corazon"></a>
                                   <a href="#"><img src="img/ojo.png" id="ojo"></a>
@@ -3183,7 +3214,7 @@
                                   <img src="img/estrella.png">
                                   <img src="img/estrella.png">
                               </div>
-                              <a href="#">Alejandro Sanz - <br> La Gira Del Disco (CD)</a>
+                              <a href="#">Cómo funciona la música - <br> David Byrne (CD)</a>
                               <h1>S/ 85.00</h1>
                               <p>Año: 2019</p>
                               <p>País: Argentina</p>
@@ -3196,7 +3227,7 @@
                       </div>
                       <div class="caja-4">
                           <div class="img-caja-4">
-                              <img src="img/CD4.jpg">
+                              <img src="img/libro4.jpeg">
                               <div class="text-float-4">
                                   <a href="#"><img src="img/corazon.png"  id="corazon"></a>
                                   <a href="#"><img src="img/ojo.png" id="ojo"></a>
@@ -3210,7 +3241,7 @@
                                   <img src="img/estrella-dorada.png">
                                   <img src="img/estrella.png">
                               </div>
-                              <a href="#">Alicia Keys - The Diary <br> Of Alicia Keys (CD)</a>
+                              <a href="#">Patti Smith - Éramos unos <br> niños (Libro)</a>
                               <h1>S/ 70.00</h1>
                               <p>Año: 2004</p>
                               <p>País: Europa</p>
@@ -3223,7 +3254,7 @@
                         </div>
                         <div class="caja-4">
                           <div class="img-caja-4">
-                              <img src="img/CD5.jpg">
+                              <img src="img/libro5.jpeg">
                               <div class="text-float-4">
                                   <a href="#"><img src="img/corazon.png"  id="corazon"></a>
                                   <a href="#"><img src="img/ojo.png" id="ojo"></a>
@@ -3237,8 +3268,8 @@
                                   <img src="img/estrella-dorada.png">
                                   <img src="img/estrella.png">
                               </div>
-                              <a href="#">Anthrax - Madhouse: The <br> Very Best Of Anthrax (CD)</a>
-                                <h1>S/ 60.00</h1>
+                              <a href="#">Musica de mierda - <br> Carl Wilson (Libro)</a>
+                                <h1>S/ 90.00</h1>
                                 <p>Año: 2012</p>
                                 <p>País: Europa/p>
                                 <p>Género: Metal</p>
@@ -3250,7 +3281,7 @@
                         </div>
                         <div class="caja-4">
                           <div class="img-caja-4">
-                              <img src="img/CD6.jpg">
+                              <img src="img/libro6.jpg">
                               <div class="text-float-4">
                                   <a href="#"><img src="img/corazon.png"  id="corazon"></a>
                                   <a href="#"><img src="img/ojo.png" id="ojo"></a>
@@ -3264,7 +3295,7 @@
                                   <img src="img/estrella.png">
                                   <img src="img/estrella.png">
                               </div>
-                              <a href="#">Antonio Pinto, Amy Winehouse - <br> Amy: The Original Soundtrack (CD)</a>
+                              <a href="#">Neo Person Petty - <br> La Biografía (Libro)</a>
                                 <h1>S/ 85.00</h1>
                                 <p>Año: 2015</p>
                                 <p>País: Estados Unidos</p>
@@ -3277,7 +3308,7 @@
                       </div>
                       <div class="caja-4">
                           <div class="img-caja-4">
-                              <img src="img/CD7.jpg">
+                              <img src="img/libro7.jpg">
                               <div class="text-float-4">
                                   <a href="#"><img src="img/corazon.png"  id="corazon"></a>
                                   <a href="#"><img src="img/ojo.png" id="ojo"></a>
@@ -3291,7 +3322,7 @@
                                   <img src="img/estrella-dorada.png">
                                   <img src="img/estrella.png">
                               </div>
-                              <a href="#">Arctic Monkeys - Humbug (CD)</a>
+                              <a href="#">Vivien Goldman - La venganza <br> de las punks (Libro)</a>
                               <h1>S/ 80.00</h1>
                               <p>Año: 2009</p>
                               <p>País: Argentina>
@@ -3304,7 +3335,7 @@
                         </div>
                         <div class="caja-4">
                           <div class="img-caja-4">
-                              <img src="img/CD8.jpg">
+                              <img src="img/libro8.jpg">
                               <div class="text-float-4">
                                   <a href="#"><img src="img/corazon.png"  id="corazon"></a>
                                   <a href="#"><img src="img/ojo.png" id="ojo"></a>
@@ -3318,7 +3349,7 @@
                                   <img src="img/estrella-dorada.png">
                                   <img src="img/estrella.png">
                               </div>
-                              <a href="#">Ariana Grande -<br>Dangerous Woman (CD)</a>
+                              <a href="#">Elvis la construcción del mito -<br>Último tren a Memphis (Libro)</a>
                                 <h1>S/ 75.00</h1>
                                 <p>Año: 2016</p>
                                 <p>País: Argentina</p>
@@ -3331,7 +3362,7 @@
                         </div>
                         <div class="caja-4">
                           <div class="img-caja-4">
-                              <img src="img/CD9.jpg">
+                              <img src="img/libro9.png">
                               <div class="text-float-4">
                                   <a href="#"><img src="img/corazon.png"  id="corazon"></a>
                                   <a href="#"><img src="img/ojo.png" id="ojo"></a>
@@ -3345,8 +3376,8 @@
                                   <img src="img/estrella-dorada.png">
                                   <img src="img/estrella.png">
                               </div>
-                              <a href="#">Ariel Rot - Dúos, Tríos <br> Y Otras Perversiones (CD)</a>
-                              <h1>S/ 75.00</h1>
+                              <a href="#">Mark Oliver - Cosas que los <br> nietos deberían saber (Libro)</a>
+                              <h1>S/ 92.00</h1>
                               <p>Año: 2007</p>
                               <p>País: España</p>
                               <p>Género: Rock</p>
@@ -3358,7 +3389,7 @@
                       </div>
                       <div class="caja-4">
                           <div class="img-caja-4">
-                              <img src="img/CD10.jpeg">
+                              <img src="img/libro10.jpg">
                               <div class="text-float-4">
                                   <a href="#"><img src="img/corazon.png"  id="corazon"></a>
                                   <a href="#"><img src="img/ojo.png" id="ojo"></a>
@@ -3372,8 +3403,8 @@
                                   <img src="img/estrella-dorada.png">
                                   <img src="img/estrella.png">
                               </div>
-                              <a href="#">Bandalos Chinos - El Big Blue (CD)</a>
-                              <h1>S/ 60.00</h1>
+                              <a href="#">Una luz abrasadora, el Sol <br> y todo lo demás (Libro)</a>
+                              <h1>S/ 70.00</h1>
                               <p>Año: 2022</p>
                               <p>País: Argemtina</p>
                               <p>Género: Indie Rock</p>
@@ -3385,7 +3416,7 @@
                       </div>
                       <div class="caja-4">
                           <div class="img-caja-4">
-                              <img src="img/CD11.png">
+                              <img src="img/libro11.jpg">
                               <div class="text-float-4">
                                   <a href="#"><img src="img/corazon.png"  id="corazon"></a>
                                   <a href="#"><img src="img/ojo.png" id="ojo"></a>
@@ -3399,7 +3430,7 @@
                                   <img src="img/estrella-dorada.png">
                                   <img src="img/estrella.png">
                               </div>
-                              <a href="#">Billie Eilish - Happier Than Ever (CD)</a>
+                              <a href="#">Música, sólo musica (Libro)</a>
                               <h1>S/ 80.00</h1>
                               <p>Año: 2021</p>
                               <p>País: Estados Unidos</p>
@@ -3412,7 +3443,7 @@
                       </div>   
                       <div class="caja-4">
                           <div class="img-caja-4">
-                              <img src="img/CD12.jpg">
+                              <img src="img/libro12.jpg">
                               <div class="text-float-4">
                                   <a href="#"><img src="img/corazon.png"  id="corazon"></a>
                                   <a href="#"><img src="img/ojo.png" id="ojo"></a>
@@ -3426,8 +3457,8 @@
                                   <img src="img/estrella-dorada.png">
                                   <img src="img/estrella.png">
                               </div>
-                              <a href="#">Cementerio Club - ¡Directo! <br> (CD)</a>
-                              <h1>S/ 40.00</h1>
+                              <a href="#">Guns N´ Roses <br> Reckless Life (libro)</a>
+                              <h1>S/ 140.00</h1>
                               <p>Año: 2022</p>
                               <p>País: Perú</p>
                               <p>Género: Pop Rock</p>
@@ -3444,7 +3475,7 @@
                     }
                      
                     #contenedor-4.unaColumna3 .caja-4 {
-                      width: 100%;
+                      width: 50%;
                       display: flex;
                       gap: 90px;
                       padding-bottom: 100px;
@@ -3457,7 +3488,7 @@
   
                     #contenedor-4.unaColumna3 .caja-4 img, #contenedor-4.unaColumna3 .img-caja-4 {
                           width: 200px;
-                          height: 200px;
+                          height: 240px;
                       }
   
                       #contenedor-4.unaColumna3 img[id^="palomita-"] {
@@ -4261,15 +4292,37 @@ cambiarPosicionInput6666.addEventListener('change', () => {
                               </button>
                         </div>
                   </div>
-                  
+                  <div class="caja-5-prox">
+                    <div class="proximamente">
+                      <img src="img/logo.png">
+                      <h1>Próximamente...</h1>
+                    </div>
+                  </div>
                   <style>
+                        .caja-5-prox{
+                          display: none;
+                          opacity: 0.6;
+                        }
+                        .caja-5-prox img, .caja-5-prox h1 {
+                            width: 280px;
+                            font-size: 30px;
+                        }
+                      #contenedor-5.unaColumna4 .caja-5-prox {
+                          width: 50%;
+                          display: flex;
+                          gap: 90px;
+                          padding-bottom: 100px;
+                          justify-content: center;
+                          align-items: center;
+                          text-align: center;
+                      }
                   #contenedor-5 {
                     display: flex;
                     flex-wrap: wrap;
                   }
                    
                   #contenedor-5.unaColumna4 .caja-5 {
-                    width: 100%;
+                    width: 50%;
                     display: flex;
                     gap: 90px;
                     padding-bottom: 100px;
@@ -4667,7 +4720,7 @@ cambiarPosicionInput6666.addEventListener('change', () => {
                 </div>
                 <div class="inforamcion">
                   <img src="img/correo.png">
-                  <a href="#">carsanchezne@uch.pe</a>
+                  <a href="#">mr_vinill@vin.pe</a>
                 </div>
               </div>
               <div class="Accesos Directos">
@@ -4689,10 +4742,10 @@ cambiarPosicionInput6666.addEventListener('change', () => {
               <div class="Redes Sociales">
                 <h2>Nuestras Redes Sociales</h2>
                 <div class="Social">
-                  <a href="https://www.youtube.com/user/UCHCANAL" target="_blank"><img src="img/youtube.png"></a>
-                  <a href="https://www.instagram.com/uch_peru/" target="_blank"><img src="img/instagram.png"></a>
-                  <a href="https://www.linkedin.com/school/uchperu/" target="_blank"><img src="img/linkedin.png"></a>
-                  <a href="https://www.facebook.com/UCH.PERU/" target="_blank"><img src="img/facebook.png"></a>
+                  <a href="https://www.youtube.com/channel/UCPRNCVy4ULmeXZXwL_4vWzw" target="_blank"><img src="img/youtube.png"></a>
+                  <a href="https://www.instagram.com/mr_vinill_23/" target="_blank"><img src="img/instagram.png"></a>
+                  <a href="https://www.tiktok.com/@mr.vinill" target="_blank"><img src="img/linkedin.png"></a>
+                  <a href="https://www.facebook.com/profile.php?id=61553997931617" target="_blank"><img src="img/facebook.png"></a>
                 </div>
               </div>
             </div>

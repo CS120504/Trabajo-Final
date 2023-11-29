@@ -47,7 +47,7 @@ function cambiarTitulo(nuevoTexto) {
 
 function cambiarTitulo(nuevoTitulo) {
     document.getElementById('ordenarTitulo').innerText = nuevoTitulo;
-    document.getElementById('Ordenar').checked = false; // Desmarca el checkbox principal
+    document.getElementById('Ordenar').checked = false;
 }
 
 
@@ -61,7 +61,7 @@ function cambiarTitulo1(nuevoTexto1) {
 
 function cambiarTitulo1(nuevoTitulo1) {
     document.getElementById('ordenarTitulo1').innerText = nuevoTitulo1;
-    document.getElementById('Ordenar-0').checked = false; // Desmarca el checkbox principal
+    document.getElementById('Ordenar-0').checked = false; 
 }
 
 
@@ -75,7 +75,7 @@ function cambiarTitulo2(nuevoTexto2) {
 
 function cambiarTitulo2(nuevoTitulo2) {
     document.getElementById('ordenarTitulo2').innerText = nuevoTitulo2;
-    document.getElementById('Ordenar-00').checked = false; // Desmarca el checkbox principal
+    document.getElementById('Ordenar-00').checked = false; 
 }
 
 
@@ -87,7 +87,7 @@ function cambiarTitulo3(nuevoTexto3) {
 
 function cambiarTitulo3(nuevoTitulo3) {
   document.getElementById('ordenarTitulo3').innerText = nuevoTitulo3;
-  document.getElementById('Ordenar-000').checked = false; // Desmarca el checkbox principal
+  document.getElementById('Ordenar-000').checked = false;
 }
 
 
@@ -98,5 +98,48 @@ function cambiarTitulo5(nuevoTexto5) {
 
 function cambiarTitulo5(nuevoTitulo5) {
   document.getElementById('ordenarTitulo5').innerText = nuevoTitulo5;
-  document.getElementById('Ordenar-0000').checked = false; // Desmarca el checkbox principal
+  document.getElementById('Ordenar-0000').checked = false;
 }
+
+function mostrarCover() {
+  var coverCtnSearch = document.getElementById('cover-ctn-search');
+  var articleList = document.getElementById('article_list');
+
+  coverCtnSearch.style.display = 'block';
+  articleList.style.display = 'block';
+
+  // Agrega la clase visible con un pequeño retraso para permitir la transición
+  setTimeout(() => {
+    articleList.classList.add('visible');
+  }, 10);
+
+  setTimeout(() => {
+    coverCtnSearch.style.opacity = 1;
+  }, 10);
+}
+
+function ocultarCover() {
+  var coverCtnSearch = document.getElementById('cover-ctn-search');
+  var articleList = document.getElementById('article_list');
+
+  coverCtnSearch.style.opacity = 0;
+
+  // Elimina la clase visible para iniciar la transición de salida
+  articleList.classList.remove('visible');
+
+  setTimeout(() => {
+    articleList.style.display = 'none';
+    coverCtnSearch.style.display = 'none';
+  }, 300); // Ajusta el tiempo para que coincida con la duración de la transición
+}
+
+document.addEventListener('click', function (event) {
+  var searchbar = document.getElementById('search-bar');
+  var articleList = document.getElementById('article_list');
+  var coverCtnSearch = document.getElementById('cover-ctn-search');
+
+  // Si se hizo clic fuera de search-bar y articleList está visible, ocultar articleList y cover-ctn-search
+  if (event.target !== searchbar && !searchbar.contains(event.target) && articleList.classList.contains('visible')) {
+    ocultarCover();
+  }
+});

@@ -11,7 +11,7 @@ section.Libros {
 
 .caja-4 img {
     width: 180px;
-    height: 180px;
+    height: 220px;
     border-radius: 10px;
 }
 .caja-4 a {
@@ -262,7 +262,7 @@ label#boton-6666:not(:hover) {
 }
 
 .img-caja-4 {
-    height: 180px;
+    height: 220px;
     width: 180px;
     position: relative;
 }

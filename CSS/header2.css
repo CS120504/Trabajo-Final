@@ -2,8 +2,8 @@
 .header-2 {
     width: 100%;
     background: #040b13;
+    box-shadow: 0px 18px 22px -19px black;
 }
-
 .header-2-container {
     padding-top: 12px;
     padding-bottom: 12px;
