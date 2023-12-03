@@ -32,7 +32,7 @@
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    border: 1px solid gray;
+    border: none;
 }
 
 .slider__btn--right {
@@ -40,13 +40,14 @@
 }
 
 .slider__btn--right:hover,.slider__btn--left:hover  {
-    background-color: white;
+    background-color: #00469b;
     transition: background-color 0.3s ease-in-out;
 }
 
 .slider__btn:not(:hover) {
-    background-color: #bdbdbd;
-    transition: background-color 0.3s ease-in-out;
+  background-color: #0a192b;
+  transition: background-color 0.3s ease-in-out;
+  border: none;
 }
 
 .slider__btn--left {
@@ -57,4 +58,5 @@
     width: 30px;
     height: 30px;
     padding: 5px;
+    filter: invert(99%) sepia(3%) saturate(159%) hue-rotate(348deg) brightness(116%) contrast(100%);
 }

@@ -38,6 +38,7 @@ header.header-full {
     display: flex;
     align-items: center;
     text-decoration: none;
+    gap: 20px;
 }
 #carrito::before{
     content: "";
@@ -230,8 +231,8 @@ nav.sections a {
 }
 
 nav.sections a:hover {
-    border-left: 10px solid rgb(70, 70, 70);
-    background: #74747418;
+    border-left: 10px solid #29D884;
+    background: #74747438;
     transition: border-left, 0.15s ease-in-out;
 }
 
@@ -265,7 +266,6 @@ nav.sections p {
     background: #74747418;
     transition: border-left, 0.15s ease-in-out;
 }
-
 .pais-select a:not(:hover) {
     transition: border-left,background-color 0.15s ease-in-out;
 }
@@ -361,42 +361,6 @@ input[type="text"]:not(:focus) {
     background-color:#252850;
     border-radius: 4px;
 }
-
-.sub-btn {
-    cursor: pointer;
-    justify-content: space-between;
-}
-
-.sub-menu {
-    display: none;
-
-}
-
-.sub-menu .active {
-    display: block;
-}
-
-.a .sub-item {
-    cursor: pointer;
-}
-
-.pais-sub a {
-    display: flex;
-
-    padding:10px 5px 10px 5px ;
-    align-items: center;
-    font-size: 17px;
-    gap: 10px;
-}
-
-.pais-select .sub-btn {
-    padding: 15px 15px 15px 0px;
-
-}
-
-.sub-item img {
-    height: 45px; width: 70px; margin-right: 10px; margin-left: 20px; border-radius: 10px;
-}
 div#cover-ctn-search {
     background: rgba(0,0,0,0.6);
     width: 100%;
@@ -461,3 +425,50 @@ div#article_list a:not(:hover){
     opacity: 1;
     transform: translateY(0);
   }
+.sub-menu p {
+    color: #7e7e7e;
+}
+.sub-menu a:hover{
+    border-left: white !important;
+}
+.sub-btn {
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.sub-menu {
+    display: none;
+
+}
+
+.sub-menu.active {
+    display: block;
+}
+
+.a .sub-item {
+    cursor: pointer;
+}
+
+.pais-sub a {
+    display: flex;
+
+    padding:10px 5px 10px 5px ;
+    align-items: center;
+    font-size: 17px;
+    gap: 10px;
+}
+
+.pais-select .sub-btn {
+    padding: 15px 15px 15px 0px;
+
+}
+
+.sub-item img {
+    height: 45px; width: 70px; margin-right: 10px; margin-left: 20px; border-radius: 10px;
+}
+input#search_reponsive_input_text,#search_responsive_container img,div#search_responsive {
+    display: none;
+}
+#carrito {
+    opacity: 0.6;
+}

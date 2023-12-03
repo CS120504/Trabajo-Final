@@ -92,6 +92,7 @@ section.Recien-llegados {
     width: 180px;
     height: 180px;
     border-radius: 10px;
+    box-shadow: 0px 0px 20px -10px #373737;
 }
 
 
@@ -391,61 +392,6 @@ label#boton-6:hover {
 label#boton-6:not(:hover) {
     transition: background-color, 0.2s ease-in-out;
 }
-
-
-@media (max-width:390px) {
-    .caja img, .img-caja {
-        height: 170px;
-        border-radius: 10px;
-    }
-    .estrellas img {
-        width: 15px;
-        height: 15px;
-    }
-    .slider img, .slider-container {
-        height: 110px;
-    }
-    .Text-Top {
-        height: 60px;
-    }
-    .indice a{
-        display: none;
-    }
-    .Text-Top h1 {
-        font-size: 20px;
-    }
-    label#boton h1 {
-        display: none;
-    }
-    label#boton {
-        display: none;
-    }
-    .content-1-Top-Left-Text p {
-        font-size: 10px;
-    }
-    .content-1-Top-Left-Text{
-        padding-left: 0px;
-    }
-    .content-1-Top{
-        justify-content: center;
-    }
-    .content-1-Top-Left-Buttons img, .content-1-Top-Left-Buttons {
-        display: none;
-    }
-    .caja {
-        width: 100%;
-        display: grid;
-        padding-bottom: 50px;
-        justify-content: center;
-        text-align: center;
-    }
-    .text-float {
-        display: none;
-    }
-    .estrellas {
-        justify-content: center;
-    }
-    .caja a {
-        font-size: 15px;
-    }
+.Text-Top h1{
+    font-size: 26px;
 }

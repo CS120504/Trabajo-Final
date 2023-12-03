@@ -101,6 +101,7 @@ function cambiarTitulo5(nuevoTitulo5) {
   document.getElementById('Ordenar-0000').checked = false;
 }
 
+  // Barra buscador//
 function mostrarCover() {
   var coverCtnSearch = document.getElementById('cover-ctn-search');
   var articleList = document.getElementById('article_list');
@@ -108,7 +109,6 @@ function mostrarCover() {
   coverCtnSearch.style.display = 'block';
   articleList.style.display = 'block';
 
-  // Agrega la clase visible con un pequeño retraso para permitir la transición
   setTimeout(() => {
     articleList.classList.add('visible');
   }, 10);
@@ -124,13 +124,12 @@ function ocultarCover() {
 
   coverCtnSearch.style.opacity = 0;
 
-  // Elimina la clase visible para iniciar la transición de salida
   articleList.classList.remove('visible');
 
   setTimeout(() => {
     articleList.style.display = 'none';
     coverCtnSearch.style.display = 'none';
-  }, 300); // Ajusta el tiempo para que coincida con la duración de la transición
+  }, 300);
 }
 
 document.addEventListener('click', function (event) {
@@ -138,8 +137,38 @@ document.addEventListener('click', function (event) {
   var articleList = document.getElementById('article_list');
   var coverCtnSearch = document.getElementById('cover-ctn-search');
 
-  // Si se hizo clic fuera de search-bar y articleList está visible, ocultar articleList y cover-ctn-search
   if (event.target !== searchbar && !searchbar.contains(event.target) && articleList.classList.contains('visible')) {
     ocultarCover();
   }
 });
+
+function toggleVisibility() {
+  var cover = document.getElementById('cover-ctn-search-responsive');
+  var container = document.getElementById('search_responsive_container');
+  
+  cover.style.opacity = '0';
+  container.style.opacity = '0';
+  cover.style.display = 'flex';
+  container.style.display = 'flex';
+
+  cover.offsetHeight;
+  container.offsetHeight;
+
+  cover.style.opacity = '1';
+  container.style.opacity = '1';
+  container.style.transform = 'translateY(0%)';
+}
+
+function hideSearchContainer() {
+  var cover = document.getElementById('cover-ctn-search-responsive');
+  var container = document.getElementById('search_responsive_container');
+
+  cover.style.opacity = '0';
+  container.style.opacity = '0';
+
+  setTimeout(function () {
+      cover.style.display = 'none';
+      container.style.display = 'none';
+      container.style.transform = 'translateY(-10px)';
+  }, 200);
+}
