@@ -117,12 +117,6 @@
     width: 11vw;
 }
 
-.Social {
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-}
-
 .Social img {
     width: 20px;
     padding: 6px;
@@ -139,4 +133,22 @@
 
 .footer-Top a:hover {
     text-decoration: underline;
+}
+.Social {
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    position: relative;
+}
+.Social::before {
+    content: "";
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    background: white;
+    top: 0;
+    border-radius: 20px;
+}
+.Redes.Sociales {
+    text-align: center;
 }

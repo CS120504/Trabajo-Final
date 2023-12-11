@@ -40,6 +40,9 @@ section.Recien-llegados {
 
 .content-1-Top-Left-Text p {
     font-size: 17px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 .content-1-Top-Left {

@@ -12,7 +12,7 @@ section [id] {
 
 header.header-full {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 1;
 }
 
@@ -188,9 +188,8 @@ input#btn-menu {
 }
 
 .buscador button {
-    width: 35px;
-    position: absolute;
-    padding: 10px;
+    width: 46px;
+    padding: 14px;
     border: 0;
     top: 0;
     bottom: 0;
@@ -198,6 +197,11 @@ input#btn-menu {
     background: none;
     cursor: pointer;
     opacity: 0.5;
+    background: #00000029;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .buscador {
@@ -303,7 +307,7 @@ label.menu-icon img:not(:hover) {
 input[type="text"] {
     width: 680px;
     height: 30px;
-    border-radius: 15px;
+    border-radius: 15px 0 0 15px;
     border: none;
     background: #00000014;
     font-size: 14px;
