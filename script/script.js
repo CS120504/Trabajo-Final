@@ -172,3 +172,17 @@ function hideSearchContainer() {
       container.style.transform = 'translateY(-10px)';
   }, 200);
 }
+
+document.getElementById("dropdown-btn").addEventListener("click", function() {
+  var dropdown = document.getElementById("myDropdown");
+  dropdown.classList.toggle("show");
+});
+
+window.onclick = function(event) {
+  if (!event.target.matches('#dropdown-btn')) {
+    var dropdown = document.getElementById("myDropdown");
+    if (dropdown.classList.contains("show")) {
+      dropdown.classList.remove("show");
+    }
+  }
+};
