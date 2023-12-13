@@ -33,6 +33,7 @@ section.Libros {
     align-items: center;
     cursor: pointer;
     margin-top: 40px;
+    gap: 5px;
 }
 
 .caja-5 button:hover {

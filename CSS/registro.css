@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url(/img/fondo1.PNG);
+    background-image: url(/img/fondo-registro.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -18,7 +18,10 @@ main {
     width: 100%;
     padding: 20px;
     margin: auto;
-    margin-top: 200px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contenedor__todo {
@@ -45,6 +48,7 @@ main {
 
 .caja__trasera div p, .caja__trasera div button {
     margin-top: 30px;
+    border-radius: 8px;
 }
 
 .caja__trasera div h3 {
@@ -106,10 +110,10 @@ main {
     background: #f2f2f2;
     font-size: 16px;
     outline: none;
+    border-radius: 7px;
 }
 
 .contenedor__login-register form button {
-    padding: 10px 40px;
     margin-top: 40px;
     border: none;
     font-size: 14px;
@@ -127,7 +131,12 @@ main {
 .formulario__register {
     display: none;
 }
-
+.contenedor__login-register form button a {
+    padding: 10px 40px;
+    background: #dbab0b;
+    color: white;
+    border-radius: 5px;
+}
 /*Apartir de aca es el css del Responsive Design*/
 
 @media screen and (max-width: 850px) {

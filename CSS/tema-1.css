@@ -143,6 +143,7 @@ div#left {
     background: #d9d9d9;
     align-items: center;
     cursor: pointer;
+    gap: 5px;
 }
 
 #boton-palomita {
